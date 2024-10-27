@@ -1,0 +1,1 @@
+var o=function(v,f,r){var i=v.byteLength;if(f=f||0,r=r||i,v.slice)return v.slice(f,r);if(f<0&&(f+=i),r<0&&(r+=i),r>i&&(r=i),f>=i||f>=r||i===0)return new ArrayBuffer(0);for(var l=new Uint8Array(v),u=new Uint8Array(r-f),e=f,c=0;e<r;e++,c++)u[c]=l[e];return u.buffer};export{o as a};

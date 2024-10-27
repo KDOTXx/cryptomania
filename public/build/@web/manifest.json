@@ -1,0 +1,1517 @@
+{
+  "resources/js/app.js": {
+    "file": "assets/app.84788141.js",
+    "src": "resources/js/app.js",
+    "isEntry": true,
+    "imports": [
+      "_vuex.db5583be.js",
+      "_vue-recaptcha.ac7b26c4.js",
+      "_vue.2fdc5d8e.js",
+      "_@glidejs.c34926ed.js",
+      "_overlayscrollbars.16146508.js",
+      "_qrcode.124b3fa5.js",
+      "_gsap.10236bb8.js",
+      "_bitcoin-units.c392cbba.js",
+      "_jquery.a5d8725e.js",
+      "_lodash.a4543754.js",
+      "_axios.372962c2.js",
+      "_laravel-echo.1870cf92.js",
+      "_socket.io-client.4c8cf9d1.js",
+      "_vue-router.21875538.js",
+      "_vue-i18n.85d99549.js",
+      "_vuex-persistedstate.4cde3667.js",
+      "_vue-izitoast.758affc3.js",
+      "_vue-feather.e39d5e52.js",
+      "_v-mask.d150318c.js",
+      "_v-click-outside.91688d80.js",
+      "_vue-infinite-scroll.16ae2245.js",
+      "_@chenfengyuan.9943b948.js",
+      "_v-tooltip.0d9af9d3.js",
+      "_vue-context.518fc610.js",
+      "_vue-content-placeholders.fb834830.js",
+      "_overlayscrollbars-vue.6a31e3e1.js",
+      "_country-flag-emoji-polyfill.38b8e49f.js",
+      "_apexcharts.1d8667f6.js",
+      "_howler.7d01981f.js",
+      "_after.f5f6eafa.js",
+      "_encode-utf8.c8acd0c0.js",
+      "_dijkstrajs.f17cb91e.js",
+      "_big.js.5a739493.js",
+      "_parseuri.1963fa84.js",
+      "_socket.io-parser.6220f9fe.js",
+      "_component-emitter.72d4fec7.js",
+      "_isarray.396bc49a.js",
+      "_engine.io-client.915a8ff3.js",
+      "_has-cors.150b278c.js",
+      "_engine.io-parser.2ae49814.js",
+      "_has-binary2.8a78c161.js",
+      "_arraybuffer.slice.9c094f68.js",
+      "_base64-arraybuffer.8e0339d2.js",
+      "_blob.387277be.js",
+      "_parseqs.ede9f166.js",
+      "_component-inherit.7edfe7ae.js",
+      "_yeast.d32d0463.js",
+      "_indexof.a4b72e6b.js",
+      "_to-array.b41ea466.js",
+      "_component-bind.d6d60fa3.js",
+      "_backo2.46430cfe.js",
+      "_feather-icons.5fdfdf40.js",
+      "_@babel.aa9208ce.js",
+      "_popper.js.d3cea3a7.js",
+      "_vue-resize.e71c9b02.js",
+      "_vue-clickaway.dacb5831.js",
+      "_is-emoji-supported.c13a6994.js"
+    ],
+    "dynamicImports": [
+      "resources/js/components/views/PageNotFound.vue",
+      "resources/js/components/views/CasinoIndex.vue",
+      "resources/js/components/views/GameProvider.vue",
+      "resources/js/components/views/GameCategory.vue",
+      "resources/js/components/views/GameTag.vue",
+      "resources/js/components/views/Game.vue",
+      "resources/js/components/views/sport/SportIndex.vue",
+      "resources/js/components/views/sport/SportGame.vue",
+      "resources/js/components/views/PrivacyPolicyView.vue",
+      "resources/js/components/views/TermsView.vue",
+      "resources/js/components/views/VIP.vue",
+      "resources/js/components/views/Fairness.vue",
+      "resources/js/components/views/Affiliate.vue",
+      "resources/js/components/views/Profile.vue",
+      "resources/js/components/views/error/InvalidLicenseView.vue",
+      "resources/js/components/views/error/InvalidLicenseUIView.vue",
+      "resources/js/utils/superwheel.js"
+    ],
+    "css": [
+      "assets/app.7b8f8b99.css"
+    ]
+  },
+  "_@babel.aa9208ce.js": {
+    "file": "assets/@babel.aa9208ce.js"
+  },
+  "_@chenfengyuan.9943b948.js": {
+    "file": "assets/@chenfengyuan.9943b948.js"
+  },
+  "_@glidejs.c34926ed.js": {
+    "file": "assets/@glidejs.c34926ed.js"
+  },
+  "_after.f5f6eafa.js": {
+    "file": "assets/after.f5f6eafa.js"
+  },
+  "_apexcharts.1d8667f6.js": {
+    "file": "assets/apexcharts.1d8667f6.js"
+  },
+  "_arraybuffer.slice.9c094f68.js": {
+    "file": "assets/arraybuffer.slice.9c094f68.js"
+  },
+  "_axios.372962c2.js": {
+    "file": "assets/axios.372962c2.js"
+  },
+  "_backo2.46430cfe.js": {
+    "file": "assets/backo2.46430cfe.js"
+  },
+  "_base64-arraybuffer.8e0339d2.js": {
+    "file": "assets/base64-arraybuffer.8e0339d2.js"
+  },
+  "_big.js.5a739493.js": {
+    "file": "assets/big.js.5a739493.js"
+  },
+  "_bitcoin-units.c392cbba.js": {
+    "file": "assets/bitcoin-units.c392cbba.js",
+    "imports": [
+      "_big.js.5a739493.js"
+    ]
+  },
+  "_blob.387277be.js": {
+    "file": "assets/blob.387277be.js"
+  },
+  "_component-bind.d6d60fa3.js": {
+    "file": "assets/component-bind.d6d60fa3.js"
+  },
+  "_component-emitter.72d4fec7.js": {
+    "file": "assets/component-emitter.72d4fec7.js"
+  },
+  "_component-inherit.7edfe7ae.js": {
+    "file": "assets/component-inherit.7edfe7ae.js"
+  },
+  "_country-flag-emoji-polyfill.38b8e49f.js": {
+    "file": "assets/country-flag-emoji-polyfill.38b8e49f.js",
+    "imports": [
+      "_is-emoji-supported.c13a6994.js"
+    ]
+  },
+  "_country-list.a70acff9.js": {
+    "file": "assets/country-list.a70acff9.js"
+  },
+  "_deepmerge.14040ed5.js": {
+    "file": "assets/deepmerge.14040ed5.js"
+  },
+  "_dijkstrajs.f17cb91e.js": {
+    "file": "assets/dijkstrajs.f17cb91e.js"
+  },
+  "_encode-utf8.c8acd0c0.js": {
+    "file": "assets/encode-utf8.c8acd0c0.js"
+  },
+  "_engine.io-client.915a8ff3.js": {
+    "file": "assets/engine.io-client.915a8ff3.js",
+    "imports": [
+      "_has-cors.150b278c.js",
+      "_engine.io-parser.2ae49814.js",
+      "_component-emitter.72d4fec7.js",
+      "_parseqs.ede9f166.js",
+      "_component-inherit.7edfe7ae.js",
+      "_yeast.d32d0463.js",
+      "_after.f5f6eafa.js",
+      "_indexof.a4b72e6b.js",
+      "_parseuri.1963fa84.js"
+    ]
+  },
+  "_engine.io-parser.2ae49814.js": {
+    "file": "assets/engine.io-parser.2ae49814.js",
+    "imports": [
+      "_has-binary2.8a78c161.js",
+      "_arraybuffer.slice.9c094f68.js",
+      "_after.f5f6eafa.js",
+      "_base64-arraybuffer.8e0339d2.js",
+      "_blob.387277be.js"
+    ]
+  },
+  "_feather-icons.5fdfdf40.js": {
+    "file": "assets/feather-icons.5fdfdf40.js",
+    "imports": [
+      "_after.f5f6eafa.js"
+    ]
+  },
+  "_gsap.10236bb8.js": {
+    "file": "assets/gsap.10236bb8.js"
+  },
+  "_has-binary2.8a78c161.js": {
+    "file": "assets/has-binary2.8a78c161.js",
+    "imports": [
+      "_isarray.396bc49a.js"
+    ]
+  },
+  "_has-cors.150b278c.js": {
+    "file": "assets/has-cors.150b278c.js"
+  },
+  "_howler.7d01981f.js": {
+    "file": "assets/howler.7d01981f.js",
+    "imports": [
+      "_after.f5f6eafa.js"
+    ]
+  },
+  "_indexof.a4b72e6b.js": {
+    "file": "assets/indexof.a4b72e6b.js"
+  },
+  "_is-emoji-supported.c13a6994.js": {
+    "file": "assets/is-emoji-supported.c13a6994.js"
+  },
+  "_isarray.396bc49a.js": {
+    "file": "assets/isarray.396bc49a.js"
+  },
+  "_jquery.a5d8725e.js": {
+    "file": "assets/jquery.a5d8725e.js",
+    "imports": [
+      "_after.f5f6eafa.js"
+    ]
+  },
+  "_jquery-ui.be44144d.js": {
+    "file": "assets/jquery-ui.be44144d.js"
+  },
+  "_jquery-ui-touch-punch.15f37d46.js": {
+    "file": "assets/jquery-ui-touch-punch.15f37d46.js"
+  },
+  "_js-sha256.effbe629.js": {
+    "file": "assets/js-sha256.effbe629.js",
+    "imports": [
+      "_after.f5f6eafa.js"
+    ]
+  },
+  "_laravel-echo.1870cf92.js": {
+    "file": "assets/laravel-echo.1870cf92.js"
+  },
+  "_lodash.a4543754.js": {
+    "file": "assets/lodash.a4543754.js",
+    "imports": [
+      "_after.f5f6eafa.js"
+    ]
+  },
+  "_overlayscrollbars.16146508.js": {
+    "file": "assets/overlayscrollbars.16146508.js",
+    "imports": [
+      "_after.f5f6eafa.js"
+    ]
+  },
+  "_overlayscrollbars-vue.6a31e3e1.js": {
+    "file": "assets/overlayscrollbars-vue.6a31e3e1.js",
+    "imports": [
+      "_overlayscrollbars.16146508.js",
+      "_vue.2fdc5d8e.js"
+    ]
+  },
+  "_parseqs.ede9f166.js": {
+    "file": "assets/parseqs.ede9f166.js"
+  },
+  "_parseuri.1963fa84.js": {
+    "file": "assets/parseuri.1963fa84.js"
+  },
+  "_popper.js.d3cea3a7.js": {
+    "file": "assets/popper.js.d3cea3a7.js"
+  },
+  "_qrcode.124b3fa5.js": {
+    "file": "assets/qrcode.124b3fa5.js",
+    "imports": [
+      "_encode-utf8.c8acd0c0.js",
+      "_dijkstrajs.f17cb91e.js"
+    ]
+  },
+  "_socket.io-client.4c8cf9d1.js": {
+    "file": "assets/socket.io-client.4c8cf9d1.js",
+    "imports": [
+      "_parseuri.1963fa84.js",
+      "_socket.io-parser.6220f9fe.js",
+      "_engine.io-client.915a8ff3.js",
+      "_component-emitter.72d4fec7.js",
+      "_to-array.b41ea466.js",
+      "_component-bind.d6d60fa3.js",
+      "_parseqs.ede9f166.js",
+      "_has-binary2.8a78c161.js",
+      "_indexof.a4b72e6b.js",
+      "_backo2.46430cfe.js"
+    ]
+  },
+  "_socket.io-parser.6220f9fe.js": {
+    "file": "assets/socket.io-parser.6220f9fe.js",
+    "imports": [
+      "_component-emitter.72d4fec7.js",
+      "_isarray.396bc49a.js"
+    ]
+  },
+  "_to-array.b41ea466.js": {
+    "file": "assets/to-array.b41ea466.js"
+  },
+  "_v-click-outside.91688d80.js": {
+    "file": "assets/v-click-outside.91688d80.js",
+    "imports": [
+      "_after.f5f6eafa.js"
+    ]
+  },
+  "_v-mask.d150318c.js": {
+    "file": "assets/v-mask.d150318c.js"
+  },
+  "_v-tooltip.0d9af9d3.js": {
+    "file": "assets/v-tooltip.0d9af9d3.js",
+    "imports": [
+      "_@babel.aa9208ce.js",
+      "_popper.js.d3cea3a7.js",
+      "_lodash.a4543754.js",
+      "_vue-resize.e71c9b02.js"
+    ]
+  },
+  "_vue.2fdc5d8e.js": {
+    "file": "assets/vue.2fdc5d8e.js",
+    "imports": [
+      "_after.f5f6eafa.js"
+    ]
+  },
+  "_vue-clickaway.dacb5831.js": {
+    "file": "assets/vue-clickaway.dacb5831.js",
+    "imports": [
+      "_vue.2fdc5d8e.js"
+    ]
+  },
+  "_vue-content-placeholders.fb834830.js": {
+    "file": "assets/vue-content-placeholders.fb834830.js",
+    "imports": [
+      "_after.f5f6eafa.js"
+    ],
+    "css": [
+      "assets/vue-content-placeholders.f691a685.css"
+    ]
+  },
+  "_vue-context.518fc610.js": {
+    "file": "assets/vue-context.518fc610.js",
+    "imports": [
+      "_vue-clickaway.dacb5831.js"
+    ]
+  },
+  "_vue-feather.e39d5e52.js": {
+    "file": "assets/vue-feather.e39d5e52.js",
+    "imports": [
+      "_feather-icons.5fdfdf40.js"
+    ]
+  },
+  "_vue-i18n.85d99549.js": {
+    "file": "assets/vue-i18n.85d99549.js"
+  },
+  "_vue-infinite-scroll.16ae2245.js": {
+    "file": "assets/vue-infinite-scroll.16ae2245.js"
+  },
+  "_vue-izitoast.758affc3.js": {
+    "file": "assets/vue-izitoast.758affc3.js",
+    "imports": [
+      "_after.f5f6eafa.js"
+    ]
+  },
+  "_vue-recaptcha.ac7b26c4.js": {
+    "file": "assets/vue-recaptcha.ac7b26c4.js"
+  },
+  "_vue-resize.e71c9b02.js": {
+    "file": "assets/vue-resize.e71c9b02.js"
+  },
+  "_vue-router.21875538.js": {
+    "file": "assets/vue-router.21875538.js"
+  },
+  "_vuex.db5583be.js": {
+    "file": "assets/vuex.db5583be.js"
+  },
+  "_vuex-persist.0f8adc89.js": {
+    "file": "assets/vuex-persist.0f8adc89.js"
+  },
+  "_vuex-persistedstate.4cde3667.js": {
+    "file": "assets/vuex-persistedstate.4cde3667.js"
+  },
+  "_yeast.d32d0463.js": {
+    "file": "assets/yeast.d32d0463.js"
+  },
+  "resources/js/utils/superwheel.js": {
+    "file": "assets/superwheel.4486bd06.js",
+    "src": "resources/js/utils/superwheel.js",
+    "isDynamicEntry": true
+  },
+  "resources/js/components/views/PageNotFound.vue": {
+    "file": "assets/PageNotFound.5507b0b8.js",
+    "src": "resources/js/components/views/PageNotFound.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.js",
+      "_vuex.db5583be.js",
+      "_vue-recaptcha.ac7b26c4.js",
+      "_vue.2fdc5d8e.js",
+      "_after.f5f6eafa.js",
+      "_@glidejs.c34926ed.js",
+      "_overlayscrollbars.16146508.js",
+      "_qrcode.124b3fa5.js",
+      "_encode-utf8.c8acd0c0.js",
+      "_dijkstrajs.f17cb91e.js",
+      "_gsap.10236bb8.js",
+      "_bitcoin-units.c392cbba.js",
+      "_big.js.5a739493.js",
+      "_jquery.a5d8725e.js",
+      "_lodash.a4543754.js",
+      "_axios.372962c2.js",
+      "_laravel-echo.1870cf92.js",
+      "_socket.io-client.4c8cf9d1.js",
+      "_parseuri.1963fa84.js",
+      "_socket.io-parser.6220f9fe.js",
+      "_component-emitter.72d4fec7.js",
+      "_isarray.396bc49a.js",
+      "_engine.io-client.915a8ff3.js",
+      "_has-cors.150b278c.js",
+      "_engine.io-parser.2ae49814.js",
+      "_has-binary2.8a78c161.js",
+      "_arraybuffer.slice.9c094f68.js",
+      "_base64-arraybuffer.8e0339d2.js",
+      "_blob.387277be.js",
+      "_parseqs.ede9f166.js",
+      "_component-inherit.7edfe7ae.js",
+      "_yeast.d32d0463.js",
+      "_indexof.a4b72e6b.js",
+      "_to-array.b41ea466.js",
+      "_component-bind.d6d60fa3.js",
+      "_backo2.46430cfe.js",
+      "_vue-router.21875538.js",
+      "_vue-i18n.85d99549.js",
+      "_vuex-persistedstate.4cde3667.js",
+      "_vue-izitoast.758affc3.js",
+      "_vue-feather.e39d5e52.js",
+      "_feather-icons.5fdfdf40.js",
+      "_v-mask.d150318c.js",
+      "_v-click-outside.91688d80.js",
+      "_vue-infinite-scroll.16ae2245.js",
+      "_@chenfengyuan.9943b948.js",
+      "_v-tooltip.0d9af9d3.js",
+      "_@babel.aa9208ce.js",
+      "_popper.js.d3cea3a7.js",
+      "_vue-resize.e71c9b02.js",
+      "_vue-context.518fc610.js",
+      "_vue-clickaway.dacb5831.js",
+      "_vue-content-placeholders.fb834830.js",
+      "_overlayscrollbars-vue.6a31e3e1.js",
+      "_country-flag-emoji-polyfill.38b8e49f.js",
+      "_is-emoji-supported.c13a6994.js",
+      "_apexcharts.1d8667f6.js",
+      "_howler.7d01981f.js"
+    ],
+    "css": [
+      "assets/PageNotFound.778ec267.css"
+    ]
+  },
+  "resources/js/components/views/CasinoIndex.vue": {
+    "file": "assets/CasinoIndex.3094b38f.js",
+    "src": "resources/js/components/views/CasinoIndex.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_vuex.db5583be.js",
+      "resources/js/app.js",
+      "_vue-recaptcha.ac7b26c4.js",
+      "_vue.2fdc5d8e.js",
+      "_after.f5f6eafa.js",
+      "_@glidejs.c34926ed.js",
+      "_overlayscrollbars.16146508.js",
+      "_qrcode.124b3fa5.js",
+      "_encode-utf8.c8acd0c0.js",
+      "_dijkstrajs.f17cb91e.js",
+      "_gsap.10236bb8.js",
+      "_bitcoin-units.c392cbba.js",
+      "_big.js.5a739493.js",
+      "_jquery.a5d8725e.js",
+      "_lodash.a4543754.js",
+      "_axios.372962c2.js",
+      "_laravel-echo.1870cf92.js",
+      "_socket.io-client.4c8cf9d1.js",
+      "_parseuri.1963fa84.js",
+      "_socket.io-parser.6220f9fe.js",
+      "_component-emitter.72d4fec7.js",
+      "_isarray.396bc49a.js",
+      "_engine.io-client.915a8ff3.js",
+      "_has-cors.150b278c.js",
+      "_engine.io-parser.2ae49814.js",
+      "_has-binary2.8a78c161.js",
+      "_arraybuffer.slice.9c094f68.js",
+      "_base64-arraybuffer.8e0339d2.js",
+      "_blob.387277be.js",
+      "_parseqs.ede9f166.js",
+      "_component-inherit.7edfe7ae.js",
+      "_yeast.d32d0463.js",
+      "_indexof.a4b72e6b.js",
+      "_to-array.b41ea466.js",
+      "_component-bind.d6d60fa3.js",
+      "_backo2.46430cfe.js",
+      "_vue-router.21875538.js",
+      "_vue-i18n.85d99549.js",
+      "_vuex-persistedstate.4cde3667.js",
+      "_vue-izitoast.758affc3.js",
+      "_vue-feather.e39d5e52.js",
+      "_feather-icons.5fdfdf40.js",
+      "_v-mask.d150318c.js",
+      "_v-click-outside.91688d80.js",
+      "_vue-infinite-scroll.16ae2245.js",
+      "_@chenfengyuan.9943b948.js",
+      "_v-tooltip.0d9af9d3.js",
+      "_@babel.aa9208ce.js",
+      "_popper.js.d3cea3a7.js",
+      "_vue-resize.e71c9b02.js",
+      "_vue-context.518fc610.js",
+      "_vue-clickaway.dacb5831.js",
+      "_vue-content-placeholders.fb834830.js",
+      "_overlayscrollbars-vue.6a31e3e1.js",
+      "_country-flag-emoji-polyfill.38b8e49f.js",
+      "_is-emoji-supported.c13a6994.js",
+      "_apexcharts.1d8667f6.js",
+      "_howler.7d01981f.js"
+    ],
+    "css": [
+      "assets/CasinoIndex.7ac153cf.css"
+    ]
+  },
+  "resources/js/components/views/GameProvider.vue": {
+    "file": "assets/GameProvider.5e5dd599.js",
+    "src": "resources/js/components/views/GameProvider.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.js",
+      "_vuex.db5583be.js",
+      "_vue-recaptcha.ac7b26c4.js",
+      "_vue.2fdc5d8e.js",
+      "_after.f5f6eafa.js",
+      "_@glidejs.c34926ed.js",
+      "_overlayscrollbars.16146508.js",
+      "_qrcode.124b3fa5.js",
+      "_encode-utf8.c8acd0c0.js",
+      "_dijkstrajs.f17cb91e.js",
+      "_gsap.10236bb8.js",
+      "_bitcoin-units.c392cbba.js",
+      "_big.js.5a739493.js",
+      "_jquery.a5d8725e.js",
+      "_lodash.a4543754.js",
+      "_axios.372962c2.js",
+      "_laravel-echo.1870cf92.js",
+      "_socket.io-client.4c8cf9d1.js",
+      "_parseuri.1963fa84.js",
+      "_socket.io-parser.6220f9fe.js",
+      "_component-emitter.72d4fec7.js",
+      "_isarray.396bc49a.js",
+      "_engine.io-client.915a8ff3.js",
+      "_has-cors.150b278c.js",
+      "_engine.io-parser.2ae49814.js",
+      "_has-binary2.8a78c161.js",
+      "_arraybuffer.slice.9c094f68.js",
+      "_base64-arraybuffer.8e0339d2.js",
+      "_blob.387277be.js",
+      "_parseqs.ede9f166.js",
+      "_component-inherit.7edfe7ae.js",
+      "_yeast.d32d0463.js",
+      "_indexof.a4b72e6b.js",
+      "_to-array.b41ea466.js",
+      "_component-bind.d6d60fa3.js",
+      "_backo2.46430cfe.js",
+      "_vue-router.21875538.js",
+      "_vue-i18n.85d99549.js",
+      "_vuex-persistedstate.4cde3667.js",
+      "_vue-izitoast.758affc3.js",
+      "_vue-feather.e39d5e52.js",
+      "_feather-icons.5fdfdf40.js",
+      "_v-mask.d150318c.js",
+      "_v-click-outside.91688d80.js",
+      "_vue-infinite-scroll.16ae2245.js",
+      "_@chenfengyuan.9943b948.js",
+      "_v-tooltip.0d9af9d3.js",
+      "_@babel.aa9208ce.js",
+      "_popper.js.d3cea3a7.js",
+      "_vue-resize.e71c9b02.js",
+      "_vue-context.518fc610.js",
+      "_vue-clickaway.dacb5831.js",
+      "_vue-content-placeholders.fb834830.js",
+      "_overlayscrollbars-vue.6a31e3e1.js",
+      "_country-flag-emoji-polyfill.38b8e49f.js",
+      "_is-emoji-supported.c13a6994.js",
+      "_apexcharts.1d8667f6.js",
+      "_howler.7d01981f.js"
+    ]
+  },
+  "resources/js/components/views/GameCategory.vue": {
+    "file": "assets/GameCategory.5700a14c.js",
+    "src": "resources/js/components/views/GameCategory.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.js",
+      "_vuex.db5583be.js",
+      "_vue-recaptcha.ac7b26c4.js",
+      "_vue.2fdc5d8e.js",
+      "_after.f5f6eafa.js",
+      "_@glidejs.c34926ed.js",
+      "_overlayscrollbars.16146508.js",
+      "_qrcode.124b3fa5.js",
+      "_encode-utf8.c8acd0c0.js",
+      "_dijkstrajs.f17cb91e.js",
+      "_gsap.10236bb8.js",
+      "_bitcoin-units.c392cbba.js",
+      "_big.js.5a739493.js",
+      "_jquery.a5d8725e.js",
+      "_lodash.a4543754.js",
+      "_axios.372962c2.js",
+      "_laravel-echo.1870cf92.js",
+      "_socket.io-client.4c8cf9d1.js",
+      "_parseuri.1963fa84.js",
+      "_socket.io-parser.6220f9fe.js",
+      "_component-emitter.72d4fec7.js",
+      "_isarray.396bc49a.js",
+      "_engine.io-client.915a8ff3.js",
+      "_has-cors.150b278c.js",
+      "_engine.io-parser.2ae49814.js",
+      "_has-binary2.8a78c161.js",
+      "_arraybuffer.slice.9c094f68.js",
+      "_base64-arraybuffer.8e0339d2.js",
+      "_blob.387277be.js",
+      "_parseqs.ede9f166.js",
+      "_component-inherit.7edfe7ae.js",
+      "_yeast.d32d0463.js",
+      "_indexof.a4b72e6b.js",
+      "_to-array.b41ea466.js",
+      "_component-bind.d6d60fa3.js",
+      "_backo2.46430cfe.js",
+      "_vue-router.21875538.js",
+      "_vue-i18n.85d99549.js",
+      "_vuex-persistedstate.4cde3667.js",
+      "_vue-izitoast.758affc3.js",
+      "_vue-feather.e39d5e52.js",
+      "_feather-icons.5fdfdf40.js",
+      "_v-mask.d150318c.js",
+      "_v-click-outside.91688d80.js",
+      "_vue-infinite-scroll.16ae2245.js",
+      "_@chenfengyuan.9943b948.js",
+      "_v-tooltip.0d9af9d3.js",
+      "_@babel.aa9208ce.js",
+      "_popper.js.d3cea3a7.js",
+      "_vue-resize.e71c9b02.js",
+      "_vue-context.518fc610.js",
+      "_vue-clickaway.dacb5831.js",
+      "_vue-content-placeholders.fb834830.js",
+      "_overlayscrollbars-vue.6a31e3e1.js",
+      "_country-flag-emoji-polyfill.38b8e49f.js",
+      "_is-emoji-supported.c13a6994.js",
+      "_apexcharts.1d8667f6.js",
+      "_howler.7d01981f.js"
+    ],
+    "css": [
+      "assets/GameCategory.ebfd6c7d.css"
+    ]
+  },
+  "resources/js/components/views/GameTag.vue": {
+    "file": "assets/GameTag.8e199c92.js",
+    "src": "resources/js/components/views/GameTag.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.js",
+      "_vuex.db5583be.js",
+      "_vue-recaptcha.ac7b26c4.js",
+      "_vue.2fdc5d8e.js",
+      "_after.f5f6eafa.js",
+      "_@glidejs.c34926ed.js",
+      "_overlayscrollbars.16146508.js",
+      "_qrcode.124b3fa5.js",
+      "_encode-utf8.c8acd0c0.js",
+      "_dijkstrajs.f17cb91e.js",
+      "_gsap.10236bb8.js",
+      "_bitcoin-units.c392cbba.js",
+      "_big.js.5a739493.js",
+      "_jquery.a5d8725e.js",
+      "_lodash.a4543754.js",
+      "_axios.372962c2.js",
+      "_laravel-echo.1870cf92.js",
+      "_socket.io-client.4c8cf9d1.js",
+      "_parseuri.1963fa84.js",
+      "_socket.io-parser.6220f9fe.js",
+      "_component-emitter.72d4fec7.js",
+      "_isarray.396bc49a.js",
+      "_engine.io-client.915a8ff3.js",
+      "_has-cors.150b278c.js",
+      "_engine.io-parser.2ae49814.js",
+      "_has-binary2.8a78c161.js",
+      "_arraybuffer.slice.9c094f68.js",
+      "_base64-arraybuffer.8e0339d2.js",
+      "_blob.387277be.js",
+      "_parseqs.ede9f166.js",
+      "_component-inherit.7edfe7ae.js",
+      "_yeast.d32d0463.js",
+      "_indexof.a4b72e6b.js",
+      "_to-array.b41ea466.js",
+      "_component-bind.d6d60fa3.js",
+      "_backo2.46430cfe.js",
+      "_vue-router.21875538.js",
+      "_vue-i18n.85d99549.js",
+      "_vuex-persistedstate.4cde3667.js",
+      "_vue-izitoast.758affc3.js",
+      "_vue-feather.e39d5e52.js",
+      "_feather-icons.5fdfdf40.js",
+      "_v-mask.d150318c.js",
+      "_v-click-outside.91688d80.js",
+      "_vue-infinite-scroll.16ae2245.js",
+      "_@chenfengyuan.9943b948.js",
+      "_v-tooltip.0d9af9d3.js",
+      "_@babel.aa9208ce.js",
+      "_popper.js.d3cea3a7.js",
+      "_vue-resize.e71c9b02.js",
+      "_vue-context.518fc610.js",
+      "_vue-clickaway.dacb5831.js",
+      "_vue-content-placeholders.fb834830.js",
+      "_overlayscrollbars-vue.6a31e3e1.js",
+      "_country-flag-emoji-polyfill.38b8e49f.js",
+      "_is-emoji-supported.c13a6994.js",
+      "_apexcharts.1d8667f6.js",
+      "_howler.7d01981f.js"
+    ]
+  },
+  "resources/js/components/views/Game.vue": {
+    "file": "assets/Game.9bd8df0e.js",
+    "src": "resources/js/components/views/Game.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_vuex.db5583be.js",
+      "resources/js/app.js",
+      "_gsap.10236bb8.js",
+      "_jquery-ui.be44144d.js",
+      "_jquery-ui-touch-punch.15f37d46.js",
+      "_vue-recaptcha.ac7b26c4.js",
+      "_vue.2fdc5d8e.js",
+      "_after.f5f6eafa.js",
+      "_@glidejs.c34926ed.js",
+      "_overlayscrollbars.16146508.js",
+      "_qrcode.124b3fa5.js",
+      "_encode-utf8.c8acd0c0.js",
+      "_dijkstrajs.f17cb91e.js",
+      "_bitcoin-units.c392cbba.js",
+      "_big.js.5a739493.js",
+      "_jquery.a5d8725e.js",
+      "_lodash.a4543754.js",
+      "_axios.372962c2.js",
+      "_laravel-echo.1870cf92.js",
+      "_socket.io-client.4c8cf9d1.js",
+      "_parseuri.1963fa84.js",
+      "_socket.io-parser.6220f9fe.js",
+      "_component-emitter.72d4fec7.js",
+      "_isarray.396bc49a.js",
+      "_engine.io-client.915a8ff3.js",
+      "_has-cors.150b278c.js",
+      "_engine.io-parser.2ae49814.js",
+      "_has-binary2.8a78c161.js",
+      "_arraybuffer.slice.9c094f68.js",
+      "_base64-arraybuffer.8e0339d2.js",
+      "_blob.387277be.js",
+      "_parseqs.ede9f166.js",
+      "_component-inherit.7edfe7ae.js",
+      "_yeast.d32d0463.js",
+      "_indexof.a4b72e6b.js",
+      "_to-array.b41ea466.js",
+      "_component-bind.d6d60fa3.js",
+      "_backo2.46430cfe.js",
+      "_vue-router.21875538.js",
+      "_vue-i18n.85d99549.js",
+      "_vuex-persistedstate.4cde3667.js",
+      "_vue-izitoast.758affc3.js",
+      "_vue-feather.e39d5e52.js",
+      "_feather-icons.5fdfdf40.js",
+      "_v-mask.d150318c.js",
+      "_v-click-outside.91688d80.js",
+      "_vue-infinite-scroll.16ae2245.js",
+      "_@chenfengyuan.9943b948.js",
+      "_v-tooltip.0d9af9d3.js",
+      "_@babel.aa9208ce.js",
+      "_popper.js.d3cea3a7.js",
+      "_vue-resize.e71c9b02.js",
+      "_vue-context.518fc610.js",
+      "_vue-clickaway.dacb5831.js",
+      "_vue-content-placeholders.fb834830.js",
+      "_overlayscrollbars-vue.6a31e3e1.js",
+      "_country-flag-emoji-polyfill.38b8e49f.js",
+      "_is-emoji-supported.c13a6994.js",
+      "_apexcharts.1d8667f6.js",
+      "_howler.7d01981f.js"
+    ],
+    "css": [
+      "assets/Game.2601a4a8.css"
+    ]
+  },
+  "resources/js/components/views/sport/SportIndex.vue": {
+    "file": "assets/SportIndex.27a4100d.js",
+    "src": "resources/js/components/views/sport/SportIndex.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_vuex.db5583be.js",
+      "_overlayscrollbars.16146508.js",
+      "resources/js/app.js",
+      "_country-list.a70acff9.js",
+      "_after.f5f6eafa.js",
+      "_vue-recaptcha.ac7b26c4.js",
+      "_vue.2fdc5d8e.js",
+      "_@glidejs.c34926ed.js",
+      "_qrcode.124b3fa5.js",
+      "_encode-utf8.c8acd0c0.js",
+      "_dijkstrajs.f17cb91e.js",
+      "_gsap.10236bb8.js",
+      "_bitcoin-units.c392cbba.js",
+      "_big.js.5a739493.js",
+      "_jquery.a5d8725e.js",
+      "_lodash.a4543754.js",
+      "_axios.372962c2.js",
+      "_laravel-echo.1870cf92.js",
+      "_socket.io-client.4c8cf9d1.js",
+      "_parseuri.1963fa84.js",
+      "_socket.io-parser.6220f9fe.js",
+      "_component-emitter.72d4fec7.js",
+      "_isarray.396bc49a.js",
+      "_engine.io-client.915a8ff3.js",
+      "_has-cors.150b278c.js",
+      "_engine.io-parser.2ae49814.js",
+      "_has-binary2.8a78c161.js",
+      "_arraybuffer.slice.9c094f68.js",
+      "_base64-arraybuffer.8e0339d2.js",
+      "_blob.387277be.js",
+      "_parseqs.ede9f166.js",
+      "_component-inherit.7edfe7ae.js",
+      "_yeast.d32d0463.js",
+      "_indexof.a4b72e6b.js",
+      "_to-array.b41ea466.js",
+      "_component-bind.d6d60fa3.js",
+      "_backo2.46430cfe.js",
+      "_vue-router.21875538.js",
+      "_vue-i18n.85d99549.js",
+      "_vuex-persistedstate.4cde3667.js",
+      "_vue-izitoast.758affc3.js",
+      "_vue-feather.e39d5e52.js",
+      "_feather-icons.5fdfdf40.js",
+      "_v-mask.d150318c.js",
+      "_v-click-outside.91688d80.js",
+      "_vue-infinite-scroll.16ae2245.js",
+      "_@chenfengyuan.9943b948.js",
+      "_v-tooltip.0d9af9d3.js",
+      "_@babel.aa9208ce.js",
+      "_popper.js.d3cea3a7.js",
+      "_vue-resize.e71c9b02.js",
+      "_vue-context.518fc610.js",
+      "_vue-clickaway.dacb5831.js",
+      "_vue-content-placeholders.fb834830.js",
+      "_overlayscrollbars-vue.6a31e3e1.js",
+      "_country-flag-emoji-polyfill.38b8e49f.js",
+      "_is-emoji-supported.c13a6994.js",
+      "_apexcharts.1d8667f6.js",
+      "_howler.7d01981f.js"
+    ],
+    "css": [
+      "assets/SportIndex.3b0c7f41.css"
+    ]
+  },
+  "resources/js/components/views/sport/SportGame.vue": {
+    "file": "assets/SportGame.59edf11a.js",
+    "src": "resources/js/components/views/sport/SportGame.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.js",
+      "_vuex.db5583be.js",
+      "_vue-recaptcha.ac7b26c4.js",
+      "_vue.2fdc5d8e.js",
+      "_after.f5f6eafa.js",
+      "_@glidejs.c34926ed.js",
+      "_overlayscrollbars.16146508.js",
+      "_qrcode.124b3fa5.js",
+      "_encode-utf8.c8acd0c0.js",
+      "_dijkstrajs.f17cb91e.js",
+      "_gsap.10236bb8.js",
+      "_bitcoin-units.c392cbba.js",
+      "_big.js.5a739493.js",
+      "_jquery.a5d8725e.js",
+      "_lodash.a4543754.js",
+      "_axios.372962c2.js",
+      "_laravel-echo.1870cf92.js",
+      "_socket.io-client.4c8cf9d1.js",
+      "_parseuri.1963fa84.js",
+      "_socket.io-parser.6220f9fe.js",
+      "_component-emitter.72d4fec7.js",
+      "_isarray.396bc49a.js",
+      "_engine.io-client.915a8ff3.js",
+      "_has-cors.150b278c.js",
+      "_engine.io-parser.2ae49814.js",
+      "_has-binary2.8a78c161.js",
+      "_arraybuffer.slice.9c094f68.js",
+      "_base64-arraybuffer.8e0339d2.js",
+      "_blob.387277be.js",
+      "_parseqs.ede9f166.js",
+      "_component-inherit.7edfe7ae.js",
+      "_yeast.d32d0463.js",
+      "_indexof.a4b72e6b.js",
+      "_to-array.b41ea466.js",
+      "_component-bind.d6d60fa3.js",
+      "_backo2.46430cfe.js",
+      "_vue-router.21875538.js",
+      "_vue-i18n.85d99549.js",
+      "_vuex-persistedstate.4cde3667.js",
+      "_vue-izitoast.758affc3.js",
+      "_vue-feather.e39d5e52.js",
+      "_feather-icons.5fdfdf40.js",
+      "_v-mask.d150318c.js",
+      "_v-click-outside.91688d80.js",
+      "_vue-infinite-scroll.16ae2245.js",
+      "_@chenfengyuan.9943b948.js",
+      "_v-tooltip.0d9af9d3.js",
+      "_@babel.aa9208ce.js",
+      "_popper.js.d3cea3a7.js",
+      "_vue-resize.e71c9b02.js",
+      "_vue-context.518fc610.js",
+      "_vue-clickaway.dacb5831.js",
+      "_vue-content-placeholders.fb834830.js",
+      "_overlayscrollbars-vue.6a31e3e1.js",
+      "_country-flag-emoji-polyfill.38b8e49f.js",
+      "_is-emoji-supported.c13a6994.js",
+      "_apexcharts.1d8667f6.js",
+      "_howler.7d01981f.js"
+    ],
+    "css": [
+      "assets/SportGame.f0b245ce.css"
+    ]
+  },
+  "resources/js/components/views/PrivacyPolicyView.vue": {
+    "file": "assets/PrivacyPolicyView.83b5001c.js",
+    "src": "resources/js/components/views/PrivacyPolicyView.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.js",
+      "_vuex.db5583be.js",
+      "_vue-recaptcha.ac7b26c4.js",
+      "_vue.2fdc5d8e.js",
+      "_after.f5f6eafa.js",
+      "_@glidejs.c34926ed.js",
+      "_overlayscrollbars.16146508.js",
+      "_qrcode.124b3fa5.js",
+      "_encode-utf8.c8acd0c0.js",
+      "_dijkstrajs.f17cb91e.js",
+      "_gsap.10236bb8.js",
+      "_bitcoin-units.c392cbba.js",
+      "_big.js.5a739493.js",
+      "_jquery.a5d8725e.js",
+      "_lodash.a4543754.js",
+      "_axios.372962c2.js",
+      "_laravel-echo.1870cf92.js",
+      "_socket.io-client.4c8cf9d1.js",
+      "_parseuri.1963fa84.js",
+      "_socket.io-parser.6220f9fe.js",
+      "_component-emitter.72d4fec7.js",
+      "_isarray.396bc49a.js",
+      "_engine.io-client.915a8ff3.js",
+      "_has-cors.150b278c.js",
+      "_engine.io-parser.2ae49814.js",
+      "_has-binary2.8a78c161.js",
+      "_arraybuffer.slice.9c094f68.js",
+      "_base64-arraybuffer.8e0339d2.js",
+      "_blob.387277be.js",
+      "_parseqs.ede9f166.js",
+      "_component-inherit.7edfe7ae.js",
+      "_yeast.d32d0463.js",
+      "_indexof.a4b72e6b.js",
+      "_to-array.b41ea466.js",
+      "_component-bind.d6d60fa3.js",
+      "_backo2.46430cfe.js",
+      "_vue-router.21875538.js",
+      "_vue-i18n.85d99549.js",
+      "_vuex-persistedstate.4cde3667.js",
+      "_vue-izitoast.758affc3.js",
+      "_vue-feather.e39d5e52.js",
+      "_feather-icons.5fdfdf40.js",
+      "_v-mask.d150318c.js",
+      "_v-click-outside.91688d80.js",
+      "_vue-infinite-scroll.16ae2245.js",
+      "_@chenfengyuan.9943b948.js",
+      "_v-tooltip.0d9af9d3.js",
+      "_@babel.aa9208ce.js",
+      "_popper.js.d3cea3a7.js",
+      "_vue-resize.e71c9b02.js",
+      "_vue-context.518fc610.js",
+      "_vue-clickaway.dacb5831.js",
+      "_vue-content-placeholders.fb834830.js",
+      "_overlayscrollbars-vue.6a31e3e1.js",
+      "_country-flag-emoji-polyfill.38b8e49f.js",
+      "_is-emoji-supported.c13a6994.js",
+      "_apexcharts.1d8667f6.js",
+      "_howler.7d01981f.js"
+    ]
+  },
+  "resources/js/components/views/TermsView.vue": {
+    "file": "assets/TermsView.4775ebaf.js",
+    "src": "resources/js/components/views/TermsView.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.js",
+      "_vuex.db5583be.js",
+      "_vue-recaptcha.ac7b26c4.js",
+      "_vue.2fdc5d8e.js",
+      "_after.f5f6eafa.js",
+      "_@glidejs.c34926ed.js",
+      "_overlayscrollbars.16146508.js",
+      "_qrcode.124b3fa5.js",
+      "_encode-utf8.c8acd0c0.js",
+      "_dijkstrajs.f17cb91e.js",
+      "_gsap.10236bb8.js",
+      "_bitcoin-units.c392cbba.js",
+      "_big.js.5a739493.js",
+      "_jquery.a5d8725e.js",
+      "_lodash.a4543754.js",
+      "_axios.372962c2.js",
+      "_laravel-echo.1870cf92.js",
+      "_socket.io-client.4c8cf9d1.js",
+      "_parseuri.1963fa84.js",
+      "_socket.io-parser.6220f9fe.js",
+      "_component-emitter.72d4fec7.js",
+      "_isarray.396bc49a.js",
+      "_engine.io-client.915a8ff3.js",
+      "_has-cors.150b278c.js",
+      "_engine.io-parser.2ae49814.js",
+      "_has-binary2.8a78c161.js",
+      "_arraybuffer.slice.9c094f68.js",
+      "_base64-arraybuffer.8e0339d2.js",
+      "_blob.387277be.js",
+      "_parseqs.ede9f166.js",
+      "_component-inherit.7edfe7ae.js",
+      "_yeast.d32d0463.js",
+      "_indexof.a4b72e6b.js",
+      "_to-array.b41ea466.js",
+      "_component-bind.d6d60fa3.js",
+      "_backo2.46430cfe.js",
+      "_vue-router.21875538.js",
+      "_vue-i18n.85d99549.js",
+      "_vuex-persistedstate.4cde3667.js",
+      "_vue-izitoast.758affc3.js",
+      "_vue-feather.e39d5e52.js",
+      "_feather-icons.5fdfdf40.js",
+      "_v-mask.d150318c.js",
+      "_v-click-outside.91688d80.js",
+      "_vue-infinite-scroll.16ae2245.js",
+      "_@chenfengyuan.9943b948.js",
+      "_v-tooltip.0d9af9d3.js",
+      "_@babel.aa9208ce.js",
+      "_popper.js.d3cea3a7.js",
+      "_vue-resize.e71c9b02.js",
+      "_vue-context.518fc610.js",
+      "_vue-clickaway.dacb5831.js",
+      "_vue-content-placeholders.fb834830.js",
+      "_overlayscrollbars-vue.6a31e3e1.js",
+      "_country-flag-emoji-polyfill.38b8e49f.js",
+      "_is-emoji-supported.c13a6994.js",
+      "_apexcharts.1d8667f6.js",
+      "_howler.7d01981f.js"
+    ]
+  },
+  "resources/js/components/views/VIP.vue": {
+    "file": "assets/VIP.1aaa4087.js",
+    "src": "resources/js/components/views/VIP.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_vuex.db5583be.js",
+      "_overlayscrollbars.16146508.js",
+      "resources/js/app.js",
+      "_after.f5f6eafa.js",
+      "_vue-recaptcha.ac7b26c4.js",
+      "_vue.2fdc5d8e.js",
+      "_@glidejs.c34926ed.js",
+      "_qrcode.124b3fa5.js",
+      "_encode-utf8.c8acd0c0.js",
+      "_dijkstrajs.f17cb91e.js",
+      "_gsap.10236bb8.js",
+      "_bitcoin-units.c392cbba.js",
+      "_big.js.5a739493.js",
+      "_jquery.a5d8725e.js",
+      "_lodash.a4543754.js",
+      "_axios.372962c2.js",
+      "_laravel-echo.1870cf92.js",
+      "_socket.io-client.4c8cf9d1.js",
+      "_parseuri.1963fa84.js",
+      "_socket.io-parser.6220f9fe.js",
+      "_component-emitter.72d4fec7.js",
+      "_isarray.396bc49a.js",
+      "_engine.io-client.915a8ff3.js",
+      "_has-cors.150b278c.js",
+      "_engine.io-parser.2ae49814.js",
+      "_has-binary2.8a78c161.js",
+      "_arraybuffer.slice.9c094f68.js",
+      "_base64-arraybuffer.8e0339d2.js",
+      "_blob.387277be.js",
+      "_parseqs.ede9f166.js",
+      "_component-inherit.7edfe7ae.js",
+      "_yeast.d32d0463.js",
+      "_indexof.a4b72e6b.js",
+      "_to-array.b41ea466.js",
+      "_component-bind.d6d60fa3.js",
+      "_backo2.46430cfe.js",
+      "_vue-router.21875538.js",
+      "_vue-i18n.85d99549.js",
+      "_vuex-persistedstate.4cde3667.js",
+      "_vue-izitoast.758affc3.js",
+      "_vue-feather.e39d5e52.js",
+      "_feather-icons.5fdfdf40.js",
+      "_v-mask.d150318c.js",
+      "_v-click-outside.91688d80.js",
+      "_vue-infinite-scroll.16ae2245.js",
+      "_@chenfengyuan.9943b948.js",
+      "_v-tooltip.0d9af9d3.js",
+      "_@babel.aa9208ce.js",
+      "_popper.js.d3cea3a7.js",
+      "_vue-resize.e71c9b02.js",
+      "_vue-context.518fc610.js",
+      "_vue-clickaway.dacb5831.js",
+      "_vue-content-placeholders.fb834830.js",
+      "_overlayscrollbars-vue.6a31e3e1.js",
+      "_country-flag-emoji-polyfill.38b8e49f.js",
+      "_is-emoji-supported.c13a6994.js",
+      "_apexcharts.1d8667f6.js",
+      "_howler.7d01981f.js"
+    ],
+    "css": [
+      "assets/VIP.95961efd.css"
+    ]
+  },
+  "resources/js/components/views/Fairness.vue": {
+    "file": "assets/Fairness.9c0c6aba.js",
+    "src": "resources/js/components/views/Fairness.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_vuex.db5583be.js",
+      "_js-sha256.effbe629.js",
+      "resources/js/app.js",
+      "_after.f5f6eafa.js",
+      "_vue-recaptcha.ac7b26c4.js",
+      "_vue.2fdc5d8e.js",
+      "_@glidejs.c34926ed.js",
+      "_overlayscrollbars.16146508.js",
+      "_qrcode.124b3fa5.js",
+      "_encode-utf8.c8acd0c0.js",
+      "_dijkstrajs.f17cb91e.js",
+      "_gsap.10236bb8.js",
+      "_bitcoin-units.c392cbba.js",
+      "_big.js.5a739493.js",
+      "_jquery.a5d8725e.js",
+      "_lodash.a4543754.js",
+      "_axios.372962c2.js",
+      "_laravel-echo.1870cf92.js",
+      "_socket.io-client.4c8cf9d1.js",
+      "_parseuri.1963fa84.js",
+      "_socket.io-parser.6220f9fe.js",
+      "_component-emitter.72d4fec7.js",
+      "_isarray.396bc49a.js",
+      "_engine.io-client.915a8ff3.js",
+      "_has-cors.150b278c.js",
+      "_engine.io-parser.2ae49814.js",
+      "_has-binary2.8a78c161.js",
+      "_arraybuffer.slice.9c094f68.js",
+      "_base64-arraybuffer.8e0339d2.js",
+      "_blob.387277be.js",
+      "_parseqs.ede9f166.js",
+      "_component-inherit.7edfe7ae.js",
+      "_yeast.d32d0463.js",
+      "_indexof.a4b72e6b.js",
+      "_to-array.b41ea466.js",
+      "_component-bind.d6d60fa3.js",
+      "_backo2.46430cfe.js",
+      "_vue-router.21875538.js",
+      "_vue-i18n.85d99549.js",
+      "_vuex-persistedstate.4cde3667.js",
+      "_vue-izitoast.758affc3.js",
+      "_vue-feather.e39d5e52.js",
+      "_feather-icons.5fdfdf40.js",
+      "_v-mask.d150318c.js",
+      "_v-click-outside.91688d80.js",
+      "_vue-infinite-scroll.16ae2245.js",
+      "_@chenfengyuan.9943b948.js",
+      "_v-tooltip.0d9af9d3.js",
+      "_@babel.aa9208ce.js",
+      "_popper.js.d3cea3a7.js",
+      "_vue-resize.e71c9b02.js",
+      "_vue-context.518fc610.js",
+      "_vue-clickaway.dacb5831.js",
+      "_vue-content-placeholders.fb834830.js",
+      "_overlayscrollbars-vue.6a31e3e1.js",
+      "_country-flag-emoji-polyfill.38b8e49f.js",
+      "_is-emoji-supported.c13a6994.js",
+      "_apexcharts.1d8667f6.js",
+      "_howler.7d01981f.js"
+    ],
+    "css": [
+      "assets/Fairness.8d8fb32b.css"
+    ]
+  },
+  "resources/js/components/views/Affiliate.vue": {
+    "file": "assets/Affiliate.2f603666.js",
+    "src": "resources/js/components/views/Affiliate.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_vuex.db5583be.js",
+      "resources/js/app.js",
+      "_vue-recaptcha.ac7b26c4.js",
+      "_vue.2fdc5d8e.js",
+      "_after.f5f6eafa.js",
+      "_@glidejs.c34926ed.js",
+      "_overlayscrollbars.16146508.js",
+      "_qrcode.124b3fa5.js",
+      "_encode-utf8.c8acd0c0.js",
+      "_dijkstrajs.f17cb91e.js",
+      "_gsap.10236bb8.js",
+      "_bitcoin-units.c392cbba.js",
+      "_big.js.5a739493.js",
+      "_jquery.a5d8725e.js",
+      "_lodash.a4543754.js",
+      "_axios.372962c2.js",
+      "_laravel-echo.1870cf92.js",
+      "_socket.io-client.4c8cf9d1.js",
+      "_parseuri.1963fa84.js",
+      "_socket.io-parser.6220f9fe.js",
+      "_component-emitter.72d4fec7.js",
+      "_isarray.396bc49a.js",
+      "_engine.io-client.915a8ff3.js",
+      "_has-cors.150b278c.js",
+      "_engine.io-parser.2ae49814.js",
+      "_has-binary2.8a78c161.js",
+      "_arraybuffer.slice.9c094f68.js",
+      "_base64-arraybuffer.8e0339d2.js",
+      "_blob.387277be.js",
+      "_parseqs.ede9f166.js",
+      "_component-inherit.7edfe7ae.js",
+      "_yeast.d32d0463.js",
+      "_indexof.a4b72e6b.js",
+      "_to-array.b41ea466.js",
+      "_component-bind.d6d60fa3.js",
+      "_backo2.46430cfe.js",
+      "_vue-router.21875538.js",
+      "_vue-i18n.85d99549.js",
+      "_vuex-persistedstate.4cde3667.js",
+      "_vue-izitoast.758affc3.js",
+      "_vue-feather.e39d5e52.js",
+      "_feather-icons.5fdfdf40.js",
+      "_v-mask.d150318c.js",
+      "_v-click-outside.91688d80.js",
+      "_vue-infinite-scroll.16ae2245.js",
+      "_@chenfengyuan.9943b948.js",
+      "_v-tooltip.0d9af9d3.js",
+      "_@babel.aa9208ce.js",
+      "_popper.js.d3cea3a7.js",
+      "_vue-resize.e71c9b02.js",
+      "_vue-context.518fc610.js",
+      "_vue-clickaway.dacb5831.js",
+      "_vue-content-placeholders.fb834830.js",
+      "_overlayscrollbars-vue.6a31e3e1.js",
+      "_country-flag-emoji-polyfill.38b8e49f.js",
+      "_is-emoji-supported.c13a6994.js",
+      "_apexcharts.1d8667f6.js",
+      "_howler.7d01981f.js"
+    ],
+    "css": [
+      "assets/Affiliate.af5da481.css"
+    ]
+  },
+  "resources/js/components/views/Profile.vue": {
+    "file": "assets/Profile.a39d6506.js",
+    "src": "resources/js/components/views/Profile.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_vuex.db5583be.js",
+      "resources/js/app.js",
+      "_qrcode.124b3fa5.js",
+      "_vue-recaptcha.ac7b26c4.js",
+      "_vue.2fdc5d8e.js",
+      "_after.f5f6eafa.js",
+      "_@glidejs.c34926ed.js",
+      "_overlayscrollbars.16146508.js",
+      "_gsap.10236bb8.js",
+      "_bitcoin-units.c392cbba.js",
+      "_big.js.5a739493.js",
+      "_jquery.a5d8725e.js",
+      "_lodash.a4543754.js",
+      "_axios.372962c2.js",
+      "_laravel-echo.1870cf92.js",
+      "_socket.io-client.4c8cf9d1.js",
+      "_parseuri.1963fa84.js",
+      "_socket.io-parser.6220f9fe.js",
+      "_component-emitter.72d4fec7.js",
+      "_isarray.396bc49a.js",
+      "_engine.io-client.915a8ff3.js",
+      "_has-cors.150b278c.js",
+      "_engine.io-parser.2ae49814.js",
+      "_has-binary2.8a78c161.js",
+      "_arraybuffer.slice.9c094f68.js",
+      "_base64-arraybuffer.8e0339d2.js",
+      "_blob.387277be.js",
+      "_parseqs.ede9f166.js",
+      "_component-inherit.7edfe7ae.js",
+      "_yeast.d32d0463.js",
+      "_indexof.a4b72e6b.js",
+      "_to-array.b41ea466.js",
+      "_component-bind.d6d60fa3.js",
+      "_backo2.46430cfe.js",
+      "_vue-router.21875538.js",
+      "_vue-i18n.85d99549.js",
+      "_vuex-persistedstate.4cde3667.js",
+      "_vue-izitoast.758affc3.js",
+      "_vue-feather.e39d5e52.js",
+      "_feather-icons.5fdfdf40.js",
+      "_v-mask.d150318c.js",
+      "_v-click-outside.91688d80.js",
+      "_vue-infinite-scroll.16ae2245.js",
+      "_@chenfengyuan.9943b948.js",
+      "_v-tooltip.0d9af9d3.js",
+      "_@babel.aa9208ce.js",
+      "_popper.js.d3cea3a7.js",
+      "_vue-resize.e71c9b02.js",
+      "_vue-context.518fc610.js",
+      "_vue-clickaway.dacb5831.js",
+      "_vue-content-placeholders.fb834830.js",
+      "_overlayscrollbars-vue.6a31e3e1.js",
+      "_country-flag-emoji-polyfill.38b8e49f.js",
+      "_is-emoji-supported.c13a6994.js",
+      "_apexcharts.1d8667f6.js",
+      "_howler.7d01981f.js",
+      "_encode-utf8.c8acd0c0.js",
+      "_dijkstrajs.f17cb91e.js"
+    ],
+    "css": [
+      "assets/Profile.a980a8ed.css"
+    ]
+  },
+  "resources/js/components/views/error/InvalidLicenseView.vue": {
+    "file": "assets/InvalidLicenseView.e91947f4.js",
+    "src": "resources/js/components/views/error/InvalidLicenseView.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_vuex.db5583be.js",
+      "resources/js/app.js",
+      "_vue-recaptcha.ac7b26c4.js",
+      "_vue.2fdc5d8e.js",
+      "_after.f5f6eafa.js",
+      "_@glidejs.c34926ed.js",
+      "_overlayscrollbars.16146508.js",
+      "_qrcode.124b3fa5.js",
+      "_encode-utf8.c8acd0c0.js",
+      "_dijkstrajs.f17cb91e.js",
+      "_gsap.10236bb8.js",
+      "_bitcoin-units.c392cbba.js",
+      "_big.js.5a739493.js",
+      "_jquery.a5d8725e.js",
+      "_lodash.a4543754.js",
+      "_axios.372962c2.js",
+      "_laravel-echo.1870cf92.js",
+      "_socket.io-client.4c8cf9d1.js",
+      "_parseuri.1963fa84.js",
+      "_socket.io-parser.6220f9fe.js",
+      "_component-emitter.72d4fec7.js",
+      "_isarray.396bc49a.js",
+      "_engine.io-client.915a8ff3.js",
+      "_has-cors.150b278c.js",
+      "_engine.io-parser.2ae49814.js",
+      "_has-binary2.8a78c161.js",
+      "_arraybuffer.slice.9c094f68.js",
+      "_base64-arraybuffer.8e0339d2.js",
+      "_blob.387277be.js",
+      "_parseqs.ede9f166.js",
+      "_component-inherit.7edfe7ae.js",
+      "_yeast.d32d0463.js",
+      "_indexof.a4b72e6b.js",
+      "_to-array.b41ea466.js",
+      "_component-bind.d6d60fa3.js",
+      "_backo2.46430cfe.js",
+      "_vue-router.21875538.js",
+      "_vue-i18n.85d99549.js",
+      "_vuex-persistedstate.4cde3667.js",
+      "_vue-izitoast.758affc3.js",
+      "_vue-feather.e39d5e52.js",
+      "_feather-icons.5fdfdf40.js",
+      "_v-mask.d150318c.js",
+      "_v-click-outside.91688d80.js",
+      "_vue-infinite-scroll.16ae2245.js",
+      "_@chenfengyuan.9943b948.js",
+      "_v-tooltip.0d9af9d3.js",
+      "_@babel.aa9208ce.js",
+      "_popper.js.d3cea3a7.js",
+      "_vue-resize.e71c9b02.js",
+      "_vue-context.518fc610.js",
+      "_vue-clickaway.dacb5831.js",
+      "_vue-content-placeholders.fb834830.js",
+      "_overlayscrollbars-vue.6a31e3e1.js",
+      "_country-flag-emoji-polyfill.38b8e49f.js",
+      "_is-emoji-supported.c13a6994.js",
+      "_apexcharts.1d8667f6.js",
+      "_howler.7d01981f.js"
+    ],
+    "css": [
+      "assets/InvalidLicenseView.6ee4c0d2.css"
+    ]
+  },
+  "resources/js/components/views/error/InvalidLicenseUIView.vue": {
+    "file": "assets/InvalidLicenseUIView.7956c6d9.js",
+    "src": "resources/js/components/views/error/InvalidLicenseUIView.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_vuex.db5583be.js",
+      "resources/js/app.js",
+      "_vue-recaptcha.ac7b26c4.js",
+      "_vue.2fdc5d8e.js",
+      "_after.f5f6eafa.js",
+      "_@glidejs.c34926ed.js",
+      "_overlayscrollbars.16146508.js",
+      "_qrcode.124b3fa5.js",
+      "_encode-utf8.c8acd0c0.js",
+      "_dijkstrajs.f17cb91e.js",
+      "_gsap.10236bb8.js",
+      "_bitcoin-units.c392cbba.js",
+      "_big.js.5a739493.js",
+      "_jquery.a5d8725e.js",
+      "_lodash.a4543754.js",
+      "_axios.372962c2.js",
+      "_laravel-echo.1870cf92.js",
+      "_socket.io-client.4c8cf9d1.js",
+      "_parseuri.1963fa84.js",
+      "_socket.io-parser.6220f9fe.js",
+      "_component-emitter.72d4fec7.js",
+      "_isarray.396bc49a.js",
+      "_engine.io-client.915a8ff3.js",
+      "_has-cors.150b278c.js",
+      "_engine.io-parser.2ae49814.js",
+      "_has-binary2.8a78c161.js",
+      "_arraybuffer.slice.9c094f68.js",
+      "_base64-arraybuffer.8e0339d2.js",
+      "_blob.387277be.js",
+      "_parseqs.ede9f166.js",
+      "_component-inherit.7edfe7ae.js",
+      "_yeast.d32d0463.js",
+      "_indexof.a4b72e6b.js",
+      "_to-array.b41ea466.js",
+      "_component-bind.d6d60fa3.js",
+      "_backo2.46430cfe.js",
+      "_vue-router.21875538.js",
+      "_vue-i18n.85d99549.js",
+      "_vuex-persistedstate.4cde3667.js",
+      "_vue-izitoast.758affc3.js",
+      "_vue-feather.e39d5e52.js",
+      "_feather-icons.5fdfdf40.js",
+      "_v-mask.d150318c.js",
+      "_v-click-outside.91688d80.js",
+      "_vue-infinite-scroll.16ae2245.js",
+      "_@chenfengyuan.9943b948.js",
+      "_v-tooltip.0d9af9d3.js",
+      "_@babel.aa9208ce.js",
+      "_popper.js.d3cea3a7.js",
+      "_vue-resize.e71c9b02.js",
+      "_vue-context.518fc610.js",
+      "_vue-clickaway.dacb5831.js",
+      "_vue-content-placeholders.fb834830.js",
+      "_overlayscrollbars-vue.6a31e3e1.js",
+      "_country-flag-emoji-polyfill.38b8e49f.js",
+      "_is-emoji-supported.c13a6994.js",
+      "_apexcharts.1d8667f6.js",
+      "_howler.7d01981f.js"
+    ],
+    "css": [
+      "assets/InvalidLicenseUIView.f381fe7d.css"
+    ]
+  },
+  "vue-content-placeholders.css": {
+    "file": "assets/vue-content-placeholders.f691a685.css",
+    "src": "vue-content-placeholders.css"
+  },
+  "resources/js/components/views/PageNotFound.css": {
+    "file": "assets/PageNotFound.778ec267.css",
+    "src": "resources/js/components/views/PageNotFound.css"
+  },
+  "resources/js/components/views/GameCategory.css": {
+    "file": "assets/GameCategory.ebfd6c7d.css",
+    "src": "resources/js/components/views/GameCategory.css"
+  },
+  "resources/js/components/views/error/InvalidLicenseView.css": {
+    "file": "assets/InvalidLicenseView.6ee4c0d2.css",
+    "src": "resources/js/components/views/error/InvalidLicenseView.css"
+  },
+  "resources/js/components/views/error/InvalidLicenseUIView.css": {
+    "file": "assets/InvalidLicenseUIView.f381fe7d.css",
+    "src": "resources/js/components/views/error/InvalidLicenseUIView.css"
+  },
+  "resources/js/components/views/VIP.css": {
+    "file": "assets/VIP.95961efd.css",
+    "src": "resources/js/components/views/VIP.css"
+  },
+  "resources/js/components/views/Fairness.css": {
+    "file": "assets/Fairness.8d8fb32b.css",
+    "src": "resources/js/components/views/Fairness.css"
+  },
+  "resources/js/components/views/sport/SportGame.css": {
+    "file": "assets/SportGame.f0b245ce.css",
+    "src": "resources/js/components/views/sport/SportGame.css"
+  },
+  "resources/js/components/views/Affiliate.css": {
+    "file": "assets/Affiliate.af5da481.css",
+    "src": "resources/js/components/views/Affiliate.css"
+  },
+  "resources/js/components/views/CasinoIndex.css": {
+    "file": "assets/CasinoIndex.7ac153cf.css",
+    "src": "resources/js/components/views/CasinoIndex.css"
+  },
+  "resources/js/components/views/sport/SportIndex.css": {
+    "file": "assets/SportIndex.3b0c7f41.css",
+    "src": "resources/js/components/views/sport/SportIndex.css"
+  },
+  "resources/js/components/views/Profile.css": {
+    "file": "assets/Profile.a980a8ed.css",
+    "src": "resources/js/components/views/Profile.css"
+  },
+  "resources/js/components/views/Game.css": {
+    "file": "assets/Game.2601a4a8.css",
+    "src": "resources/js/components/views/Game.css"
+  },
+  "resources/js/app.css": {
+    "file": "assets/app.7b8f8b99.css",
+    "src": "resources/js/app.css"
+  }
+}

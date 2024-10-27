@@ -1,0 +1,1 @@
+import{_ as e}from"./app.f6b791b5.js";import{e as _,f as n}from"./@vue.ca773235.js";const s={},o={class:"spinner"};function r(a,c){return _(),n("div",o)}const p=e(s,[["render",r],["__scopeId","data-v-59a589d3"]]);export{p as D};

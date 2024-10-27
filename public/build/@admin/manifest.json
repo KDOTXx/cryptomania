@@ -1,0 +1,1650 @@
+{
+  "resources/app.js": {
+    "file": "assets/app.f6b791b5.js",
+    "src": "resources/app.js",
+    "isEntry": true,
+    "imports": [
+      "_vue.9ea8e8a6.js",
+      "_vuex.497f08d2.js",
+      "_@vue.ca773235.js",
+      "_overlayscrollbars.8d928870.js",
+      "_string-similarity.860833b6.js",
+      "_gsap.8449ad8c.js",
+      "_vue-router.63e2ccab.js",
+      "_vuex-persistedstate.fa252374.js",
+      "_izitoast.765d8918.js",
+      "_click-outside-vue3.6791b41e.js",
+      "_floating-vue.8db45bbf.js",
+      "_axios.ea6880df.js",
+      "_@vuepic.b319e7e5.js",
+      "_apexcharts.8dc8f2aa.js",
+      "_@floating-ui.9bdab495.js",
+      "_date-fns.5b6f9246.js"
+    ],
+    "dynamicImports": [
+      "resources/components/views/PageNotFoundView.vue",
+      "resources/components/views/DashboardView.vue",
+      "resources/components/views/UpdateView.vue",
+      "resources/components/views/WebSSHNotSupported.vue",
+      "resources/components/views/DatabaseView.vue",
+      "resources/components/views/sidebar/DatabaseViewSidebar.vue",
+      "resources/components/views/WalletView.vue",
+      "resources/components/views/FileManagerView.vue",
+      "resources/components/views/sidebar/FileManagerViewSidebar.vue",
+      "resources/components/views/RolesView.vue",
+      "resources/components/views/sidebar/RolesViewSidebar.vue",
+      "resources/components/views/LogsView.vue",
+      "resources/components/views/BannerView.vue",
+      "resources/components/views/LicenseView.vue",
+      "resources/components/views/ActivityView.vue",
+      "resources/components/views/GamesView.vue",
+      "resources/components/views/VIPView.vue",
+      "resources/components/views/sidebar/VIPViewSidebar.vue",
+      "resources/components/views/GameView.vue",
+      "resources/components/views/UsersView.vue",
+      "resources/components/views/WithdrawsView.vue",
+      "resources/components/views/DepositsView.vue",
+      "resources/components/views/UserView.vue",
+      "resources/components/views/sidebar/UserViewSidebar.vue",
+      "resources/components/views/CreateUserView.vue",
+      "resources/components/views/NotificationsView.vue",
+      "resources/components/views/PromocodesView.vue",
+      "resources/components/views/BonusBalanceView.vue",
+      "resources/components/views/ChatBotsView.vue",
+      "resources/components/views/BetBotsView.vue",
+      "resources/components/views/CrashBotsView.vue",
+      "resources/components/views/ThemesView.vue",
+      "resources/components/views/sidebar/ThemesViewSidebar.vue",
+      "resources/components/views/AppearanceView.vue",
+      "resources/components/views/SSLView.vue",
+      "resources/components/views/SportManagementView.vue",
+      "resources/components/views/PluginsView.vue",
+      "resources/components/views/sidebar/PluginsSidebar.vue",
+      "resources/components/views/ExternalSlotsView.vue",
+      "resources/components/views/GameAnalytics.vue"
+    ],
+    "css": [
+      "assets/app.51949d84.css"
+    ]
+  },
+  "_@codemirror.0312c085.js": {
+    "file": "assets/@codemirror.0312c085.js",
+    "imports": [
+      "_@lezer.5b9aa3da.js",
+      "_crelt.67277586.js",
+      "_style-mod.a2e40363.js",
+      "_w3c-keyname.30cf5eb3.js"
+    ]
+  },
+  "_@floating-ui.9bdab495.js": {
+    "file": "assets/@floating-ui.9bdab495.js"
+  },
+  "_@jaames.ca058c90.js": {
+    "file": "assets/@jaames.ca058c90.js"
+  },
+  "_@lezer.5b9aa3da.js": {
+    "file": "assets/@lezer.5b9aa3da.js"
+  },
+  "_@vue.ca773235.js": {
+    "file": "assets/@vue.ca773235.js"
+  },
+  "_@vuepic.b319e7e5.js": {
+    "file": "assets/@vuepic.b319e7e5.js",
+    "imports": [
+      "_@vue.ca773235.js",
+      "_date-fns.5b6f9246.js"
+    ],
+    "css": [
+      "assets/@vuepic.436c8958.css"
+    ]
+  },
+  "_apexcharts.8dc8f2aa.js": {
+    "file": "assets/apexcharts.8dc8f2aa.js"
+  },
+  "_axios.ea6880df.js": {
+    "file": "assets/axios.ea6880df.js",
+    "imports": [
+      "_apexcharts.8dc8f2aa.js"
+    ]
+  },
+  "_click-outside-vue3.6791b41e.js": {
+    "file": "assets/click-outside-vue3.6791b41e.js",
+    "imports": [
+      "_apexcharts.8dc8f2aa.js"
+    ]
+  },
+  "_codemirror.613ad510.js": {
+    "file": "assets/codemirror.613ad510.js",
+    "imports": [
+      "_@codemirror.0312c085.js"
+    ]
+  },
+  "_crelt.67277586.js": {
+    "file": "assets/crelt.67277586.js"
+  },
+  "_date-fns.5b6f9246.js": {
+    "file": "assets/date-fns.5b6f9246.js"
+  },
+  "_file-saver.accb2fd9.js": {
+    "file": "assets/file-saver.accb2fd9.js",
+    "imports": [
+      "_apexcharts.8dc8f2aa.js"
+    ]
+  },
+  "_floating-vue.8db45bbf.js": {
+    "file": "assets/floating-vue.8db45bbf.js",
+    "imports": [
+      "_@vue.ca773235.js",
+      "_@floating-ui.9bdab495.js"
+    ],
+    "css": [
+      "assets/floating-vue.19edbbe9.css"
+    ]
+  },
+  "_gsap.8449ad8c.js": {
+    "file": "assets/gsap.8449ad8c.js"
+  },
+  "_izitoast.765d8918.js": {
+    "file": "assets/izitoast.765d8918.js",
+    "imports": [
+      "_apexcharts.8dc8f2aa.js"
+    ]
+  },
+  "_jszip.40028396.js": {
+    "file": "assets/jszip.40028396.js",
+    "imports": [
+      "_apexcharts.8dc8f2aa.js"
+    ]
+  },
+  "_lodash.escape.bfda3e94.js": {
+    "file": "assets/lodash.escape.bfda3e94.js",
+    "imports": [
+      "_apexcharts.8dc8f2aa.js"
+    ]
+  },
+  "_marked.733c0503.js": {
+    "file": "assets/marked.733c0503.js"
+  },
+  "_overlayscrollbars.8d928870.js": {
+    "file": "assets/overlayscrollbars.8d928870.js",
+    "imports": [
+      "_apexcharts.8dc8f2aa.js"
+    ]
+  },
+  "_string-similarity.860833b6.js": {
+    "file": "assets/string-similarity.860833b6.js"
+  },
+  "_style-mod.a2e40363.js": {
+    "file": "assets/style-mod.a2e40363.js"
+  },
+  "_vue.9ea8e8a6.js": {
+    "file": "assets/vue.9ea8e8a6.js",
+    "imports": [
+      "_@vue.ca773235.js"
+    ]
+  },
+  "_vue-router.63e2ccab.js": {
+    "file": "assets/vue-router.63e2ccab.js",
+    "imports": [
+      "_@vue.ca773235.js"
+    ]
+  },
+  "_vuex.497f08d2.js": {
+    "file": "assets/vuex.497f08d2.js",
+    "imports": [
+      "_@vue.ca773235.js"
+    ]
+  },
+  "_vuex-persistedstate.fa252374.js": {
+    "file": "assets/vuex-persistedstate.fa252374.js"
+  },
+  "_w3c-keyname.30cf5eb3.js": {
+    "file": "assets/w3c-keyname.30cf5eb3.js"
+  },
+  "_zipcelx.266ed464.js": {
+    "file": "assets/zipcelx.266ed464.js",
+    "imports": [
+      "_lodash.escape.bfda3e94.js",
+      "_jszip.40028396.js",
+      "_file-saver.accb2fd9.js"
+    ]
+  },
+  "resources/components/views/PageNotFoundView.vue": {
+    "file": "assets/PageNotFoundView.b9243e8b.js",
+    "src": "resources/components/views/PageNotFoundView.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/app.js",
+      "_@vue.ca773235.js",
+      "_vue.9ea8e8a6.js",
+      "_vuex.497f08d2.js",
+      "_overlayscrollbars.8d928870.js",
+      "_apexcharts.8dc8f2aa.js",
+      "_string-similarity.860833b6.js",
+      "_gsap.8449ad8c.js",
+      "_vue-router.63e2ccab.js",
+      "_vuex-persistedstate.fa252374.js",
+      "_izitoast.765d8918.js",
+      "_click-outside-vue3.6791b41e.js",
+      "_floating-vue.8db45bbf.js",
+      "_@floating-ui.9bdab495.js",
+      "_axios.ea6880df.js",
+      "_@vuepic.b319e7e5.js",
+      "_date-fns.5b6f9246.js"
+    ],
+    "css": [
+      "assets/PageNotFoundView.9e902c27.css"
+    ]
+  },
+  "resources/components/views/DashboardView.vue": {
+    "file": "assets/DashboardView.a986d249.js",
+    "src": "resources/components/views/DashboardView.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_DashboardWarning.95ccc3d6.js",
+      "_vuex.497f08d2.js",
+      "resources/app.js",
+      "_LoaderAnimation.f430cb8d.js",
+      "_apexcharts.8dc8f2aa.js",
+      "_@vue.ca773235.js",
+      "_DashboardSpinner.225c547d.js",
+      "_vue.9ea8e8a6.js",
+      "_overlayscrollbars.8d928870.js",
+      "_string-similarity.860833b6.js",
+      "_gsap.8449ad8c.js",
+      "_vue-router.63e2ccab.js",
+      "_vuex-persistedstate.fa252374.js",
+      "_izitoast.765d8918.js",
+      "_click-outside-vue3.6791b41e.js",
+      "_floating-vue.8db45bbf.js",
+      "_@floating-ui.9bdab495.js",
+      "_axios.ea6880df.js",
+      "_@vuepic.b319e7e5.js",
+      "_date-fns.5b6f9246.js"
+    ],
+    "css": [
+      "assets/DashboardView.25cb2865.css"
+    ]
+  },
+  "_DashboardWarning.95ccc3d6.js": {
+    "file": "assets/DashboardWarning.95ccc3d6.js",
+    "imports": [
+      "resources/app.js",
+      "_@vue.ca773235.js"
+    ],
+    "css": [
+      "assets/DashboardWarning.d248615e.css"
+    ]
+  },
+  "_DashboardSpinner.225c547d.js": {
+    "file": "assets/DashboardSpinner.225c547d.js",
+    "imports": [
+      "resources/app.js",
+      "_@vue.ca773235.js"
+    ],
+    "css": [
+      "assets/DashboardSpinner.27e45f9e.css"
+    ]
+  },
+  "_LoaderAnimation.f430cb8d.js": {
+    "file": "assets/LoaderAnimation.f430cb8d.js",
+    "imports": [
+      "resources/app.js",
+      "_@vue.ca773235.js"
+    ],
+    "css": [
+      "assets/LoaderAnimation.3b809c2e.css"
+    ]
+  },
+  "resources/components/views/UpdateView.vue": {
+    "file": "assets/UpdateView.f2014abf.js",
+    "src": "resources/components/views/UpdateView.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_DashboardSpinner.225c547d.js",
+      "_marked.733c0503.js",
+      "resources/app.js",
+      "_LoadingModal.a415cab1.js",
+      "_CompilerModalOutput.6f9ec5f7.js",
+      "_@vue.ca773235.js",
+      "_vue.9ea8e8a6.js",
+      "_vuex.497f08d2.js",
+      "_overlayscrollbars.8d928870.js",
+      "_apexcharts.8dc8f2aa.js",
+      "_string-similarity.860833b6.js",
+      "_gsap.8449ad8c.js",
+      "_vue-router.63e2ccab.js",
+      "_vuex-persistedstate.fa252374.js",
+      "_izitoast.765d8918.js",
+      "_click-outside-vue3.6791b41e.js",
+      "_floating-vue.8db45bbf.js",
+      "_@floating-ui.9bdab495.js",
+      "_axios.ea6880df.js",
+      "_@vuepic.b319e7e5.js",
+      "_date-fns.5b6f9246.js",
+      "_LoaderAnimation.f430cb8d.js"
+    ],
+    "css": [
+      "assets/UpdateView.dba9b832.css"
+    ]
+  },
+  "_LoadingModal.a415cab1.js": {
+    "file": "assets/LoadingModal.a415cab1.js",
+    "imports": [
+      "resources/app.js",
+      "_LoaderAnimation.f430cb8d.js"
+    ],
+    "css": [
+      "assets/LoadingModal.13ce12f1.css"
+    ]
+  },
+  "_CompilerModalOutput.6f9ec5f7.js": {
+    "file": "assets/CompilerModalOutput.6f9ec5f7.js",
+    "imports": [
+      "resources/app.js"
+    ],
+    "css": [
+      "assets/CompilerModalOutput.bc286c62.css"
+    ]
+  },
+  "resources/components/views/WebSSHNotSupported.vue": {
+    "file": "assets/WebSSHNotSupported.7ff830a2.js",
+    "src": "resources/components/views/WebSSHNotSupported.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/app.js",
+      "_@vue.ca773235.js",
+      "_vue.9ea8e8a6.js",
+      "_vuex.497f08d2.js",
+      "_overlayscrollbars.8d928870.js",
+      "_apexcharts.8dc8f2aa.js",
+      "_string-similarity.860833b6.js",
+      "_gsap.8449ad8c.js",
+      "_vue-router.63e2ccab.js",
+      "_vuex-persistedstate.fa252374.js",
+      "_izitoast.765d8918.js",
+      "_click-outside-vue3.6791b41e.js",
+      "_floating-vue.8db45bbf.js",
+      "_@floating-ui.9bdab495.js",
+      "_axios.ea6880df.js",
+      "_@vuepic.b319e7e5.js",
+      "_date-fns.5b6f9246.js"
+    ],
+    "css": [
+      "assets/WebSSHNotSupported.157aaf1d.css"
+    ]
+  },
+  "resources/components/views/DatabaseView.vue": {
+    "file": "assets/DatabaseView.e51d7890.js",
+    "src": "resources/components/views/DatabaseView.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/app.js",
+      "_codemirror.613ad510.js",
+      "_@codemirror.0312c085.js",
+      "_pageSidebar.9e81cee6.js",
+      "_@vue.ca773235.js",
+      "_vue.9ea8e8a6.js",
+      "_vuex.497f08d2.js",
+      "_overlayscrollbars.8d928870.js",
+      "_apexcharts.8dc8f2aa.js",
+      "_string-similarity.860833b6.js",
+      "_gsap.8449ad8c.js",
+      "_vue-router.63e2ccab.js",
+      "_vuex-persistedstate.fa252374.js",
+      "_izitoast.765d8918.js",
+      "_click-outside-vue3.6791b41e.js",
+      "_floating-vue.8db45bbf.js",
+      "_@floating-ui.9bdab495.js",
+      "_axios.ea6880df.js",
+      "_@vuepic.b319e7e5.js",
+      "_date-fns.5b6f9246.js",
+      "_@lezer.5b9aa3da.js",
+      "_crelt.67277586.js",
+      "_style-mod.a2e40363.js",
+      "_w3c-keyname.30cf5eb3.js"
+    ],
+    "css": [
+      "assets/DatabaseView.fa9f1d12.css"
+    ]
+  },
+  "_pageSidebar.9e81cee6.js": {
+    "file": "assets/pageSidebar.9e81cee6.js"
+  },
+  "resources/components/views/sidebar/DatabaseViewSidebar.vue": {
+    "file": "assets/DatabaseViewSidebar.9192a6e6.js",
+    "src": "resources/components/views/sidebar/DatabaseViewSidebar.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_DashboardPageSidebar.7576c6ca.js",
+      "resources/app.js",
+      "_@vue.ca773235.js",
+      "_overlayscrollbars.8d928870.js",
+      "_apexcharts.8dc8f2aa.js",
+      "_vue.9ea8e8a6.js",
+      "_vuex.497f08d2.js",
+      "_string-similarity.860833b6.js",
+      "_gsap.8449ad8c.js",
+      "_vue-router.63e2ccab.js",
+      "_vuex-persistedstate.fa252374.js",
+      "_izitoast.765d8918.js",
+      "_click-outside-vue3.6791b41e.js",
+      "_floating-vue.8db45bbf.js",
+      "_@floating-ui.9bdab495.js",
+      "_axios.ea6880df.js",
+      "_@vuepic.b319e7e5.js",
+      "_date-fns.5b6f9246.js"
+    ],
+    "css": [
+      "assets/DatabaseViewSidebar.d8d6f9c5.css"
+    ]
+  },
+  "_DashboardPageSidebar.7576c6ca.js": {
+    "file": "assets/DashboardPageSidebar.7576c6ca.js",
+    "imports": [
+      "_overlayscrollbars.8d928870.js",
+      "resources/app.js",
+      "_@vue.ca773235.js"
+    ],
+    "css": [
+      "assets/DashboardPageSidebar.0818849c.css"
+    ]
+  },
+  "resources/components/views/WalletView.vue": {
+    "file": "assets/WalletView.74f8855f.js",
+    "src": "resources/components/views/WalletView.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/app.js",
+      "_DashboardSpinner.225c547d.js",
+      "_@vue.ca773235.js",
+      "_vue.9ea8e8a6.js",
+      "_vuex.497f08d2.js",
+      "_overlayscrollbars.8d928870.js",
+      "_apexcharts.8dc8f2aa.js",
+      "_string-similarity.860833b6.js",
+      "_gsap.8449ad8c.js",
+      "_vue-router.63e2ccab.js",
+      "_vuex-persistedstate.fa252374.js",
+      "_izitoast.765d8918.js",
+      "_click-outside-vue3.6791b41e.js",
+      "_floating-vue.8db45bbf.js",
+      "_@floating-ui.9bdab495.js",
+      "_axios.ea6880df.js",
+      "_@vuepic.b319e7e5.js",
+      "_date-fns.5b6f9246.js"
+    ],
+    "css": [
+      "assets/WalletView.3359c61d.css"
+    ]
+  },
+  "resources/components/views/FileManagerView.vue": {
+    "file": "assets/FileManagerView.80a72250.js",
+    "src": "resources/components/views/FileManagerView.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/app.js",
+      "_pageSidebar.9e81cee6.js",
+      "_@vue.ca773235.js",
+      "_vue.9ea8e8a6.js",
+      "_vuex.497f08d2.js",
+      "_overlayscrollbars.8d928870.js",
+      "_apexcharts.8dc8f2aa.js",
+      "_string-similarity.860833b6.js",
+      "_gsap.8449ad8c.js",
+      "_vue-router.63e2ccab.js",
+      "_vuex-persistedstate.fa252374.js",
+      "_izitoast.765d8918.js",
+      "_click-outside-vue3.6791b41e.js",
+      "_floating-vue.8db45bbf.js",
+      "_@floating-ui.9bdab495.js",
+      "_axios.ea6880df.js",
+      "_@vuepic.b319e7e5.js",
+      "_date-fns.5b6f9246.js"
+    ],
+    "css": [
+      "assets/FileManagerView.8c3842a6.css"
+    ]
+  },
+  "resources/components/views/sidebar/FileManagerViewSidebar.vue": {
+    "file": "assets/FileManagerViewSidebar.b609d050.js",
+    "src": "resources/components/views/sidebar/FileManagerViewSidebar.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_DashboardPageSidebar.7576c6ca.js",
+      "resources/app.js",
+      "_@vue.ca773235.js",
+      "_overlayscrollbars.8d928870.js",
+      "_apexcharts.8dc8f2aa.js",
+      "_vue.9ea8e8a6.js",
+      "_vuex.497f08d2.js",
+      "_string-similarity.860833b6.js",
+      "_gsap.8449ad8c.js",
+      "_vue-router.63e2ccab.js",
+      "_vuex-persistedstate.fa252374.js",
+      "_izitoast.765d8918.js",
+      "_click-outside-vue3.6791b41e.js",
+      "_floating-vue.8db45bbf.js",
+      "_@floating-ui.9bdab495.js",
+      "_axios.ea6880df.js",
+      "_@vuepic.b319e7e5.js",
+      "_date-fns.5b6f9246.js"
+    ],
+    "css": [
+      "assets/FileManagerViewSidebar.2b503af7.css"
+    ]
+  },
+  "resources/components/views/RolesView.vue": {
+    "file": "assets/RolesView.09dab19e.js",
+    "src": "resources/components/views/RolesView.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_DashboardSwitch.dc169bb3.js",
+      "_DashboardWarning.95ccc3d6.js",
+      "resources/app.js",
+      "_@vue.ca773235.js",
+      "_pageSidebar.9e81cee6.js",
+      "_vue.9ea8e8a6.js",
+      "_vuex.497f08d2.js",
+      "_overlayscrollbars.8d928870.js",
+      "_apexcharts.8dc8f2aa.js",
+      "_string-similarity.860833b6.js",
+      "_gsap.8449ad8c.js",
+      "_vue-router.63e2ccab.js",
+      "_vuex-persistedstate.fa252374.js",
+      "_izitoast.765d8918.js",
+      "_click-outside-vue3.6791b41e.js",
+      "_floating-vue.8db45bbf.js",
+      "_@floating-ui.9bdab495.js",
+      "_axios.ea6880df.js",
+      "_@vuepic.b319e7e5.js",
+      "_date-fns.5b6f9246.js"
+    ],
+    "css": [
+      "assets/RolesView.60b11654.css"
+    ]
+  },
+  "_DashboardSwitch.dc169bb3.js": {
+    "file": "assets/DashboardSwitch.dc169bb3.js",
+    "imports": [
+      "resources/app.js",
+      "_@vue.ca773235.js"
+    ],
+    "css": [
+      "assets/DashboardSwitch.bfe14a05.css"
+    ]
+  },
+  "resources/components/views/sidebar/RolesViewSidebar.vue": {
+    "file": "assets/RolesViewSidebar.1dd16978.js",
+    "src": "resources/components/views/sidebar/RolesViewSidebar.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_DashboardPageSidebar.7576c6ca.js",
+      "resources/app.js",
+      "_@vue.ca773235.js",
+      "_overlayscrollbars.8d928870.js",
+      "_apexcharts.8dc8f2aa.js",
+      "_vue.9ea8e8a6.js",
+      "_vuex.497f08d2.js",
+      "_string-similarity.860833b6.js",
+      "_gsap.8449ad8c.js",
+      "_vue-router.63e2ccab.js",
+      "_vuex-persistedstate.fa252374.js",
+      "_izitoast.765d8918.js",
+      "_click-outside-vue3.6791b41e.js",
+      "_floating-vue.8db45bbf.js",
+      "_@floating-ui.9bdab495.js",
+      "_axios.ea6880df.js",
+      "_@vuepic.b319e7e5.js",
+      "_date-fns.5b6f9246.js"
+    ],
+    "css": [
+      "assets/RolesViewSidebar.b49d29f8.css"
+    ]
+  },
+  "resources/components/views/LogsView.vue": {
+    "file": "assets/LogsView.d7fa20ca.js",
+    "src": "resources/components/views/LogsView.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/app.js",
+      "_@vue.ca773235.js",
+      "_vue.9ea8e8a6.js",
+      "_vuex.497f08d2.js",
+      "_overlayscrollbars.8d928870.js",
+      "_apexcharts.8dc8f2aa.js",
+      "_string-similarity.860833b6.js",
+      "_gsap.8449ad8c.js",
+      "_vue-router.63e2ccab.js",
+      "_vuex-persistedstate.fa252374.js",
+      "_izitoast.765d8918.js",
+      "_click-outside-vue3.6791b41e.js",
+      "_floating-vue.8db45bbf.js",
+      "_@floating-ui.9bdab495.js",
+      "_axios.ea6880df.js",
+      "_@vuepic.b319e7e5.js",
+      "_date-fns.5b6f9246.js"
+    ],
+    "css": [
+      "assets/LogsView.90e39634.css"
+    ]
+  },
+  "resources/components/views/BannerView.vue": {
+    "file": "assets/BannerView.a4a90800.js",
+    "src": "resources/components/views/BannerView.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_DashboardSwitch.dc169bb3.js",
+      "_@vue.ca773235.js",
+      "resources/app.js",
+      "_vue.9ea8e8a6.js",
+      "_vuex.497f08d2.js",
+      "_overlayscrollbars.8d928870.js",
+      "_apexcharts.8dc8f2aa.js",
+      "_string-similarity.860833b6.js",
+      "_gsap.8449ad8c.js",
+      "_vue-router.63e2ccab.js",
+      "_vuex-persistedstate.fa252374.js",
+      "_izitoast.765d8918.js",
+      "_click-outside-vue3.6791b41e.js",
+      "_floating-vue.8db45bbf.js",
+      "_@floating-ui.9bdab495.js",
+      "_axios.ea6880df.js",
+      "_@vuepic.b319e7e5.js",
+      "_date-fns.5b6f9246.js"
+    ],
+    "css": [
+      "assets/BannerView.b24ebb2c.css"
+    ]
+  },
+  "resources/components/views/LicenseView.vue": {
+    "file": "assets/LicenseView.ad1e7645.js",
+    "src": "resources/components/views/LicenseView.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_DashboardWarning.95ccc3d6.js",
+      "resources/app.js",
+      "_@vue.ca773235.js",
+      "_vue.9ea8e8a6.js",
+      "_vuex.497f08d2.js",
+      "_overlayscrollbars.8d928870.js",
+      "_apexcharts.8dc8f2aa.js",
+      "_string-similarity.860833b6.js",
+      "_gsap.8449ad8c.js",
+      "_vue-router.63e2ccab.js",
+      "_vuex-persistedstate.fa252374.js",
+      "_izitoast.765d8918.js",
+      "_click-outside-vue3.6791b41e.js",
+      "_floating-vue.8db45bbf.js",
+      "_@floating-ui.9bdab495.js",
+      "_axios.ea6880df.js",
+      "_@vuepic.b319e7e5.js",
+      "_date-fns.5b6f9246.js"
+    ],
+    "css": [
+      "assets/LicenseView.2562bb64.css"
+    ]
+  },
+  "resources/components/views/ActivityView.vue": {
+    "file": "assets/ActivityView.eca349a3.js",
+    "src": "resources/components/views/ActivityView.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_overlayscrollbars.8d928870.js",
+      "resources/app.js",
+      "_@vue.ca773235.js",
+      "_apexcharts.8dc8f2aa.js",
+      "_vue.9ea8e8a6.js",
+      "_vuex.497f08d2.js",
+      "_string-similarity.860833b6.js",
+      "_gsap.8449ad8c.js",
+      "_vue-router.63e2ccab.js",
+      "_vuex-persistedstate.fa252374.js",
+      "_izitoast.765d8918.js",
+      "_click-outside-vue3.6791b41e.js",
+      "_floating-vue.8db45bbf.js",
+      "_@floating-ui.9bdab495.js",
+      "_axios.ea6880df.js",
+      "_@vuepic.b319e7e5.js",
+      "_date-fns.5b6f9246.js"
+    ],
+    "css": [
+      "assets/ActivityView.57606a41.css"
+    ]
+  },
+  "resources/components/views/GamesView.vue": {
+    "file": "assets/GamesView.23eeb13b.js",
+    "src": "resources/components/views/GamesView.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/app.js",
+      "_LoadingModal.a415cab1.js",
+      "_@vue.ca773235.js",
+      "_vue.9ea8e8a6.js",
+      "_vuex.497f08d2.js",
+      "_overlayscrollbars.8d928870.js",
+      "_apexcharts.8dc8f2aa.js",
+      "_string-similarity.860833b6.js",
+      "_gsap.8449ad8c.js",
+      "_vue-router.63e2ccab.js",
+      "_vuex-persistedstate.fa252374.js",
+      "_izitoast.765d8918.js",
+      "_click-outside-vue3.6791b41e.js",
+      "_floating-vue.8db45bbf.js",
+      "_@floating-ui.9bdab495.js",
+      "_axios.ea6880df.js",
+      "_@vuepic.b319e7e5.js",
+      "_date-fns.5b6f9246.js",
+      "_LoaderAnimation.f430cb8d.js"
+    ],
+    "css": [
+      "assets/GamesView.11a0fdbb.css"
+    ]
+  },
+  "resources/components/views/VIPView.vue": {
+    "file": "assets/VIPView.e6f88c10.js",
+    "src": "resources/components/views/VIPView.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_pageSidebar.9e81cee6.js",
+      "resources/app.js",
+      "_@vue.ca773235.js",
+      "_vue.9ea8e8a6.js",
+      "_vuex.497f08d2.js",
+      "_overlayscrollbars.8d928870.js",
+      "_apexcharts.8dc8f2aa.js",
+      "_string-similarity.860833b6.js",
+      "_gsap.8449ad8c.js",
+      "_vue-router.63e2ccab.js",
+      "_vuex-persistedstate.fa252374.js",
+      "_izitoast.765d8918.js",
+      "_click-outside-vue3.6791b41e.js",
+      "_floating-vue.8db45bbf.js",
+      "_@floating-ui.9bdab495.js",
+      "_axios.ea6880df.js",
+      "_@vuepic.b319e7e5.js",
+      "_date-fns.5b6f9246.js"
+    ],
+    "css": [
+      "assets/VIPView.d5e41e0a.css"
+    ]
+  },
+  "resources/components/views/sidebar/VIPViewSidebar.vue": {
+    "file": "assets/VIPViewSidebar.01d8f87f.js",
+    "src": "resources/components/views/sidebar/VIPViewSidebar.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_DashboardPageSidebar.7576c6ca.js",
+      "resources/app.js",
+      "_@vue.ca773235.js",
+      "_overlayscrollbars.8d928870.js",
+      "_apexcharts.8dc8f2aa.js",
+      "_vue.9ea8e8a6.js",
+      "_vuex.497f08d2.js",
+      "_string-similarity.860833b6.js",
+      "_gsap.8449ad8c.js",
+      "_vue-router.63e2ccab.js",
+      "_vuex-persistedstate.fa252374.js",
+      "_izitoast.765d8918.js",
+      "_click-outside-vue3.6791b41e.js",
+      "_floating-vue.8db45bbf.js",
+      "_@floating-ui.9bdab495.js",
+      "_axios.ea6880df.js",
+      "_@vuepic.b319e7e5.js",
+      "_date-fns.5b6f9246.js"
+    ],
+    "css": [
+      "assets/VIPViewSidebar.c1ac0905.css"
+    ]
+  },
+  "resources/components/views/GameView.vue": {
+    "file": "assets/GameView.af88998c.js",
+    "src": "resources/components/views/GameView.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_DashboardSwitch.dc169bb3.js",
+      "_DashboardWarning.95ccc3d6.js",
+      "resources/app.js",
+      "_@vue.ca773235.js",
+      "_vue.9ea8e8a6.js",
+      "_vuex.497f08d2.js",
+      "_overlayscrollbars.8d928870.js",
+      "_apexcharts.8dc8f2aa.js",
+      "_string-similarity.860833b6.js",
+      "_gsap.8449ad8c.js",
+      "_vue-router.63e2ccab.js",
+      "_vuex-persistedstate.fa252374.js",
+      "_izitoast.765d8918.js",
+      "_click-outside-vue3.6791b41e.js",
+      "_floating-vue.8db45bbf.js",
+      "_@floating-ui.9bdab495.js",
+      "_axios.ea6880df.js",
+      "_@vuepic.b319e7e5.js",
+      "_date-fns.5b6f9246.js"
+    ],
+    "css": [
+      "assets/GameView.9dd83f94.css"
+    ]
+  },
+  "resources/components/views/UsersView.vue": {
+    "file": "assets/UsersView.abe4a32f.js",
+    "src": "resources/components/views/UsersView.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/app.js",
+      "_zipcelx.266ed464.js",
+      "_overlayscrollbars.8d928870.js",
+      "_@vue.ca773235.js",
+      "_vue.9ea8e8a6.js",
+      "_vuex.497f08d2.js",
+      "_string-similarity.860833b6.js",
+      "_gsap.8449ad8c.js",
+      "_vue-router.63e2ccab.js",
+      "_vuex-persistedstate.fa252374.js",
+      "_izitoast.765d8918.js",
+      "_apexcharts.8dc8f2aa.js",
+      "_click-outside-vue3.6791b41e.js",
+      "_floating-vue.8db45bbf.js",
+      "_@floating-ui.9bdab495.js",
+      "_axios.ea6880df.js",
+      "_@vuepic.b319e7e5.js",
+      "_date-fns.5b6f9246.js",
+      "_lodash.escape.bfda3e94.js",
+      "_jszip.40028396.js",
+      "_file-saver.accb2fd9.js"
+    ],
+    "css": [
+      "assets/UsersView.69eec18f.css"
+    ]
+  },
+  "resources/components/views/WithdrawsView.vue": {
+    "file": "assets/WithdrawsView.c12dae1c.js",
+    "src": "resources/components/views/WithdrawsView.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/app.js",
+      "_overlayscrollbars.8d928870.js",
+      "_@vue.ca773235.js",
+      "_vue.9ea8e8a6.js",
+      "_vuex.497f08d2.js",
+      "_string-similarity.860833b6.js",
+      "_gsap.8449ad8c.js",
+      "_vue-router.63e2ccab.js",
+      "_vuex-persistedstate.fa252374.js",
+      "_izitoast.765d8918.js",
+      "_apexcharts.8dc8f2aa.js",
+      "_click-outside-vue3.6791b41e.js",
+      "_floating-vue.8db45bbf.js",
+      "_@floating-ui.9bdab495.js",
+      "_axios.ea6880df.js",
+      "_@vuepic.b319e7e5.js",
+      "_date-fns.5b6f9246.js"
+    ],
+    "css": [
+      "assets/WithdrawsView.66184e72.css"
+    ]
+  },
+  "resources/components/views/DepositsView.vue": {
+    "file": "assets/DepositsView.c564e426.js",
+    "src": "resources/components/views/DepositsView.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/app.js",
+      "_overlayscrollbars.8d928870.js",
+      "_@vue.ca773235.js",
+      "_vue.9ea8e8a6.js",
+      "_vuex.497f08d2.js",
+      "_string-similarity.860833b6.js",
+      "_gsap.8449ad8c.js",
+      "_vue-router.63e2ccab.js",
+      "_vuex-persistedstate.fa252374.js",
+      "_izitoast.765d8918.js",
+      "_apexcharts.8dc8f2aa.js",
+      "_click-outside-vue3.6791b41e.js",
+      "_floating-vue.8db45bbf.js",
+      "_@floating-ui.9bdab495.js",
+      "_axios.ea6880df.js",
+      "_@vuepic.b319e7e5.js",
+      "_date-fns.5b6f9246.js"
+    ],
+    "css": [
+      "assets/DepositsView.9ca5a5da.css"
+    ]
+  },
+  "resources/components/views/UserView.vue": {
+    "file": "assets/UserView.6a739c9d.js",
+    "src": "resources/components/views/UserView.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_overlayscrollbars.8d928870.js",
+      "resources/app.js",
+      "_pageSidebar.9e81cee6.js",
+      "_@vue.ca773235.js",
+      "_apexcharts.8dc8f2aa.js",
+      "_vue.9ea8e8a6.js",
+      "_vuex.497f08d2.js",
+      "_string-similarity.860833b6.js",
+      "_gsap.8449ad8c.js",
+      "_vue-router.63e2ccab.js",
+      "_vuex-persistedstate.fa252374.js",
+      "_izitoast.765d8918.js",
+      "_click-outside-vue3.6791b41e.js",
+      "_floating-vue.8db45bbf.js",
+      "_@floating-ui.9bdab495.js",
+      "_axios.ea6880df.js",
+      "_@vuepic.b319e7e5.js",
+      "_date-fns.5b6f9246.js"
+    ],
+    "css": [
+      "assets/UserView.1d971cd6.css"
+    ]
+  },
+  "resources/components/views/sidebar/UserViewSidebar.vue": {
+    "file": "assets/UserViewSidebar.b8e387d5.js",
+    "src": "resources/components/views/sidebar/UserViewSidebar.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_DashboardPageSidebar.7576c6ca.js",
+      "resources/app.js",
+      "_@vue.ca773235.js",
+      "_overlayscrollbars.8d928870.js",
+      "_apexcharts.8dc8f2aa.js",
+      "_vue.9ea8e8a6.js",
+      "_vuex.497f08d2.js",
+      "_string-similarity.860833b6.js",
+      "_gsap.8449ad8c.js",
+      "_vue-router.63e2ccab.js",
+      "_vuex-persistedstate.fa252374.js",
+      "_izitoast.765d8918.js",
+      "_click-outside-vue3.6791b41e.js",
+      "_floating-vue.8db45bbf.js",
+      "_@floating-ui.9bdab495.js",
+      "_axios.ea6880df.js",
+      "_@vuepic.b319e7e5.js",
+      "_date-fns.5b6f9246.js"
+    ],
+    "css": [
+      "assets/UserViewSidebar.528d1ab7.css"
+    ]
+  },
+  "resources/components/views/CreateUserView.vue": {
+    "file": "assets/CreateUserView.0dd561c5.js",
+    "src": "resources/components/views/CreateUserView.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/app.js",
+      "_@vue.ca773235.js",
+      "_vue.9ea8e8a6.js",
+      "_vuex.497f08d2.js",
+      "_overlayscrollbars.8d928870.js",
+      "_apexcharts.8dc8f2aa.js",
+      "_string-similarity.860833b6.js",
+      "_gsap.8449ad8c.js",
+      "_vue-router.63e2ccab.js",
+      "_vuex-persistedstate.fa252374.js",
+      "_izitoast.765d8918.js",
+      "_click-outside-vue3.6791b41e.js",
+      "_floating-vue.8db45bbf.js",
+      "_@floating-ui.9bdab495.js",
+      "_axios.ea6880df.js",
+      "_@vuepic.b319e7e5.js",
+      "_date-fns.5b6f9246.js"
+    ],
+    "css": [
+      "assets/CreateUserView.37adcd38.css"
+    ]
+  },
+  "resources/components/views/NotificationsView.vue": {
+    "file": "assets/NotificationsView.84fce276.js",
+    "src": "resources/components/views/NotificationsView.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_overlayscrollbars.8d928870.js",
+      "resources/app.js",
+      "_@vue.ca773235.js",
+      "_apexcharts.8dc8f2aa.js",
+      "_vue.9ea8e8a6.js",
+      "_vuex.497f08d2.js",
+      "_string-similarity.860833b6.js",
+      "_gsap.8449ad8c.js",
+      "_vue-router.63e2ccab.js",
+      "_vuex-persistedstate.fa252374.js",
+      "_izitoast.765d8918.js",
+      "_click-outside-vue3.6791b41e.js",
+      "_floating-vue.8db45bbf.js",
+      "_@floating-ui.9bdab495.js",
+      "_axios.ea6880df.js",
+      "_@vuepic.b319e7e5.js",
+      "_date-fns.5b6f9246.js"
+    ],
+    "css": [
+      "assets/NotificationsView.917eb2f4.css"
+    ]
+  },
+  "resources/components/views/PromocodesView.vue": {
+    "file": "assets/PromocodesView.e1b877d4.js",
+    "src": "resources/components/views/PromocodesView.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_overlayscrollbars.8d928870.js",
+      "resources/app.js",
+      "_DashboardDropdownConfig.00aa5cf0.js",
+      "_@vue.ca773235.js",
+      "_apexcharts.8dc8f2aa.js",
+      "_vue.9ea8e8a6.js",
+      "_vuex.497f08d2.js",
+      "_string-similarity.860833b6.js",
+      "_gsap.8449ad8c.js",
+      "_vue-router.63e2ccab.js",
+      "_vuex-persistedstate.fa252374.js",
+      "_izitoast.765d8918.js",
+      "_click-outside-vue3.6791b41e.js",
+      "_floating-vue.8db45bbf.js",
+      "_@floating-ui.9bdab495.js",
+      "_axios.ea6880df.js",
+      "_@vuepic.b319e7e5.js",
+      "_date-fns.5b6f9246.js",
+      "_DashboardSwitch.dc169bb3.js"
+    ],
+    "css": [
+      "assets/PromocodesView.c1ab6506.css"
+    ]
+  },
+  "_DashboardDropdownConfig.00aa5cf0.js": {
+    "file": "assets/DashboardDropdownConfig.00aa5cf0.js",
+    "imports": [
+      "_DashboardSwitch.dc169bb3.js",
+      "_@vuepic.b319e7e5.js",
+      "_vuex.497f08d2.js",
+      "resources/app.js",
+      "_@vue.ca773235.js"
+    ],
+    "css": [
+      "assets/DashboardDropdownConfig.2c219fec.css"
+    ]
+  },
+  "resources/components/views/BonusBalanceView.vue": {
+    "file": "assets/BonusBalanceView.f1e7a169.js",
+    "src": "resources/components/views/BonusBalanceView.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_overlayscrollbars.8d928870.js",
+      "resources/app.js",
+      "_DashboardDropdownConfig.00aa5cf0.js",
+      "_@vue.ca773235.js",
+      "_apexcharts.8dc8f2aa.js",
+      "_vue.9ea8e8a6.js",
+      "_vuex.497f08d2.js",
+      "_string-similarity.860833b6.js",
+      "_gsap.8449ad8c.js",
+      "_vue-router.63e2ccab.js",
+      "_vuex-persistedstate.fa252374.js",
+      "_izitoast.765d8918.js",
+      "_click-outside-vue3.6791b41e.js",
+      "_floating-vue.8db45bbf.js",
+      "_@floating-ui.9bdab495.js",
+      "_axios.ea6880df.js",
+      "_@vuepic.b319e7e5.js",
+      "_date-fns.5b6f9246.js",
+      "_DashboardSwitch.dc169bb3.js"
+    ],
+    "css": [
+      "assets/BonusBalanceView.f68d3952.css"
+    ]
+  },
+  "resources/components/views/ChatBotsView.vue": {
+    "file": "assets/ChatBotsView.180a06be.js",
+    "src": "resources/components/views/ChatBotsView.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/app.js",
+      "_@vue.ca773235.js",
+      "_vue.9ea8e8a6.js",
+      "_vuex.497f08d2.js",
+      "_overlayscrollbars.8d928870.js",
+      "_apexcharts.8dc8f2aa.js",
+      "_string-similarity.860833b6.js",
+      "_gsap.8449ad8c.js",
+      "_vue-router.63e2ccab.js",
+      "_vuex-persistedstate.fa252374.js",
+      "_izitoast.765d8918.js",
+      "_click-outside-vue3.6791b41e.js",
+      "_floating-vue.8db45bbf.js",
+      "_@floating-ui.9bdab495.js",
+      "_axios.ea6880df.js",
+      "_@vuepic.b319e7e5.js",
+      "_date-fns.5b6f9246.js"
+    ],
+    "css": [
+      "assets/ChatBotsView.f2ab8219.css"
+    ]
+  },
+  "resources/components/views/BetBotsView.vue": {
+    "file": "assets/BetBotsView.f7857f02.js",
+    "src": "resources/components/views/BetBotsView.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/app.js",
+      "_DashboardWarning.95ccc3d6.js",
+      "_@vue.ca773235.js",
+      "_vue.9ea8e8a6.js",
+      "_vuex.497f08d2.js",
+      "_overlayscrollbars.8d928870.js",
+      "_apexcharts.8dc8f2aa.js",
+      "_string-similarity.860833b6.js",
+      "_gsap.8449ad8c.js",
+      "_vue-router.63e2ccab.js",
+      "_vuex-persistedstate.fa252374.js",
+      "_izitoast.765d8918.js",
+      "_click-outside-vue3.6791b41e.js",
+      "_floating-vue.8db45bbf.js",
+      "_@floating-ui.9bdab495.js",
+      "_axios.ea6880df.js",
+      "_@vuepic.b319e7e5.js",
+      "_date-fns.5b6f9246.js"
+    ],
+    "css": [
+      "assets/BetBotsView.f2a622a3.css"
+    ]
+  },
+  "resources/components/views/CrashBotsView.vue": {
+    "file": "assets/CrashBotsView.ee9c20c4.js",
+    "src": "resources/components/views/CrashBotsView.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/app.js",
+      "_DashboardWarning.95ccc3d6.js",
+      "_@vue.ca773235.js",
+      "_vue.9ea8e8a6.js",
+      "_vuex.497f08d2.js",
+      "_overlayscrollbars.8d928870.js",
+      "_apexcharts.8dc8f2aa.js",
+      "_string-similarity.860833b6.js",
+      "_gsap.8449ad8c.js",
+      "_vue-router.63e2ccab.js",
+      "_vuex-persistedstate.fa252374.js",
+      "_izitoast.765d8918.js",
+      "_click-outside-vue3.6791b41e.js",
+      "_floating-vue.8db45bbf.js",
+      "_@floating-ui.9bdab495.js",
+      "_axios.ea6880df.js",
+      "_@vuepic.b319e7e5.js",
+      "_date-fns.5b6f9246.js"
+    ],
+    "css": [
+      "assets/CrashBotsView.e7bc03d7.css"
+    ]
+  },
+  "resources/components/views/ThemesView.vue": {
+    "file": "assets/ThemesView.06fcd403.js",
+    "src": "resources/components/views/ThemesView.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_codemirror.613ad510.js",
+      "_@codemirror.0312c085.js",
+      "_pageSidebar.9e81cee6.js",
+      "resources/app.js",
+      "_vuex.497f08d2.js",
+      "_@jaames.ca058c90.js",
+      "_@vue.ca773235.js",
+      "_CompilerModalOutput.6f9ec5f7.js",
+      "_LoadingModal.a415cab1.js",
+      "_@lezer.5b9aa3da.js",
+      "_crelt.67277586.js",
+      "_style-mod.a2e40363.js",
+      "_w3c-keyname.30cf5eb3.js",
+      "_vue.9ea8e8a6.js",
+      "_overlayscrollbars.8d928870.js",
+      "_apexcharts.8dc8f2aa.js",
+      "_string-similarity.860833b6.js",
+      "_gsap.8449ad8c.js",
+      "_vue-router.63e2ccab.js",
+      "_vuex-persistedstate.fa252374.js",
+      "_izitoast.765d8918.js",
+      "_click-outside-vue3.6791b41e.js",
+      "_floating-vue.8db45bbf.js",
+      "_@floating-ui.9bdab495.js",
+      "_axios.ea6880df.js",
+      "_@vuepic.b319e7e5.js",
+      "_date-fns.5b6f9246.js",
+      "_LoaderAnimation.f430cb8d.js"
+    ],
+    "css": [
+      "assets/ThemesView.dddfe267.css"
+    ]
+  },
+  "resources/components/views/sidebar/ThemesViewSidebar.vue": {
+    "file": "assets/ThemesViewSidebar.19f2b801.js",
+    "src": "resources/components/views/sidebar/ThemesViewSidebar.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_DashboardPageSidebar.7576c6ca.js",
+      "resources/app.js",
+      "_@vue.ca773235.js",
+      "_overlayscrollbars.8d928870.js",
+      "_apexcharts.8dc8f2aa.js",
+      "_vue.9ea8e8a6.js",
+      "_vuex.497f08d2.js",
+      "_string-similarity.860833b6.js",
+      "_gsap.8449ad8c.js",
+      "_vue-router.63e2ccab.js",
+      "_vuex-persistedstate.fa252374.js",
+      "_izitoast.765d8918.js",
+      "_click-outside-vue3.6791b41e.js",
+      "_floating-vue.8db45bbf.js",
+      "_@floating-ui.9bdab495.js",
+      "_axios.ea6880df.js",
+      "_@vuepic.b319e7e5.js",
+      "_date-fns.5b6f9246.js"
+    ],
+    "css": [
+      "assets/ThemesViewSidebar.c6a9f734.css"
+    ]
+  },
+  "resources/components/views/AppearanceView.vue": {
+    "file": "assets/AppearanceView.64c35b8a.js",
+    "src": "resources/components/views/AppearanceView.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/app.js",
+      "_LoadingModal.a415cab1.js",
+      "_CompilerModalOutput.6f9ec5f7.js",
+      "_vuex.497f08d2.js",
+      "_@vue.ca773235.js",
+      "_vue.9ea8e8a6.js",
+      "_overlayscrollbars.8d928870.js",
+      "_apexcharts.8dc8f2aa.js",
+      "_string-similarity.860833b6.js",
+      "_gsap.8449ad8c.js",
+      "_vue-router.63e2ccab.js",
+      "_vuex-persistedstate.fa252374.js",
+      "_izitoast.765d8918.js",
+      "_click-outside-vue3.6791b41e.js",
+      "_floating-vue.8db45bbf.js",
+      "_@floating-ui.9bdab495.js",
+      "_axios.ea6880df.js",
+      "_@vuepic.b319e7e5.js",
+      "_date-fns.5b6f9246.js",
+      "_LoaderAnimation.f430cb8d.js"
+    ],
+    "css": [
+      "assets/AppearanceView.4988cb7e.css"
+    ]
+  },
+  "resources/components/views/SSLView.vue": {
+    "file": "assets/SSLView.17f7ba7b.js",
+    "src": "resources/components/views/SSLView.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/app.js",
+      "_LoadingModal.a415cab1.js",
+      "_CompilerModalOutput.6f9ec5f7.js",
+      "_DashboardWarning.95ccc3d6.js",
+      "_@vue.ca773235.js",
+      "_vue.9ea8e8a6.js",
+      "_vuex.497f08d2.js",
+      "_overlayscrollbars.8d928870.js",
+      "_apexcharts.8dc8f2aa.js",
+      "_string-similarity.860833b6.js",
+      "_gsap.8449ad8c.js",
+      "_vue-router.63e2ccab.js",
+      "_vuex-persistedstate.fa252374.js",
+      "_izitoast.765d8918.js",
+      "_click-outside-vue3.6791b41e.js",
+      "_floating-vue.8db45bbf.js",
+      "_@floating-ui.9bdab495.js",
+      "_axios.ea6880df.js",
+      "_@vuepic.b319e7e5.js",
+      "_date-fns.5b6f9246.js",
+      "_LoaderAnimation.f430cb8d.js"
+    ],
+    "css": [
+      "assets/SSLView.1e8da88c.css"
+    ]
+  },
+  "resources/components/views/SportManagementView.vue": {
+    "file": "assets/SportManagementView.abdaf52c.js",
+    "src": "resources/components/views/SportManagementView.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_DashboardWarning.95ccc3d6.js",
+      "resources/app.js",
+      "_overlayscrollbars.8d928870.js",
+      "_@vue.ca773235.js",
+      "_vue.9ea8e8a6.js",
+      "_vuex.497f08d2.js",
+      "_string-similarity.860833b6.js",
+      "_gsap.8449ad8c.js",
+      "_vue-router.63e2ccab.js",
+      "_vuex-persistedstate.fa252374.js",
+      "_izitoast.765d8918.js",
+      "_apexcharts.8dc8f2aa.js",
+      "_click-outside-vue3.6791b41e.js",
+      "_floating-vue.8db45bbf.js",
+      "_@floating-ui.9bdab495.js",
+      "_axios.ea6880df.js",
+      "_@vuepic.b319e7e5.js",
+      "_date-fns.5b6f9246.js"
+    ],
+    "css": [
+      "assets/SportManagementView.2451cba9.css"
+    ]
+  },
+  "resources/components/views/PluginsView.vue": {
+    "file": "assets/PluginsView.48d46771.js",
+    "src": "resources/components/views/PluginsView.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/app.js",
+      "_LoadingModal.a415cab1.js",
+      "_@vue.ca773235.js",
+      "_pageSidebar.9e81cee6.js",
+      "_vue.9ea8e8a6.js",
+      "_vuex.497f08d2.js",
+      "_overlayscrollbars.8d928870.js",
+      "_apexcharts.8dc8f2aa.js",
+      "_string-similarity.860833b6.js",
+      "_gsap.8449ad8c.js",
+      "_vue-router.63e2ccab.js",
+      "_vuex-persistedstate.fa252374.js",
+      "_izitoast.765d8918.js",
+      "_click-outside-vue3.6791b41e.js",
+      "_floating-vue.8db45bbf.js",
+      "_@floating-ui.9bdab495.js",
+      "_axios.ea6880df.js",
+      "_@vuepic.b319e7e5.js",
+      "_date-fns.5b6f9246.js",
+      "_LoaderAnimation.f430cb8d.js"
+    ],
+    "css": [
+      "assets/PluginsView.56700e89.css"
+    ]
+  },
+  "resources/components/views/sidebar/PluginsSidebar.vue": {
+    "file": "assets/PluginsSidebar.817ef2ae.js",
+    "src": "resources/components/views/sidebar/PluginsSidebar.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_DashboardPageSidebar.7576c6ca.js",
+      "resources/app.js",
+      "_@vue.ca773235.js",
+      "_overlayscrollbars.8d928870.js",
+      "_apexcharts.8dc8f2aa.js",
+      "_vue.9ea8e8a6.js",
+      "_vuex.497f08d2.js",
+      "_string-similarity.860833b6.js",
+      "_gsap.8449ad8c.js",
+      "_vue-router.63e2ccab.js",
+      "_vuex-persistedstate.fa252374.js",
+      "_izitoast.765d8918.js",
+      "_click-outside-vue3.6791b41e.js",
+      "_floating-vue.8db45bbf.js",
+      "_@floating-ui.9bdab495.js",
+      "_axios.ea6880df.js",
+      "_@vuepic.b319e7e5.js",
+      "_date-fns.5b6f9246.js"
+    ],
+    "css": [
+      "assets/PluginsSidebar.d0c5f868.css"
+    ]
+  },
+  "resources/components/views/ExternalSlotsView.vue": {
+    "file": "assets/ExternalSlotsView.be878c54.js",
+    "src": "resources/components/views/ExternalSlotsView.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_DashboardSwitch.dc169bb3.js",
+      "resources/app.js",
+      "_@vue.ca773235.js",
+      "_vue.9ea8e8a6.js",
+      "_vuex.497f08d2.js",
+      "_overlayscrollbars.8d928870.js",
+      "_apexcharts.8dc8f2aa.js",
+      "_string-similarity.860833b6.js",
+      "_gsap.8449ad8c.js",
+      "_vue-router.63e2ccab.js",
+      "_vuex-persistedstate.fa252374.js",
+      "_izitoast.765d8918.js",
+      "_click-outside-vue3.6791b41e.js",
+      "_floating-vue.8db45bbf.js",
+      "_@floating-ui.9bdab495.js",
+      "_axios.ea6880df.js",
+      "_@vuepic.b319e7e5.js",
+      "_date-fns.5b6f9246.js"
+    ],
+    "css": [
+      "assets/ExternalSlotsView.5d8f93bc.css"
+    ]
+  },
+  "resources/components/views/GameAnalytics.vue": {
+    "file": "assets/GameAnalytics.1f558e35.js",
+    "src": "resources/components/views/GameAnalytics.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/app.js",
+      "_@vue.ca773235.js",
+      "_vue.9ea8e8a6.js",
+      "_vuex.497f08d2.js",
+      "_overlayscrollbars.8d928870.js",
+      "_apexcharts.8dc8f2aa.js",
+      "_string-similarity.860833b6.js",
+      "_gsap.8449ad8c.js",
+      "_vue-router.63e2ccab.js",
+      "_vuex-persistedstate.fa252374.js",
+      "_izitoast.765d8918.js",
+      "_click-outside-vue3.6791b41e.js",
+      "_floating-vue.8db45bbf.js",
+      "_@floating-ui.9bdab495.js",
+      "_axios.ea6880df.js",
+      "_@vuepic.b319e7e5.js",
+      "_date-fns.5b6f9246.js"
+    ],
+    "css": [
+      "assets/GameAnalytics.cb8073fb.css"
+    ]
+  },
+  "LoadingModal.css": {
+    "file": "assets/LoadingModal.13ce12f1.css",
+    "src": "LoadingModal.css"
+  },
+  "resources/components/views/sidebar/PluginsSidebar.css": {
+    "file": "assets/PluginsSidebar.d0c5f868.css",
+    "src": "resources/components/views/sidebar/PluginsSidebar.css"
+  },
+  "resources/components/views/LicenseView.css": {
+    "file": "assets/LicenseView.2562bb64.css",
+    "src": "resources/components/views/LicenseView.css"
+  },
+  "resources/components/views/sidebar/VIPViewSidebar.css": {
+    "file": "assets/VIPViewSidebar.c1ac0905.css",
+    "src": "resources/components/views/sidebar/VIPViewSidebar.css"
+  },
+  "resources/components/views/sidebar/RolesViewSidebar.css": {
+    "file": "assets/RolesViewSidebar.b49d29f8.css",
+    "src": "resources/components/views/sidebar/RolesViewSidebar.css"
+  },
+  "resources/components/views/DepositsView.css": {
+    "file": "assets/DepositsView.9ca5a5da.css",
+    "src": "resources/components/views/DepositsView.css"
+  },
+  "resources/components/views/sidebar/UserViewSidebar.css": {
+    "file": "assets/UserViewSidebar.528d1ab7.css",
+    "src": "resources/components/views/sidebar/UserViewSidebar.css"
+  },
+  "resources/components/views/PromocodesView.css": {
+    "file": "assets/PromocodesView.c1ab6506.css",
+    "src": "resources/components/views/PromocodesView.css"
+  },
+  "resources/components/views/FileManagerView.css": {
+    "file": "assets/FileManagerView.8c3842a6.css",
+    "src": "resources/components/views/FileManagerView.css"
+  },
+  "CompilerModalOutput.css": {
+    "file": "assets/CompilerModalOutput.bc286c62.css",
+    "src": "CompilerModalOutput.css"
+  },
+  "resources/components/views/ThemesView.css": {
+    "file": "assets/ThemesView.dddfe267.css",
+    "src": "resources/components/views/ThemesView.css"
+  },
+  "resources/components/views/ChatBotsView.css": {
+    "file": "assets/ChatBotsView.f2ab8219.css",
+    "src": "resources/components/views/ChatBotsView.css"
+  },
+  "resources/components/views/UserView.css": {
+    "file": "assets/UserView.1d971cd6.css",
+    "src": "resources/components/views/UserView.css"
+  },
+  "resources/components/views/sidebar/ThemesViewSidebar.css": {
+    "file": "assets/ThemesViewSidebar.c6a9f734.css",
+    "src": "resources/components/views/sidebar/ThemesViewSidebar.css"
+  },
+  "resources/components/views/RolesView.css": {
+    "file": "assets/RolesView.60b11654.css",
+    "src": "resources/components/views/RolesView.css"
+  },
+  "resources/components/views/SportManagementView.css": {
+    "file": "assets/SportManagementView.2451cba9.css",
+    "src": "resources/components/views/SportManagementView.css"
+  },
+  "resources/components/views/sidebar/FileManagerViewSidebar.css": {
+    "file": "assets/FileManagerViewSidebar.2b503af7.css",
+    "src": "resources/components/views/sidebar/FileManagerViewSidebar.css"
+  },
+  "DashboardDropdownConfig.css": {
+    "file": "assets/DashboardDropdownConfig.2c219fec.css",
+    "src": "DashboardDropdownConfig.css"
+  },
+  "resources/components/views/GameAnalytics.css": {
+    "file": "assets/GameAnalytics.cb8073fb.css",
+    "src": "resources/components/views/GameAnalytics.css"
+  },
+  "resources/components/views/BonusBalanceView.css": {
+    "file": "assets/BonusBalanceView.f68d3952.css",
+    "src": "resources/components/views/BonusBalanceView.css"
+  },
+  "resources/components/views/VIPView.css": {
+    "file": "assets/VIPView.d5e41e0a.css",
+    "src": "resources/components/views/VIPView.css"
+  },
+  "resources/components/views/PluginsView.css": {
+    "file": "assets/PluginsView.56700e89.css",
+    "src": "resources/components/views/PluginsView.css"
+  },
+  "resources/components/views/BetBotsView.css": {
+    "file": "assets/BetBotsView.f2a622a3.css",
+    "src": "resources/components/views/BetBotsView.css"
+  },
+  "DashboardPageSidebar.css": {
+    "file": "assets/DashboardPageSidebar.0818849c.css",
+    "src": "DashboardPageSidebar.css"
+  },
+  "@vuepic.css": {
+    "file": "assets/@vuepic.436c8958.css",
+    "src": "@vuepic.css"
+  },
+  "resources/components/views/UsersView.css": {
+    "file": "assets/UsersView.69eec18f.css",
+    "src": "resources/components/views/UsersView.css"
+  },
+  "resources/components/views/GameView.css": {
+    "file": "assets/GameView.9dd83f94.css",
+    "src": "resources/components/views/GameView.css"
+  },
+  "resources/components/views/ExternalSlotsView.css": {
+    "file": "assets/ExternalSlotsView.5d8f93bc.css",
+    "src": "resources/components/views/ExternalSlotsView.css"
+  },
+  "DashboardSpinner.css": {
+    "file": "assets/DashboardSpinner.27e45f9e.css",
+    "src": "DashboardSpinner.css"
+  },
+  "resources/components/views/LogsView.css": {
+    "file": "assets/LogsView.90e39634.css",
+    "src": "resources/components/views/LogsView.css"
+  },
+  "resources/components/views/CreateUserView.css": {
+    "file": "assets/CreateUserView.37adcd38.css",
+    "src": "resources/components/views/CreateUserView.css"
+  },
+  "resources/components/views/WithdrawsView.css": {
+    "file": "assets/WithdrawsView.66184e72.css",
+    "src": "resources/components/views/WithdrawsView.css"
+  },
+  "resources/components/views/CrashBotsView.css": {
+    "file": "assets/CrashBotsView.e7bc03d7.css",
+    "src": "resources/components/views/CrashBotsView.css"
+  },
+  "resources/components/views/BannerView.css": {
+    "file": "assets/BannerView.b24ebb2c.css",
+    "src": "resources/components/views/BannerView.css"
+  },
+  "floating-vue.css": {
+    "file": "assets/floating-vue.19edbbe9.css",
+    "src": "floating-vue.css"
+  },
+  "resources/components/views/ActivityView.css": {
+    "file": "assets/ActivityView.57606a41.css",
+    "src": "resources/components/views/ActivityView.css"
+  },
+  "LoaderAnimation.css": {
+    "file": "assets/LoaderAnimation.3b809c2e.css",
+    "src": "LoaderAnimation.css"
+  },
+  "resources/components/views/NotificationsView.css": {
+    "file": "assets/NotificationsView.917eb2f4.css",
+    "src": "resources/components/views/NotificationsView.css"
+  },
+  "DashboardWarning.css": {
+    "file": "assets/DashboardWarning.d248615e.css",
+    "src": "DashboardWarning.css"
+  },
+  "resources/components/views/GamesView.css": {
+    "file": "assets/GamesView.11a0fdbb.css",
+    "src": "resources/components/views/GamesView.css"
+  },
+  "DashboardSwitch.css": {
+    "file": "assets/DashboardSwitch.bfe14a05.css",
+    "src": "DashboardSwitch.css"
+  },
+  "resources/components/views/WalletView.css": {
+    "file": "assets/WalletView.3359c61d.css",
+    "src": "resources/components/views/WalletView.css"
+  },
+  "resources/components/views/WebSSHNotSupported.css": {
+    "file": "assets/WebSSHNotSupported.157aaf1d.css",
+    "src": "resources/components/views/WebSSHNotSupported.css"
+  },
+  "resources/components/views/SSLView.css": {
+    "file": "assets/SSLView.1e8da88c.css",
+    "src": "resources/components/views/SSLView.css"
+  },
+  "resources/components/views/AppearanceView.css": {
+    "file": "assets/AppearanceView.4988cb7e.css",
+    "src": "resources/components/views/AppearanceView.css"
+  },
+  "resources/components/views/DashboardView.css": {
+    "file": "assets/DashboardView.25cb2865.css",
+    "src": "resources/components/views/DashboardView.css"
+  },
+  "resources/components/views/DatabaseView.css": {
+    "file": "assets/DatabaseView.fa9f1d12.css",
+    "src": "resources/components/views/DatabaseView.css"
+  },
+  "resources/components/views/UpdateView.css": {
+    "file": "assets/UpdateView.dba9b832.css",
+    "src": "resources/components/views/UpdateView.css"
+  },
+  "resources/components/views/PageNotFoundView.css": {
+    "file": "assets/PageNotFoundView.9e902c27.css",
+    "src": "resources/components/views/PageNotFoundView.css"
+  },
+  "resources/components/views/sidebar/DatabaseViewSidebar.css": {
+    "file": "assets/DatabaseViewSidebar.d8d6f9c5.css",
+    "src": "resources/components/views/sidebar/DatabaseViewSidebar.css"
+  },
+  "resources/app.css": {
+    "file": "assets/app.51949d84.css",
+    "src": "resources/app.css"
+  }
+}
