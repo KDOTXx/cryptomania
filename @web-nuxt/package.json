@@ -1,0 +1,33 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.6.0",
+    "@fred78290/vue3-content-placeholders": "^1.0.1",
+    "@glidejs/glide": "^3.6.2",
+    "@nuxtjs/i18n": "^8.5.5",
+    "@pinia/nuxt": "^0.5.5",
+    "bootstrap": "^5.3.3",
+    "country-flag-emoji-polyfill": "^0.1.8",
+    "nuxt": "^3.13.2",
+    "overlayscrollbars": "^2.10.0",
+    "overlayscrollbars-vue": "^0.5.9",
+    "sass-loader": "^16.0.2",
+    "vue": "latest",
+    "vue-content-placeholders": "^0.2.1",
+    "vue-recaptcha-v3": "^2.0.1",
+    "vue-router": "latest"
+  },
+  "packageManager": "pnpm@8.7.5+sha1.735d4d0e6fc66c4d2d64b269b08e5995b19230ca",
+  "devDependencies": {
+    "sass": "^1.77.6"
+  }
+}

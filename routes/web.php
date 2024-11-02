@@ -28,6 +28,9 @@ Route::get('/avatar/{hash}', function ($hash) {
 });
 
 Route::post('/license', function() {
+  return [
+    'isValid' => true
+  ];
   $license = new \App\License\License();
 
   //if(!$license->isValid()) return [ 'isValid' => false ];
