@@ -2,6 +2,7 @@
 import useMainStore from "@/stores/useMainStore";
 import BannerModal from "@/components/Modals/BannerModal.vue";
 import { polyfillCountryFlagEmojis } from "country-flag-emoji-polyfill";
+import { fetchXsrfCookie } from "@/composables/useAxios";
 
 useHead({
   htmlAttrs: {
@@ -15,7 +16,9 @@ const store = useMainStore();
 const user = computed(() => store.user);
 const isGuest = computed(() => store.isGuest);
 
-onMounted(() => {
+onMounted(async () => {
+  await fetchXsrfCookie();
+
   BannerModal.methods.open();
   store.switchTheme(store.theme);
   store.update();
@@ -82,8 +85,8 @@ watch(route, () => {
       </div>
     </div>
 
-    <LayoutChat />
-    <LayoutFloatingButtons />
+    <!-- <LayoutChat /> -->
+    <!-- <LayoutFloatingButtons /> -->
     <!-- <BetSlip /> -->
     <!-- <mobile-menu /> -->
     <!-- <profit-monitoring /> -->

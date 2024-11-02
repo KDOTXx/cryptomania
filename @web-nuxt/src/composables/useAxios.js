@@ -1,33 +1,32 @@
 import axios from 'axios'
-import { useRuntimeConfig } from '#app'
+
+export const fetchXsrfCookie = async () => {
+    const config = useRuntimeConfig();
+
+    await axios.get(`${config.public.apiBaseURL}/sanctum/csrf-cookie`, { withCredentials: true, withXSRFToken: true });
+}
 
 export const useAxios = () => {
-    const config = useRuntimeConfig()
+    const config = useRuntimeConfig();
 
     const apiClient = axios.create({
-        baseURL: config.public.apiBase,
+        baseURL: config.public.apiBaseURL,
         headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json',
         },
+        withCredentials: true,
+        withXSRFToken: true
     })
 
     apiClient.interceptors.request.use(
-        (request) => {
-            return request
-        },
-        (error) => {
-            return Promise.reject(error)
-        }
+        (request) => request,
+        (error) => Promise.reject(error)
     )
 
     apiClient.interceptors.response.use(
-        (response) => {
-            return response
-        },
-        (error) => {
-            return Promise.reject(error)
-        }
+        (response) => response,
+        (error) => Promise.reject(error)
     )
 
     return apiClient

@@ -210,7 +210,6 @@ export default defineStore("main", () => {
   const showChat = computed(() => chat.value)
 
   return {
-    // State
     showChat,
     license,
     user,
@@ -237,8 +236,6 @@ export default defineStore("main", () => {
     sportGames,
     recentGameHistory,
     phoenixConsoleSettings,
-
-    // Actions
     setSportFilter,
     setFiatView,
     setGameInstance,

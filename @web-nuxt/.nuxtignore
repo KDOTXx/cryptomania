@@ -1,0 +1,2 @@
+./* # ignore everything
+!./src/** # un-ignore src
