@@ -3,7 +3,7 @@ import { OverlayScrollbarsComponent } from "overlayscrollbars-vue";
 import vClickOutside from "v-click-outside";
 import walletSvg from "@/assets/img/wallet.svg";
 import useMainStore from "@/stores/useMainStore";
-import AuthModal from "@/components/modals/AuthModal.vue";
+import AuthModal from "@/components/Modals/AuthModal.vue";
 // import DemoBalanceModal from "@/components/modals/DemoBalanceModal.vue";
 // import WalletModal from "@/components/modals/WalletModal.vue";
 import Bus from "@/composables/useBus";

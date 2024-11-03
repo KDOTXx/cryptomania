@@ -7,6 +7,8 @@ import { useAxios } from "@/composables/useAxios";
 
 const { locale, setLocale } = useI18n()
 const { $checkPermission } = usePermissions();
+const { t } = useI18n()
+const { $toast } = useNuxtApp();
 const apiClient = useAxios();
 
 const chatScrollbarRef = ref();
@@ -161,8 +163,8 @@ const sendSticker = (gifUrl) => {
   }).catch((error) => {
     alert("ChatStickerMessage message error");
 
-    //   if (error.response.data.code === 1) this.$toast.error(this.$i18n.t('chat.error.length'));
-    //   if (error.response.data.code === 2) this.$toast.error(this.$i18n.t('chat.error.muted'));
+      if (error.response.data.code === 1) $toast.error(t('chat.error.length'));
+      if (error.response.data.code === 2) $toast.error(t('chat.error.muted'));
   });
 };
 
@@ -197,8 +199,8 @@ const sendChatMessage = () => {
     channel: store.channel,
   }).catch((error) => {
     alert("chat message error");
-    //   if (error === 1) this.$toast.error(this.$i18n.t('chat.error.length'));
-    //   if (error === 2) this.$toast.error(this.$i18n.t('chat.error.muted'));
+      if (error === 1) $toast.error(t('chat.error.length'));
+      if (error === 2) $toast.error(t('chat.error.muted'));
   });
 
   message.value = "";
@@ -228,7 +230,7 @@ onMounted(() => {
         .post("/api/user/find", { name: args[0].replace(".", "") })
         .then(({ data }) => UserModal.methods.open(data.id))
         .catch(() => {
-          // this.$toast.error(this.$i18n.t("general.error.unknown_user"));
+          $toast.error(t("general.error.unknown_user"));
         });
     },
     "bet [id]": (args) => {
@@ -236,7 +238,7 @@ onMounted(() => {
         .post("/api/game/find", { id: args[0] })
         .then(({ data }) => OverviewModal.methods.open(data.id, data.game))
         .then(() => {
-          // this.$toast.error(this.$i18n.t("general.error.unknown_game"));
+          $toast.error(t("general.error.unknown_game"));
         });
     },
     "ignore [name]": (args) => {
@@ -244,12 +246,12 @@ onMounted(() => {
         .post("/api/user/ignore", { name: args[0].replace(".", "") })
         .then(() => {
           store.update();
-          // this.$toast.success(this.$i18n.t('general.ignore'));
+          $toast.success(t('general.ignore'));
           alert("success ignore-name");
         })
         .catch(() => {
           alert("catch ignore-name");
-          // this.$toast.error(this.$i18n.t('general.error.unknown_user'));
+          $toast.error(t('general.error.unknown_user'));
         });
     },
     "unignore [name]": (args) => {
@@ -257,10 +259,10 @@ onMounted(() => {
         .post("/api/user/unignore", { name: args[0].replace(".", "") })
         .then(({ data }) => {
           store.update();
-          // this.$toast.success(this.$i18n.t('general.unignore'));
+          $toast.success(t('general.unignore'));
         })
         .catch(() => {
-          // this.$toast.error(this.$i18n.t('general.error.unknown_user'));
+          $toast.error(t('general.error.unknown_user'));
         });
     },
     tip: () => {
@@ -281,10 +283,10 @@ onMounted(() => {
       apiClient
         .post("/api/chat/moderate/unmute", { name: args[0] })
         .then(() => {
-          // this.$toast.success("Success")
+          $toast.success("Success")
         })
         .catch(() => {
-          // this.$toast.error("Unknown username");
+          $toast.error("Unknown username");
         });
     };
   }

@@ -54,7 +54,7 @@ if (!store.isGuest) {
 
   onMounted(() => {
     axios.post("/api/notifications/unread").then(({ data }) => {
-      _.forEach(data.notifications, (notification) => {
+      forEach(data.notifications, (notification) => {
         const meta = notifications[notification.type](notification.data);
         add(notification, meta);
       });

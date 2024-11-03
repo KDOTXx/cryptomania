@@ -8,7 +8,7 @@ export default defineNuxtConfig(<any>{
   },
   runtimeConfig: {
     public: {
-      apiBaseURL: process.env.PUBLIC_API_URL,
+      apiUrl: process.env.PUBLIC_API_URL,
       recaptcha: {
         siteKey: process.env.PUBLIC_RECAPTCHA_SITE_KEY,
       },

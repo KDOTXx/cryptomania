@@ -15,16 +15,20 @@
     "@glidejs/glide": "^3.6.2",
     "@nuxtjs/i18n": "^8.5.5",
     "@pinia/nuxt": "^0.5.5",
+    "axios": "^1.7.7",
     "bootstrap": "^5.3.3",
     "country-flag-emoji-polyfill": "^0.1.8",
+    "lodash": "^4.17.21",
     "nuxt": "^3.13.2",
     "overlayscrollbars": "^2.10.0",
     "overlayscrollbars-vue": "^0.5.9",
     "sass-loader": "^16.0.2",
+    "v-click-outside": "^3.2.0",
     "vue": "latest",
     "vue-content-placeholders": "^0.2.1",
     "vue-recaptcha-v3": "^2.0.1",
-    "vue-router": "latest"
+    "vue-router": "latest",
+    "vue-toast-notification": "^3"
   },
   "packageManager": "pnpm@8.7.5+sha1.735d4d0e6fc66c4d2d64b269b08e5995b19230ca",
   "devDependencies": {

@@ -3,14 +3,15 @@ import axios from 'axios'
 export const fetchXsrfCookie = async () => {
     const config = useRuntimeConfig();
 
-    await axios.get(`${config.public.apiBaseURL}/sanctum/csrf-cookie`, { withCredentials: true, withXSRFToken: true });
+    await axios.get(`${config.public.apiUrl}/sanctum/csrf-cookie`, { withCredentials: true, withXSRFToken: true });
 }
 
 export const useAxios = () => {
     const config = useRuntimeConfig();
+    const baseURL = config.public;
 
     const apiClient = axios.create({
-        baseURL: config.public.apiBaseURL,
+        baseURL: config.public.apiUrl,
         headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json',

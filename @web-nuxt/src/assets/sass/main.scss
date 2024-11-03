@@ -48,6 +48,10 @@
   src: url("@/assets/fonts/open-sans-v40-latin-800.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
+.v-toast {
+  z-index: 99999999 ! important
+}
+
 #__nuxt {
   width: 100% !important;
 }

@@ -6,6 +6,8 @@ import useGoogleRecaptcha from "@/composables/useGoogleRecaptcha";
 
 const store = useMainStore();
 const apiClient = useAxios();
+const { $toast } = useNuxtApp();
+const { t } = useI18n();
 const { executeRecaptcha } = useGoogleRecaptcha();
 
 const type = ref("auth");
@@ -37,7 +39,7 @@ const login = async (callback = null) => {
       if (this.callback) this.callback();
     })
     .catch(() => {
-      this.$toast.error(this.$i18n.t("general.auth.wrong_credentials"));
+      $toast.error(t("general.auth.wrong_credentials"));
     });
 };
 
@@ -60,7 +62,7 @@ const register = () => {
       store.updateData();
 
       Bus.$emit("login:success");
-      // this.$toast.success(this.$i18n.t("general.profile.verify_email"));
+      $toast.success(t("general.profile.verify_email"));
     })
     .catch((e) => Bus.$emit("register:fail", e));
 };
@@ -79,7 +81,7 @@ onMounted(async () => {
 
   Bus.$on(
     "login:fail",
-    () => this.$toast.error(this.$i18n.t("general.auth.wrong_credentials")),
+    () => $toast.error(t("general.auth.wrong_credentials")),
     true
   );
 
@@ -87,7 +89,7 @@ onMounted(async () => {
   Bus.$on("register:fail", (e) => {
     if (e.response.data.code === 1) {
       inviteCode.value = "";
-      return this.$toast.error("Invalid invite code.");
+      return $toast.error("Invalid invite code.");
     }
 
     const errors = e.response.data.errors;
@@ -99,9 +101,9 @@ onMounted(async () => {
         case "email": {
           values.forEach((value) => {
             if (value === "validation.email") {
-              this.$toast.error("Invalid email");
+              $toast.error("Invalid email");
             } else if (value === "validation.unique") {
-              this.$toast.error("This email is already registered");
+              $toast.error("This email is already registered");
             }
           });
           break;
@@ -109,11 +111,11 @@ onMounted(async () => {
         case "name": {
           values.forEach((value) => {
             if (value === "validation.regex") {
-              this.$toast.error(
+              $toast.error(
                 "Your login has less than 4 characters or contains invalid symbols"
               );
             } else if (value === "validation.unique") {
-              this.$toast.error(
+              $toast.error(
                 "This login is already registered, pick something else"
               );
             }
@@ -123,7 +125,7 @@ onMounted(async () => {
         case "password": {
           values.forEach((value) => {
             if (value === "validation.min.string") {
-              this.$toast.error("Password should have at least 5 characters");
+              $toast.error("Password should have at least 5 characters");
             }
           });
           break;
@@ -269,6 +271,7 @@ onMounted(async () => {
     padding: 20px;
     width: 350px;
     display: flex;
+    gap: 10px;
     flex-direction: column;
   }
 

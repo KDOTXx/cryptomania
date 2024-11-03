@@ -547,7 +547,7 @@
     "hilo-lower":"Más abajo",
     "hilo-same":"Lo mismo",
     "chance":"Oportunidad",
-    "chat_at":"Escriba @<strong>username</strong> para notificar al usuario",
+    "chat_at":"Escriba {'@'}<strong>username</strong> para notificar al usuario",
     "autoStop":"Cobrar en",
     "target_payout":"Objetivo de Pago",
     "win_chance":"Porcentaje de Victoria",
@@ -644,7 +644,7 @@
         },
         "p":{
           "title":"Asociación",
-          "description":"Contáctenos: <a href=\"mailto:support@axes.bet\">support@axes.bet</a>"
+          "description":"Contáctenos: <a href=\"mailto:support{'@'}axes.bet\">support{'@'}axes.bet</a>"
         }
       },
       "payments":{

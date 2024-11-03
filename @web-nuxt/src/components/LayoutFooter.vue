@@ -45,7 +45,7 @@ function openLeaderboard() {
                   font-size: 1.2rem;
                 "
               >
-                CryptoMania
+                CryptoMania 2
               </div>
             </div>
           </div>

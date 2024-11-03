@@ -547,7 +547,7 @@
     "hilo-lower":"降低",
     "hilo-same":"一样",
     "chance":"機會",
-    "chat_at":"輸入 @<strong>username</strong> 通知用戶",
+    "chat_at":"輸入 {'@'}<strong>username</strong> 通知用戶",
     "autoStop":"申請提現",
     "target_payout":"目標派彩",
     "win_chance":"獲勝機會",
@@ -644,7 +644,7 @@
         },
         "p":{
           "title":"夥伴關係",
-          "description":"聯繫我們: <a href=\"mailto:support@axes.bet\">support@axes.bet</a>"
+          "description":"聯繫我們: <a href=\"mailto:support{'@'}axes.bet\">support{'@'}axes.bet</a>"
         }
       },
       "payments":{

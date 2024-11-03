@@ -722,7 +722,7 @@
     "hilo-lower": "Plus bas",
     "hilo-same": "Pareil",
     "chance": "Chance",
-    "chat_at": "Tapez @<strong>username</strong> pour notifier l'utilisateur",
+    "chat_at": "Tapez {'@'}<strong>username</strong> pour notifier l'utilisateur",
     "autoStop": "Paiement en",
     "target_payout": "Paiement cible",
     "win_chance": "Chances de gagner",
@@ -896,7 +896,7 @@
     },
     "pending": "En attente",
     "method": "Mode de paiement:",
-    "troubles": "Avez-vous besoin d'aide?<br>Contactez <a href=\"mailto:support@pepe.casino\">support team</a>",
+    "troubles": "Avez-vous besoin d'aide?<br>Contactez <a href=\"mailto:support{'@'}pepe.casino\">support team</a>",
     "fast": "Vous serez averti immédiatement après avoir effectué le dépôt et pourrez voir votre numéro de confirmation de transaction",
     "deposit": {
       "address": "Votre adresse de dépôt en {currency}",
