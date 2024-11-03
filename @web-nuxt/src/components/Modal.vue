@@ -4,34 +4,23 @@ import { OverlayScrollbarsComponent } from "overlayscrollbars-vue";
 defineProps(["title"])
 
 const model = defineModel();
-
-const emit = defineEmits(["update:modelValue"]);
-
-const isDialogVisible = computed({
-  get: () => props.modelValue,
-  set: (value) => emit("update:modelValue", value),
-});
 </script>
 
 <template>
   <transition tag="div" name="modal" v-if="model">
     <div class="modals" tabindex="0">
       <div class="xmodal">
-        <i
-          class="modal-close fa fa-times"
-          @click="isDialogVisible = false"
-        ></i>
+        <i class="modal-close fa fa-times" @click="model = false"></i>
         <div v-if="title" class="heading">
           <span class="title">{{ $t(title) }}</span>
         </div>
         <div class="modal_template">
-          <OverlayScrollbarsComponent
-            :options="{
-              scrollbars: { autoHide: 'leave' },
-            }"
-            class="os-theme-thin-light"
-          >
-            <div class="modal_content"><slot /></div>
+          <OverlayScrollbarsComponent :options="{
+            scrollbars: { autoHide: 'leave' },
+          }" class="os-theme-thin-light">
+            <div class="modal_content">
+              <slot />
+            </div>
           </OverlayScrollbarsComponent>
         </div>
       </div>

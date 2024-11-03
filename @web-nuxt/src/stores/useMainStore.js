@@ -50,17 +50,13 @@ export default defineStore("main", () => {
   }
 
   function login(credentials, callback = null) {
-    return apiClient.get('/sanctum/csrf-cookie').then(() => {
-      apiClient.post('/auth/login', credentials, {
-        withCredentials: true
-      }).then(({ data }) => {
-        setUserData(data);
-        updateData();
-        if (callback) callback();
-      }).catch((e) => {
-        console.log("lgiin fail", e);
-        Bus.$emit('login:fail', e)
-      });
+    return apiClient.post('/auth/login', credentials).then(({ data }) => {
+      setUserData(data);
+      updateData();
+      if (callback) callback();
+    }).catch((e) => {
+      console.log("login failed", e);
+      Bus.$emit('login:failed', e)
     });
   }
 

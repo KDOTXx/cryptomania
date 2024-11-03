@@ -17,6 +17,8 @@ const store = useMainStore();
 // State variables
 const expand = ref(false);
 const animated = ref([]);
+
+const type = ref("auth");
 const isAuthModelVisible = ref(false);
 
 // Computed properties from store
@@ -42,10 +44,13 @@ function openDemoBalanceModal() {
   // DemoBalanceModal.methods.open();
 }
 
-function openAuthModal(type) {
-  alert("asdasdsa");
-  AuthModal.methods.open(type);
+function openAuthModal(typeModal = "auth") {
+  type.value = typeModal == "auth" ? "auth" : "register";
+
+  isAuthModelVisible.value = true;
 }
+
+const handleTypeChange = ({ tabType }) => type.value = tabType
 
 onMounted(() => {
   Bus.$on("event:balanceModification", (e) => {
@@ -69,68 +74,36 @@ onMounted(() => {
       <div class="container">
         <div class="header-container">
           <div class="switcher">
-            <NuxtLink
-              to="/"
-              tag="div"
-              class="logo"
-              style="display: flex !important"
-            />
-            <div
-              class="switch home-logo"
-              :class="{ active: isCasino }"
-              @click="router.push('/')"
-              style="padding-left: 0 !important"
-            >
+            <NuxtLink to="/" tag="div" class="logo" style="display: flex !important" />
+            <div class="switch home-logo" :class="{ active: isCasino }" @click="router.push('/')"
+              style="padding-left: 0 !important">
               CryptoMania
             </div>
           </div>
 
-          <content-placeholders
-            v-if="!isGuest && !currencies"
-            class="wallet_loader"
-          >
+          <content-placeholders v-if="!isGuest && !currencies" class="wallet_loader">
             <content-placeholders-img />
           </content-placeholders>
           <div style="display: flex">
-            <div
-              class="wallet"
-              v-if="!isGuest && currencies"
-              v-click-outside="() => (expand = false)"
-            >
+            <div class="wallet" v-if="!isGuest && currencies" v-click-outside="() => (expand = false)">
               <div :class="`wallet-switcher ${expand ? 'active' : ''}`">
-                <OverlayScrollbarsComponent
-                  :options="{
-                    scrollbars: { autoHide: 'leave' },
-                    className: 'os-theme-thin-light',
-                  }"
-                >
-                  <div
-                    v-for="(currency, i) in currencies"
-                    v-if="currency.balance"
-                    class="option"
-                    :key="i"
-                    @click="
-                      setCurrency(currency.id);
-                      setCookie('currency', currency.id, 365);
-                      expand = false;
-                    "
-                  >
+                <OverlayScrollbarsComponent :options="{
+                  scrollbars: { autoHide: 'leave' },
+                  className: 'os-theme-thin-light',
+                }">
+                  <div v-for="(currency, i) in currencies" v-if="currency.balance" class="option" :key="i" @click="
+                    setCurrency(currency.id);
+                  setCookie('currency', currency.id, 365);
+                  expand = false;
+                  ">
                     <div class="currency">
-                      <WebIcon
-                        :icon="currency.icon"
-                        :style="{ color: currency.style }"
-                      />
+                      <WebIcon :icon="currency.icon" :style="{ color: currency.style }" />
                     </div>
                     <div class="wallet-switcher-content">
                       <span>{{ currency.name }}</span>
                       <div>
-                        <unit
-                          :fiat="fiatView"
-                          :to="currency.id"
-                          :value="
-                            demo ? currency.balance.demo : currency.balance.real
-                          "
-                        />
+                        <unit :fiat="fiatView" :to="currency.id" :value="demo ? currency.balance.demo : currency.balance.real
+                          " />
                       </div>
                     </div>
                   </div>
@@ -140,102 +113,56 @@ onMounted(() => {
                     {{ $t("general.head.wallet_demo") }}
                   </div>
                   <div @click.stop>
-                    <WebSwitch
-                      :value="demo"
-                      :onChange="toggleDemo"
-                      ref="demoSwitch"
-                    />
+                    <WebSwitch :value="demo" :onChange="toggleDemo" ref="demoSwitch" />
                   </div>
                 </div>
-                <div
-                  class="option"
-                  @click="$refs.fiatSwitch.toggle()"
-                  style="margin-top: 10px; padding: 5px 15px"
-                >
+                <div class="option" @click="$refs.fiatSwitch.toggle()" style="margin-top: 10px; padding: 5px 15px">
                   <div class="wallet-switcher-content">
                     {{ $t("general.head.view_in_fiat") }}
                   </div>
                   <div @click.stop>
-                    <WebSwitch
-                      :value="fiatView"
-                      :onChange="toggleFiatView"
-                      ref="fiatSwitch"
-                    />
+                    <WebSwitch :value="fiatView" :onChange="toggleFiatView" ref="fiatSwitch" />
                   </div>
                 </div>
               </div>
-              <div
-                class="btn btn-secondary icon"
-                @click="expand = !expand"
-                style="margin-right: 0; width: 130px"
-              >
-                <WebIcon
-                  :icon="currencies[currency]?.icon"
-                  v-if="currencies[currency]"
-                  :style="{ color: currencies[currency].style }"
-                />
-                <unit
-                  :fiat="fiatView"
-                  :to="currency"
-                  style="margin-left: 5px"
-                  :value="currencies[currency]?.balance[demo ? 'demo' : 'real']"
-                />
+              <div class="btn btn-secondary icon" @click="expand = !expand" style="margin-right: 0; width: 130px">
+                <WebIcon :icon="currencies[currency]?.icon" v-if="currencies[currency]"
+                  :style="{ color: currencies[currency].style }" />
+                <unit :fiat="fiatView" :to="currency" style="margin-left: 5px"
+                  :value="currencies[currency]?.balance[demo ? 'demo' : 'real']" />
                 <i class="fal fa-angle-down"></i>
               </div>
             </div>
-            <div
-              v-if="!isGuest && currencies"
-              @click="demo ? openDemoBalanceModal() : openWalletModal()"
-            >
+            <div v-if="!isGuest && currencies" @click="demo ? openDemoBalanceModal() : openWalletModal()">
               <button class="wallet-balance-btn" id="wallet-btn">
                 <img :src="walletSvg" alt="wallet" />
                 <span class="wallet-balance-span">Wallet</span>
               </button>
-              <transition-group
-                mode="out-in"
-                name="balance-a"
-                :style="{ position: 'absolute' }"
-              >
-                <span
-                  :key="`key-${i}`"
-                  v-for="(animate, i) in animated"
-                  :class="`animated text-${
-                    animate.diff.action === 'subtract' ? 'danger' : 'success'
-                  }`"
-                >
-                  <unit
-                    :fiat="fiatView"
-                    :to="currency"
-                    :value="animate.diff.value"
-                  />
+              <transition-group mode="out-in" name="balance-a" :style="{ position: 'absolute' }">
+                <span :key="`key-${i}`" v-for="(animate, i) in animated" :class="`animated text-${animate.diff.action === 'subtract' ? 'danger' : 'success'
+                  }`">
+                  <unit :fiat="fiatView" :to="currency" :value="animate.diff.value" />
                 </span>
               </transition-group>
             </div>
           </div>
 
           <div v-if="isGuest" :class="`right ${isGuest ? 'ml-auto' : ''}`">
-            <button
-              class="btn btn-transparent"
-              @click="isAuthModelVisible = true"
-            >
+            <button class="btn btn-transparent" @click="openAuthModal('auth')">
               {{ $t("general.auth.login") }}
             </button>
-            <button class="btn btn-primary" @click="isAuthModelVisible = true">
+            <button class="btn btn-primary" @click="openAuthModal('register')">
               {{ $t("general.auth.register") }}
             </button>
           </div>
           <div v-else class="right">
-            <router-link
-              tag="img"
-              :to="`/profile/${user.user._id}`"
-              :src="user.user.avatar"
-            />
+            <router-link tag="img" :to="`/profile/${user.user._id}`" :src="user.user.avatar" />
           </div>
         </div>
       </div>
     </div>
 
-    <Modals.AuthModal v-model="isAuthModelVisible" />
+    <Modals.AuthModal v-model="isAuthModelVisible" :type @update:type="handleTypeChange" />
   </header>
 </template>
 
@@ -290,10 +217,12 @@ header {
         input {
           cursor: pointer !important;
           padding-left: 55px !important;
+
           @include themed() {
             background: t("input") !important;
             border: 1px solid t("border") !important;
           }
+
           pointer-events: none !important;
           border-radius: 50px;
         }
@@ -504,12 +433,9 @@ header {
   }
 }
 
-@include only_safari(
-  "header",
-  (
-    display: contents,
-  )
-);
+@include only_safari("header",
+  (display: contents,
+  ));
 
 .balance-a-enter-active,
 .balance-a-leave-active {
