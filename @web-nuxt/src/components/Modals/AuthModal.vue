@@ -4,11 +4,7 @@ import useMainStore from "@/stores/useMainStore";
 import { useAxios } from "@/composables/useAxios";
 import useGoogleRecaptcha from "@/composables/useGoogleRecaptcha";
 
-const model = defineModel();
-const props = defineProps(["type"]);
-
-const emit = defineEmits(["update:type"])
-
+const { isModalVisible, type, handleTypeChange } = useAuthModal();
 const store = useMainStore();
 const apiClient = useAxios();
 const { $toast } = useNuxtApp();
@@ -71,8 +67,6 @@ const register = () => {
 const handleSubmit = () => {
   props.type == "auth" ? login() : register();
 };
-
-const handleTabChange = (tabType = 'auth') => emit("update:type", { tabType })
 
 onMounted(async () => {
   if (typeof URLSearchParams === "function") {
@@ -138,14 +132,15 @@ onMounted(async () => {
 </script>
 
 <template>
-  <Modal v-model="model">
+  <Modal v-model="isModalVisible">
     <div class="auth-promo"></div>
     <div class="auth-block-1">
       <div class="auth-tabs">
-        <div class="auth-tab" @click="handleTabChange('auth')" :class="type === 'auth' ? 'active' : ''">
+        <div class="auth-tab" @click="handleTypeChange({ tabType: 'auth' })" :class="type === 'auth' ? 'active' : ''">
           {{ $t("general.auth.login") }}
         </div>
-        <div class="auth-tab" @click="handleTabChange('register')" :class="type === 'register' ? 'active' : ''">
+        <div class="auth-tab" @click="handleTypeChange({ tabType: 'register' })"
+          :class="type === 'register' ? 'active' : ''">
           {{ $t("general.auth.register") }}
         </div>
       </div>
@@ -177,7 +172,7 @@ onMounted(async () => {
   </Modal>
 </template>
 
-<style lang="scss" module>
+<style lang="scss">
 @import "@/assets/sass/variables";
 
 .xmodal {

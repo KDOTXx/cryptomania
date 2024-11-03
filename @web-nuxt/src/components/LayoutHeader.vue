@@ -17,9 +17,7 @@ const store = useMainStore();
 // State variables
 const expand = ref(false);
 const animated = ref([]);
-
-const type = ref("auth");
-const isAuthModelVisible = ref(false);
+const { openAuthModal } = useAuthModal();
 
 // Computed properties from store
 const user = computed(() => store.user);
@@ -43,14 +41,6 @@ function openWalletModal() {
 function openDemoBalanceModal() {
   // DemoBalanceModal.methods.open();
 }
-
-function openAuthModal(typeModal = "auth") {
-  type.value = typeModal == "auth" ? "auth" : "register";
-
-  isAuthModelVisible.value = true;
-}
-
-const handleTypeChange = ({ tabType }) => type.value = tabType
 
 onMounted(() => {
   Bus.$on("event:balanceModification", (e) => {
@@ -161,8 +151,6 @@ onMounted(() => {
         </div>
       </div>
     </div>
-
-    <Modals.AuthModal v-model="isAuthModelVisible" :type @update:type="handleTypeChange" />
   </header>
 </template>
 

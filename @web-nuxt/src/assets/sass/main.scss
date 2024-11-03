@@ -14,38 +14,46 @@
 
 /* open-sans-regular - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("@/assets/fonts/open-sans-v40-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("@/assets/fonts/open-sans-v40-latin-regular.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* open-sans-600 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 600;
-  src: url("@/assets/fonts/open-sans-v40-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("@/assets/fonts/open-sans-v40-latin-600.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* open-sans-700 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("@/assets/fonts/open-sans-v40-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("@/assets/fonts/open-sans-v40-latin-700.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* open-sans-800 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 800;
-  src: url("@/assets/fonts/open-sans-v40-latin-800.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("@/assets/fonts/open-sans-v40-latin-800.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 .v-toast {
@@ -60,8 +68,15 @@
   width: 100%;
 }
 
+.game.router-link-exact-active {
+  color: #886cff !important;
+  border-left: solid 5px #886cff !important;
+  background-color: #1b172d;
+}
+
 .vue-content-placeholders-img {
   opacity: 0.15;
+
   @include themed() {
     background: t("link");
   }
@@ -135,6 +150,7 @@ input {
 
     &:not(:read-only),
     &:not(:disabled) {
+
       &:hover,
       &:active,
       &:focus {
@@ -186,13 +202,14 @@ input {
 
 .custom-control-label::before {
   box-shadow: none !important;
+
   @include themed() {
     background: lighten(t("input"), 10%) !important;
     border: 1px solid darken(t("input"), 2%) !important;
   }
 }
 
-.custom-control-input:checked ~ .custom-control-label::before {
+.custom-control-input:checked~.custom-control-label::before {
   @include themed() {
     border-color: t("secondary") !important;
     background-color: t("secondary") !important;
@@ -244,6 +261,7 @@ input {
     background: t("secondary");
     color: t("textInverted") !important;
     border: none;
+
     &:hover,
     &:active,
     &:focus {
@@ -332,9 +350,11 @@ hr {
   0% {
     transform: translate(0vw, 0vh) rotate(12deg);
   }
+
   75% {
     transform: translate(-4vw, 40vh) rotate(12deg);
   }
+
   100% {
     transform: translate(-17vw, 55vh) rotate(12deg);
   }
@@ -344,11 +364,9 @@ hr {
   width: 1px;
   height: 60%;
   margin-left: 7px;
-  background: linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 0),
-    rgba(255, 255, 255, 0.25)
-  );
+  background: linear-gradient(to bottom,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0.25));
   animation: stem 0.5s linear infinite;
 }
 
@@ -356,12 +374,15 @@ hr {
   0% {
     opacity: 1;
   }
+
   65% {
     opacity: 1;
   }
+
   75% {
     opacity: 0;
   }
+
   100% {
     opacity: 0;
   }
@@ -393,9 +414,11 @@ hr {
   0% {
     background: #db4437;
   }
+
   50% {
     background: darken(#db4437, 10%);
   }
+
   100% {
     background: #db4437;
   }
@@ -411,35 +434,35 @@ hr {
   display: none;
 }
 
-.os-theme-thin-light > .os-scrollbar-horizontal {
+.os-theme-thin-light>.os-scrollbar-horizontal {
   right: 14px;
   height: 14px;
   padding: 0 6px;
 }
 
-.os-theme-thin-light > .os-scrollbar-vertical {
+.os-theme-thin-light>.os-scrollbar-vertical {
   bottom: 14px;
   width: 14px;
   padding: 6px 0;
 }
 
-.os-theme-thin-light.os-host-rtl > .os-scrollbar-horizontal {
+.os-theme-thin-light.os-host-rtl>.os-scrollbar-horizontal {
   left: 14px;
   right: 0;
 }
 
-.os-theme-thin-light > .os-scrollbar-corner {
+.os-theme-thin-light>.os-scrollbar-corner {
   height: 14px;
   width: 14px;
   background-color: transparent;
 }
 
-.os-theme-thin-light > .os-scrollbar > .os-scrollbar-track {
+.os-theme-thin-light>.os-scrollbar>.os-scrollbar-track {
   background: transparent;
 }
 
-.os-theme-thin-light > .os-scrollbar-horizontal > .os-scrollbar-track:before,
-.os-theme-thin-light > .os-scrollbar-vertical > .os-scrollbar-track:before {
+.os-theme-thin-light>.os-scrollbar-horizontal>.os-scrollbar-track:before,
+.os-theme-thin-light>.os-scrollbar-vertical>.os-scrollbar-track:before {
   @include themed() {
     content: "";
     display: block;
@@ -448,11 +471,8 @@ hr {
   }
 }
 
-.os-theme-thin-light > .os-scrollbar-horizontal > .os-scrollbar-track:before,
-.os-theme-thin-light
-  > .os-scrollbar-horizontal
-  > .os-scrollbar-track
-  > .os-scrollbar-handle:before {
+.os-theme-thin-light>.os-scrollbar-horizontal>.os-scrollbar-track:before,
+.os-theme-thin-light>.os-scrollbar-horizontal>.os-scrollbar-track>.os-scrollbar-handle:before {
   left: 0;
   right: 0;
   height: 2px;
@@ -460,11 +480,8 @@ hr {
   margin-top: -1px;
 }
 
-.os-theme-thin-light > .os-scrollbar-vertical > .os-scrollbar-track:before,
-.os-theme-thin-light
-  > .os-scrollbar-vertical
-  > .os-scrollbar-track
-  > .os-scrollbar-handle:before {
+.os-theme-thin-light>.os-scrollbar-vertical>.os-scrollbar-track:before,
+.os-theme-thin-light>.os-scrollbar-vertical>.os-scrollbar-track>.os-scrollbar-handle:before {
   top: 0;
   bottom: 0;
   width: 2px;
@@ -472,10 +489,7 @@ hr {
   margin-left: -1px;
 }
 
-.os-theme-thin-light
-  > .os-scrollbar
-  > .os-scrollbar-track
-  > .os-scrollbar-handle:before {
+.os-theme-thin-light>.os-scrollbar>.os-scrollbar-track>.os-scrollbar-handle:before {
   @include themed() {
     content: "";
     display: block;
@@ -485,88 +499,53 @@ hr {
   }
 }
 
-.os-theme-thin-light
-  > .os-scrollbar-horizontal
-  > .os-scrollbar-track
-  > .os-scrollbar-handle:hover:before,
-.os-theme-thin-light
-  > .os-scrollbar-horizontal
-  > .os-scrollbar-track
-  > .os-scrollbar-handle.active:before {
+.os-theme-thin-light>.os-scrollbar-horizontal>.os-scrollbar-track>.os-scrollbar-handle:hover:before,
+.os-theme-thin-light>.os-scrollbar-horizontal>.os-scrollbar-track>.os-scrollbar-handle.active:before {
   height: 4px;
   margin-top: -2px;
 }
 
-.os-theme-thin-light
-  > .os-scrollbar-vertical
-  > .os-scrollbar-track
-  > .os-scrollbar-handle:hover:before,
-.os-theme-thin-light
-  > .os-scrollbar-vertical
-  > .os-scrollbar-track
-  > .os-scrollbar-handle.active:before {
+.os-theme-thin-light>.os-scrollbar-vertical>.os-scrollbar-track>.os-scrollbar-handle:hover:before,
+.os-theme-thin-light>.os-scrollbar-vertical>.os-scrollbar-track>.os-scrollbar-handle.active:before {
   width: 4px;
   margin-left: -2px;
 }
 
-.os-theme-thin-light
-  > .os-scrollbar-horizontal
-  > .os-scrollbar-track
-  > .os-scrollbar-handle:hover:before,
-.os-theme-thin-light
-  > .os-scrollbar-vertical
-  > .os-scrollbar-track
-  > .os-scrollbar-handle:hover:before {
+.os-theme-thin-light>.os-scrollbar-horizontal>.os-scrollbar-track>.os-scrollbar-handle:hover:before,
+.os-theme-thin-light>.os-scrollbar-vertical>.os-scrollbar-track>.os-scrollbar-handle:hover:before {
   @include themed() {
     background: rgba(t("text"), 0.7);
   }
 }
 
-.os-theme-thin-light
-  > .os-scrollbar-horizontal
-  > .os-scrollbar-track
-  > .os-scrollbar-handle.active:before,
-.os-theme-thin-light
-  > .os-scrollbar-vertical
-  > .os-scrollbar-track
-  > .os-scrollbar-handle.active:before {
+.os-theme-thin-light>.os-scrollbar-horizontal>.os-scrollbar-track>.os-scrollbar-handle.active:before,
+.os-theme-thin-light>.os-scrollbar-vertical>.os-scrollbar-track>.os-scrollbar-handle.active:before {
   @include themed() {
     background: t("text");
   }
 }
 
-.os-theme-thin-light
-  > .os-scrollbar-horizontal
-  > .os-scrollbar-track
-  > .os-scrollbar-handle {
+.os-theme-thin-light>.os-scrollbar-horizontal>.os-scrollbar-track>.os-scrollbar-handle {
   height: 100%;
   min-width: 30px;
 }
 
-.os-theme-thin-light
-  > .os-scrollbar-vertical
-  > .os-scrollbar-track
-  > .os-scrollbar-handle {
+.os-theme-thin-light>.os-scrollbar-vertical>.os-scrollbar-track>.os-scrollbar-handle {
   width: 100%;
   min-height: 30px;
 }
 
-.os-theme-thin-light.os-host-transition
-  > .os-scrollbar-horizontal
-  > .os-scrollbar-track
-  > .os-scrollbar-handle:before {
+.os-theme-thin-light.os-host-transition>.os-scrollbar-horizontal>.os-scrollbar-track>.os-scrollbar-handle:before {
   transition: height 0.3s, margin-top 0.3s, background 0.2s;
 }
 
-.os-theme-thin-light.os-host-transition
-  > .os-scrollbar-vertical
-  > .os-scrollbar-track
-  > .os-scrollbar-handle:before {
+.os-theme-thin-light.os-host-transition>.os-scrollbar-vertical>.os-scrollbar-track>.os-scrollbar-handle:before {
   transition: width 0.3s, margin-left 0.3s, background 0.2s;
 }
 
 .tabs {
   display: flex;
+
   @include themed() {
     .tab {
       display: inline-flex;
@@ -631,6 +610,7 @@ hr {
 .overview-bet {
   display: flex;
   margin-top: 5px;
+
   @include themed() {
     .option {
       padding: 7px;
@@ -671,6 +651,7 @@ hr {
     background: t("body");
     filter: t("shadow");
   }
+
   border-radius: 8px;
 
   .loader {
@@ -734,6 +715,7 @@ hr {
         background: #161b2c; // t('block');
         border-radius: 5px;
       }
+
       tr {
         &:hover {
           background: #323b57;
@@ -1129,7 +1111,9 @@ hr {
         color: t("text");
         border-color: t("text");
         opacity: 1;
-        transition: opacity 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+        transition: opacity 0.3s ease,
+        border-color 0.3s ease,
+        color 0.3s ease;
       }
 
       .history.highlight {
@@ -1267,6 +1251,7 @@ hr {
       }
 
       &:hover {
+
         i,
         svg {
           color: t("link-hover");
@@ -1480,6 +1465,7 @@ hr {
         }
 
         &:hover {
+
           i,
           svg {
             color: t("link-hover");
@@ -1960,6 +1946,7 @@ hr {
     width: 100%;
     content: "";
     height: 1px;
+
     @include themed() {
       background: rgba(t("text"), 0.2);
     }
@@ -2257,6 +2244,7 @@ select {
   right: 0;
   transition: right 0.3s ease;
   padding: 25px;
+
   @include themed() {
     background: t("sidebar");
   }
@@ -2353,6 +2341,7 @@ select {
   0% {
     transform: scale(0.33);
   }
+
   80%,
   100% {
     opacity: 0;
@@ -2363,9 +2352,11 @@ select {
   0% {
     transform: scale(0.8);
   }
+
   50% {
     transform: scale(1);
   }
+
   100% {
     transform: scale(0.8);
   }
@@ -2670,11 +2661,9 @@ select {
       background-size: cover !important;
 
       @include themed() {
-        background: linear-gradient(
-          180deg,
-          rgba(14, 38, 45, 0) 0%,
-          t("block") 100%
-        ) !important;
+        background: linear-gradient(180deg,
+            rgba(14, 38, 45, 0) 0%,
+            t("block") 100%) !important;
         border: 1px solid t("block");
       }
 
@@ -2841,7 +2830,7 @@ select {
   }
 }
 
-.custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
+.custom-checkbox .custom-control-input:checked~.custom-control-label::after {
   mix-blend-mode: difference;
 }
 

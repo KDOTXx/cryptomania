@@ -1,21 +1,18 @@
 <script setup>
-import axios from "axios";
 import useMainStore from "@/stores/useMainStore";
-// import AuthModal from "../modals/AuthModal.vue";
+import { useAxios } from "@/composables/useAxios";
 
 const store = useMainStore();
+const apiClient = useAxios();
+const { openAuthModal } = useAuthModal();
 
 const tab = ref(0);
 const affiliates = ref([]);
 
-const openAuthModal = () => {
-  // AuthModal.methods.open(type);
-};
-
 onMounted(() => {
-  // axios
-  //   .post("/api/user/affiliates")
-  //   .then(({ data }) => (affiliates.value = data));
+  apiClient
+    .post("/api/user/affiliates")
+    .then(({ data }) => (affiliates.value = data));
 });
 </script>
 
@@ -27,18 +24,10 @@ onMounted(() => {
           <div @click="tab = 0" :class="`option ${tab === 0 ? 'active' : ''}`">
             {{ $t("partner.tabs.overview") }}
           </div>
-          <div
-            v-if="!store.isGuest"
-            @click="tab = 1"
-            :class="`option ${tab === 1 ? 'active' : ''}`"
-          >
+          <div v-if="!store.isGuest" @click="tab = 1" :class="`option ${tab === 1 ? 'active' : ''}`">
             {{ $t("partner.tabs.list") }}
           </div>
-          <div
-            v-if="!store.isGuest"
-            @click="tab = 2"
-            :class="`option ${tab === 2 ? 'active' : ''}`"
-          >
+          <div v-if="!store.isGuest" @click="tab = 2" :class="`option ${tab === 2 ? 'active' : ''}`">
             {{ $t("partner.tabs.analytics") }}
           </div>
         </div>
@@ -53,9 +42,7 @@ onMounted(() => {
               </button>
             </template>
             <div v-else>
-              <div
-                v-html="$t('partner.overview.content', { id: store.user.name })"
-              ></div>
+              <div v-html="$t('partner.overview.content', { id: store.user.name })"></div>
               <div class="mt-4">
                 <div class="heading">{{ $t("partner.overview.header") }}</div>
                 <div class="subheader">{{ $t("partner.overview.1") }}</div>
@@ -65,15 +52,9 @@ onMounted(() => {
               </div>
             </div>
           </div>
-          <div
-            v-if="!store.isGuest && tab === 1"
-            class="tab-content"
-            data-tab="list"
-          >
-            <table
-              class="table dt-responsive nowrap dataTable"
-              v-if="affiliates.affiliates && affiliates.affiliates.length > 0"
-            >
+          <div v-if="!store.isGuest && tab === 1" class="tab-content" data-tab="list">
+            <table class="table dt-responsive nowrap dataTable"
+              v-if="affiliates.affiliates && affiliates.affiliates.length > 0">
               <thead>
                 <tr>
                   <th>{{ $t("partner.list.name") }}</th>
@@ -81,19 +62,10 @@ onMounted(() => {
                 </tr>
               </thead>
               <tbody>
-                <router-link
-                  tag="tr"
-                  :to="`/profile/${affiliate.user._id}`"
-                  v-for="affiliate in affiliates.affiliates"
-                  :key="affiliate.user._id"
-                  :style="{ cursor: 'pointer' }"
-                >
+                <router-link tag="tr" :to="`/profile/${affiliate.user._id}`" v-for="affiliate in affiliates.affiliates"
+                  :key="affiliate.user._id" :style="{ cursor: 'pointer' }">
                   <td>
-                    <img
-                      alt
-                      :src="affiliate.user.avatar"
-                      style="width: 32px; height: 32px; margin-right: 5px"
-                    />
+                    <img alt :src="affiliate.user.avatar" style="width: 32px; height: 32px; margin-right: 5px" />
                     {{ affiliate.user.name }}
                   </td>
 
@@ -112,18 +84,12 @@ onMounted(() => {
             </div>
           </div>
           <div v-if="!store.isGuest && tab === 2" class="tab-content">
-            <div
-              v-html="
-                $t('partner.analytics.referrals', { count: affiliates.total })
-              "
-            ></div>
-            <div
-              v-html="
-                $t('partner.analytics.referrals_bonus', {
-                  count: affiliates.bonus,
-                })
-              "
-            ></div>
+            <div v-html="$t('partner.analytics.referrals', { count: affiliates.total })
+              "></div>
+            <div v-html="$t('partner.analytics.referrals_bonus', {
+              count: affiliates.bonus,
+            })
+              "></div>
           </div>
         </div>
       </div>

@@ -65,14 +65,11 @@ watch(route, () => {
       <div class="pageWrapper">
         <LayoutHeader />
 
-        <div
-          class="pageContainer"
-          style="
+        <div class="pageContainer" style="
             scrollbar-color: #161b2c #0000;
             height: calc(100vh - 110px);
             overflow: auto;
-          "
-        >
+          ">
           <!-- <GlobalNotifications /> -->
 
           <div class="pageContent">
@@ -95,6 +92,9 @@ watch(route, () => {
       v-if="!isGuest && user && user.isPhoenixGamblingManager"
     /> -->
     <!-- <search /> -->
+
+    <!-- Modals -->
+    <Modals.AuthModal />
   </div>
 </template>
 
