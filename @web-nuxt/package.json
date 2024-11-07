@@ -16,6 +16,7 @@
     "@nuxtjs/i18n": "^8.5.5",
     "@pinia/nuxt": "^0.5.5",
     "axios": "^1.7.7",
+    "bitcoin-units": "^0.3.0",
     "bootstrap": "^5.3.3",
     "country-flag-emoji-polyfill": "^0.1.8",
     "lodash": "^4.17.21",

@@ -20,6 +20,7 @@ onMounted(async () => {
   await fetchXsrfCookie();
 
   BannerModal.methods.open();
+
   store.switchTheme(store.theme);
   store.update();
   store.updateData();
@@ -83,15 +84,15 @@ watch(route, () => {
     </div>
 
     <!-- <LayoutChat /> -->
+    <BetSlip />
     <!-- <LayoutFloatingButtons /> -->
-    <!-- <BetSlip /> -->
     <!-- <mobile-menu /> -->
     <!-- <profit-monitoring /> -->
     <!-- <support-chat /> -->
     <!-- <phoenix-gambling-manager-view
       v-if="!isGuest && user && user.isPhoenixGamblingManager"
     /> -->
-    <!-- <search /> -->
+    <Search />
 
     <!-- Modals -->
     <Modals.AuthModal />

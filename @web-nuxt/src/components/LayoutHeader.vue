@@ -3,23 +3,15 @@ import { OverlayScrollbarsComponent } from "overlayscrollbars-vue";
 import vClickOutside from "v-click-outside";
 import walletSvg from "@/assets/img/wallet.svg";
 import useMainStore from "@/stores/useMainStore";
-import AuthModal from "@/components/Modals/AuthModal.vue";
-// import DemoBalanceModal from "@/components/modals/DemoBalanceModal.vue";
-// import WalletModal from "@/components/modals/WalletModal.vue";
 import Bus from "@/composables/useBus";
 
-// Access router
 const router = useRouter();
-
-// Access Pinia store
 const store = useMainStore();
-
-// State variables
-const expand = ref(false);
-const animated = ref([]);
 const { openAuthModal } = useAuthModal();
 
-// Computed properties from store
+const expand = ref(false);
+const animated = ref([]);
+
 const user = computed(() => store.user);
 const isGuest = computed(() => store.isGuest);
 const demo = computed(() => store.demo);
@@ -29,7 +21,6 @@ const currencies = computed(() => store.currencies);
 const fiatView = computed(() => store.fiatView);
 const isCasino = computed(() => store.sportFilter === "casino");
 
-// Methods
 const setCurrency = (currencyId) => store.setCurrency(currencyId);
 const toggleDemo = () => store.setDemo(!demo.value);
 const toggleFiatView = () => store.setFiatView(!fiatView.value);
@@ -74,17 +65,15 @@ onMounted(() => {
           <content-placeholders v-if="!isGuest && !currencies" class="wallet_loader">
             <content-placeholders-img />
           </content-placeholders>
+
           <div style="display: flex">
             <div class="wallet" v-if="!isGuest && currencies" v-click-outside="() => (expand = false)">
               <div :class="`wallet-switcher ${expand ? 'active' : ''}`">
                 <OverlayScrollbarsComponent :options="{
                   scrollbars: { autoHide: 'leave' },
-                  className: 'os-theme-thin-light',
-                }">
+                }" class="os-theme-thin-light">
                   <div v-for="(currency, i) in currencies" v-if="currency.balance" class="option" :key="i" @click="
-                    setCurrency(currency.id);
-                  setCookie('currency', currency.id, 365);
-                  expand = false;
+                    setCurrency(currency.id); setCookie('currency', currency.id, 365); expand = false;
                   ">
                     <div class="currency">
                       <WebIcon :icon="currency.icon" :style="{ color: currency.style }" />
@@ -92,7 +81,7 @@ onMounted(() => {
                     <div class="wallet-switcher-content">
                       <span>{{ currency.name }}</span>
                       <div>
-                        <unit :fiat="fiatView" :to="currency.id" :value="demo ? currency.balance.demo : currency.balance.real
+                        <Unit :fiat="fiatView" :to="currency.id" :value="demo ? currency.balance.demo : currency.balance.real
                           " />
                       </div>
                     </div>

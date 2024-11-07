@@ -8,7 +8,7 @@ export default defineStore("main", () => {
   const demo = ref(false);
   const theme = ref("main");
   const unit = ref("btc");
-  const currency = ref(null);
+  const currency = ref("commerce_bitcoin");
   const liveFeedEntries = ref(10);
   const sound = ref(true);
   const quick = ref(false);
@@ -24,17 +24,11 @@ export default defineStore("main", () => {
   const providers = ref([]);
   const currencies = ref([]);
   const notifications = ref([]);
-  const sportFilter = ref("live");
   const sportGames = ref([]);
   const recentGameHistory = ref([]);
   const phoenixConsoleSettings = ref([]);
 
   const apiClient = useAxios();
-
-  // Actions
-  function setSportFilter(filter) {
-    sportFilter.value = filter;
-  }
 
   function setFiatView(view) {
     fiatView.value = view;
@@ -197,7 +191,7 @@ export default defineStore("main", () => {
 
   // Getters
   const isGuest = computed(() => !user.value);
-  const isCasino = computed(() => sportFilter.value === "casino");
+  const isCasino = computed(() => true);
   const demoMode = computed(() => !user.value || demo.value);
   const liveChannelAdjusted = computed(() =>
     !user.value && liveChannel.value === "mine" ? "all" : liveChannel.value
@@ -228,11 +222,9 @@ export default defineStore("main", () => {
     providers,
     currencies,
     notifications,
-    sportFilter,
     sportGames,
     recentGameHistory,
     phoenixConsoleSettings,
-    setSportFilter,
     setFiatView,
     setGameInstance,
     setUserData,

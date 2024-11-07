@@ -1,30 +1,22 @@
 <script setup>
-import { useRoute, useRouter } from "vue-router";
 import Bus from "@/composables/useBus";
-import useMainStore from "@/stores/useMainStore";
 import originalSvg from "@/assets/img/icons/original.svg";
 import slotsSvg from "@/assets/img/icons/slots.svg";
 import casinoSvg from "@/assets/img/icons/casino.svg";
-// import { useToast } from "vue-toastification";
-// import axios from "axios";
-// import Bus from "../../bus";
 
-// import AuthModal from "../modals/AuthModal.vue";
-// import PasswordResetModal from "../modals/PasswordResetModal.vue";
-
-const mainStore = useMainStore();
-
+const store = useMainStore();
 const router = useRouter();
 const route = useRoute();
-// const toast = useToast();
+const { $toast } = useNuxtApp();
 
-const tab = ref("lobby");
+const { selectedTab: tab } = useGameCategory();
+
 const gamesPerView = ref(0);
 const page = ref([]);
 const width = ref(0);
 
 const slotGames = computed(() => {
-  let gameList = mainStore.games.filter(
+  let gameList = store.games.filter(
     (game) => game.category.includes("slots") && !game.isHidden
   );
   gameList.sort((a, b) =>
@@ -34,7 +26,7 @@ const slotGames = computed(() => {
 });
 
 const originalGames = computed(() => {
-  let gameList = mainStore.games.filter(
+  let gameList = store.games.filter(
     (game) => game.category.includes("originals") && !game.isHidden
   );
   gameList.sort((a, b) =>
@@ -44,7 +36,7 @@ const originalGames = computed(() => {
 });
 
 const liveGames = computed(() => {
-  let gameList = mainStore.games.filter(
+  let gameList = store.games.filter(
     (game) => game.category.includes("live") && !game.isHidden
   );
   gameList.sort((a, b) =>
@@ -53,21 +45,7 @@ const liveGames = computed(() => {
   return gameList;
 });
 
-// Watcher to update games when the `games` state changes
-watch(mainStore.games, () => updateGames());
 
-// Lifecycle hooks
-onMounted(() => {
-  updateGamesPerView();
-  window.addEventListener("resize", updateGamesPerView);
-  initializePages();
-});
-
-onBeforeUnmount(() => {
-  window.removeEventListener("resize", updateGamesPerView);
-});
-
-// Helper functions
 function updateGamesPerView() {
   width.value = window.innerWidth;
   const prev = gamesPerView.value;
@@ -105,11 +83,33 @@ function updateGames() {
   updatePage({ id: "original", current: 0, max: 1 });
 }
 
+const paginatedOriginalGames = computed(() => {
+  const start = findPage('original') ? (findPage('original').current * gamesPerView.value) : 0;
+  const end = start + gamesPerView.value;
+
+  return originalGames.value.slice(start, end);
+});
+
+const paginatedSlotGames = computed(() => {
+  const start = findPage('slot') ? (findPage('slot').current * gamesPerView.value) : 0;
+  const end = start + gamesPerView.value;
+
+  return slotGames.value.slice(start, end);
+});
+
+const paginatedLiveGames = computed(() => {
+  const start = findPage('live') ? (findPage('live').current * gamesPerView.value) : 0;
+  const end = start + gamesPerView.value;
+
+  return liveGames.value.slice(start, end);
+});
+
+watch(store.games, () => updateGames());
+
 onMounted(() => {
-  Bus.$on("tab:lobby", () => (tab.value = "lobby"));
-  Bus.$on("tab:originals", () => (tab.value = "originals"));
-  Bus.$on("tab:slots", () => (tab.value = "slots"));
-  Bus.$on("tab:live", () => (tab.value = "live"));
+  updateGamesPerView();
+  window.addEventListener("resize", updateGamesPerView);
+  initializePages();
 
   if (route.params.user && route.params.token) {
     alert("if power reset modal");
@@ -123,18 +123,21 @@ onMounted(() => {
   }
 });
 
+onBeforeUnmount(() => {
+  window.removeEventListener("resize", updateGamesPerView);
+});
+
 // Event listeners using the Bus
 </script>
 
 <template>
-  <!-- <div v-if="mainStore.games.length <= 0" style="display: flex; justify-content: center">
-    <loader />
-  </div> -->
+  <div v-if="store.games.length <= 0" style="display: flex; justify-content: center">
+    <Loader />
+  </div>
 
   <div class="container" style="">
-    <!-- <game-category-search :IsHome="true" /> -->
+    <GameCategorySearch :IsHome="true" />
 
-    <!-- <original-game-list v-if="tab=='originals'||tab==='lobby'" :isIndex="tab=='originals'?true:true"></original-game-list> -->
     <template v-if="tab === 'lobby'">
       <div v-if="originalGames.length > 0" class="game-list" id="slot-games">
         <div class="category category-subtitle">
@@ -142,64 +145,43 @@ onMounted(() => {
             <img :src="originalSvg" alt="Original" />
           </div>
           <div class="name">Originals</div>
-          <div
-            class="viewAll"
-            @click="$router.push('/casino/game/category/originals')"
-          >
+          <div class="viewAll" @click="$router.push('/casino/game/category/originals')">
             {{ $t("general.viewAll") }}
           </div>
           <div class="arrows">
-            <div
-              class="arrow"
-              @click="
-                findPage('original').current > 0
-                  ? updatePage(
-                      Object.assign(findPage('original'), {
-                        current: findPage('original').current - 1,
-                      })
-                    )
-                  : null
-              "
-              :class="
-                findPage('original') && findPage('original').current <= 0
-                  ? 'disabled'
-                  : ''
-              "
-            >
-              <WebIcon icon="fal fa-chevron-left" />
+            <div class="arrow" @click="
+              findPage('original').current > 0
+                ? updatePage(
+                  Object.assign(findPage('original'), {
+                    current: findPage('original').current - 1,
+                  })
+                )
+                : null
+              " :class="findPage('original') && findPage('original').current <= 0
+                ? 'disabled'
+                : ''
+                ">
+              <WebIcon icon="fa fa-chevron-left" />
             </div>
-            <div
-              class="arrow"
-              @click="
-                findPage('original').current < findPage('original').max
-                  ? updatePage(
-                      Object.assign(findPage('original'), {
-                        current: findPage('original').current + 1,
-                      })
-                    )
-                  : null
-              "
-              :class="
-                findPage('original') &&
+            <div class="arrow" @click="
+              findPage('original').current < findPage('original').max
+                ? updatePage(
+                  Object.assign(findPage('original'), {
+                    current: findPage('original').current + 1,
+                  })
+                )
+                : null
+              " :class="findPage('original') &&
                 findPage('original').current >= findPage('original').max
-                  ? 'disabled'
-                  : ''
-              "
-            >
-              <WebIcon icon="fal fa-chevron-right" />
+                ? 'disabled'
+                : ''
+                ">
+              <WebIcon icon="fa fa-chevron-right" />
             </div>
           </div>
         </div>
-        <div
-          class="CardGrid_cardGridElement__IfdAD"
-          :key="'original'"
-          :class="!sort ? '' : 'sorted'"
-        >
-          <!-- <game-list-entry
-            v-for="game in paginatedOriginalGames"
-            :key="game.id"
-            :game="game"
-          /> -->
+        <div class="CardGrid_cardGridElement__IfdAD sorted" key="original">
+          <GameListEntry v-for="game in paginatedOriginalGames" :key="game.id" :game="game" />
         </div>
       </div>
       <div v-if="slotGames.length > 0" class="game-list" id="slot-games">
@@ -208,64 +190,43 @@ onMounted(() => {
             <img :src="slotsSvg" alt="Slots" />
           </div>
           <div class="name">Trending Slots</div>
-          <div
-            class="viewAll"
-            @click="$router.push('/casino/game/category/slots')"
-          >
+          <div class="viewAll" @click="$router.push('/casino/game/category/slots')">
             {{ $t("general.viewAll") }}
           </div>
           <div class="arrows">
-            <div
-              class="arrow"
-              @click="
-                findPage('slot').current > 0
-                  ? updatePage(
-                      Object.assign(findPage('slot'), {
-                        current: findPage('slot').current - 1,
-                      })
-                    )
-                  : null
-              "
-              :class="
-                findPage('slot') && findPage('slot').current <= 0
-                  ? 'disabled'
-                  : ''
-              "
-            >
-              <WebIcon icon="fal fa-chevron-left" />
+            <div class="arrow" @click="
+              findPage('slot').current > 0
+                ? updatePage(
+                  Object.assign(findPage('slot'), {
+                    current: findPage('slot').current - 1,
+                  })
+                )
+                : null
+              " :class="findPage('slot') && findPage('slot').current <= 0
+                ? 'disabled'
+                : ''
+                ">
+              <WebIcon icon="fa fa-chevron-left" />
             </div>
-            <div
-              class="arrow"
-              @click="
-                findPage('slot').current < findPage('slot').max
-                  ? updatePage(
-                      Object.assign(findPage('slot'), {
-                        current: findPage('slot').current + 1,
-                      })
-                    )
-                  : null
-              "
-              :class="
-                findPage('slot') &&
+            <div class="arrow" @click="
+              findPage('slot').current < findPage('slot').max
+                ? updatePage(
+                  Object.assign(findPage('slot'), {
+                    current: findPage('slot').current + 1,
+                  })
+                )
+                : null
+              " :class="findPage('slot') &&
                 findPage('slot').current >= findPage('slot').max
-                  ? 'disabled'
-                  : ''
-              "
-            >
-              <WebIcon icon="fal fa-chevron-right" />
+                ? 'disabled'
+                : ''
+                ">
+              <WebIcon icon="fa fa-chevron-right" />
             </div>
           </div>
         </div>
-        <div
-          class="CardGrid_cardGridElement__IfdAD"
-          :key="'slot'"
-          :class="!sort ? '' : 'sorted'"
-        >
-          <!-- <game-list-entry
-            v-for="game in paginatedSlotGames"
-            :key="game.id"
-            :game="game"
-          /> -->
+        <div class="CardGrid_cardGridElement__IfdAD sorted" key="slot">
+          <GameListEntry v-for="game in paginatedSlotGames" :key="game.id" :game="game" />
         </div>
       </div>
       <div v-if="liveGames.length > 0" class="game-list" id="live-games">
@@ -274,64 +235,43 @@ onMounted(() => {
             <img :src="casinoSvg" alt="Live" />
           </div>
           <div class="name">Trending Live Games</div>
-          <div
-            class="viewAll"
-            @click="$router.push('/casino/game/category/live')"
-          >
+          <div class="viewAll" @click="$router.push('/casino/game/category/live')">
             {{ $t("general.viewAll") }}
           </div>
           <div class="arrows">
-            <div
-              class="arrow"
-              @click="
-                findPage('live').current > 0
-                  ? updatePage(
-                      Object.assign(findPage('live'), {
-                        current: findPage('live').current - 1,
-                      })
-                    )
-                  : null
-              "
-              :class="
-                findPage('live') && findPage('live').current <= 0
-                  ? 'disabled'
-                  : ''
-              "
-            >
-              <WebIcon icon="fal fa-chevron-left" />
+            <div class="arrow" @click="
+              findPage('live').current > 0
+                ? updatePage(
+                  Object.assign(findPage('live'), {
+                    current: findPage('live').current - 1,
+                  })
+                )
+                : null
+              " :class="findPage('live') && findPage('live').current <= 0
+                ? 'disabled'
+                : ''
+                ">
+              <WebIcon icon="fa fa-chevron-left" />
             </div>
-            <div
-              class="arrow"
-              @click="
-                findPage('live').current < findPage('live').max
-                  ? updatePage(
-                      Object.assign(findPage('live'), {
-                        current: findPage('live').current + 1,
-                      })
-                    )
-                  : null
-              "
-              :class="
-                findPage('live') &&
+            <div class="arrow" @click="
+              findPage('live').current < findPage('live').max
+                ? updatePage(
+                  Object.assign(findPage('live'), {
+                    current: findPage('live').current + 1,
+                  })
+                )
+                : null
+              " :class="findPage('live') &&
                 findPage('live').current >= findPage('live').max
-                  ? 'disabled'
-                  : ''
-              "
-            >
-              <WebIcon icon="fal fa-chevron-right" />
+                ? 'disabled'
+                : ''
+                ">
+              <WebIcon icon="fa fa-chevron-right" />
             </div>
           </div>
         </div>
-        <div
-          class="CardGrid_cardGridElement__IfdAD"
-          :key="'live'"
-          :class="!sort ? '' : 'sorted'"
-        >
-          <!-- <game-list-entry
-            v-for="game in paginatedLiveGames"
-            :key="game.id"
-            :game="game"
-          /> -->
+        <div class="CardGrid_cardGridElement__IfdAD sorted" key="live">
+          <GameListEntry v-for="game in paginatedLiveGames" :key="game.id" :game="game" />
         </div>
       </div>
       <!-- <provider-slider v-if="tab === 'lobby'" /> -->
@@ -344,11 +284,7 @@ onMounted(() => {
           </div>
           <div class="name">Originals</div>
         </div>
-        <!-- <category-game-list
-          :sort="{ type: 'category', by: 'originals' }"
-          :isCategory="false"
-          :isIndex="false"
-        /> -->
+        <CategoryGameList :sort="{ type: 'category', by: 'originals' }" :isCategory="false" :isIndex="false" />
       </div>
     </template>
     <template v-else-if="tab === 'slots'">
@@ -359,11 +295,7 @@ onMounted(() => {
           </div>
           <div class="name">Slots</div>
         </div>
-        <!-- <category-game-list
-          :sort="{ type: 'category', by: 'slots' }"
-          :isCategory="false"
-          :isIndex="false"
-        /> -->
+        <CategoryGameList :sort="{ type: 'category', by: 'slots' }" :isCategory="false" :isIndex="false" />
       </div>
     </template>
     <template v-else-if="tab === 'live'">
@@ -374,11 +306,7 @@ onMounted(() => {
           </div>
           <div class="name">Live Games</div>
         </div>
-        <!-- <category-game-list
-          :sort="{ type: 'category', by: 'live' }"
-          :isCategory="false"
-          :isIndex="false"
-        /> -->
+        <CategoryGameList :sort="{ type: 'category', by: 'live' }" :isCategory="false" :isIndex="false" />
       </div>
     </template>
   </div>
@@ -465,6 +393,7 @@ onMounted(() => {
   }
 
   @media (max-width: 991px) {
+
     .slots,
     .sports {
       margin: 0;

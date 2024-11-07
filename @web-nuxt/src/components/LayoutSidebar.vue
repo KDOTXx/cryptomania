@@ -68,71 +68,36 @@ onMounted(() => {
 </script>
 
 <template>
-  <div
-    :class="`sidebar ${sidebar || mobileToggle ? 'visible' : 'hidden'} ${
-      mobileToggle ? 'mobileToggle' : ''
-    }`"
-    @click="mobileToggle = false"
-    v-click-outside="closeSidebar"
-  >
+  <div :class="`sidebar ${sidebar || mobileToggle ? 'visible' : 'hidden'} ${mobileToggle ? 'mobileToggle' : ''
+    }`" @click="mobileToggle = false" v-click-outside="closeSidebar">
     <div class="fixed" style="border-right: 1px solid #2a2e38 !important">
-      <div
-        class="sidebar-header"
-        style="
+      <div class="sidebar-header" style="
           border-bottom: 1px solid #2a2e38 !important;
           align-items: center;
           padding-left: 1.25rem;
-        "
-      >
-        <div
-          class="toggle"
-          @click="toggleSidebar"
-          style="margin: 0 !important; padding: 0 6px"
-        >
+        ">
+        <div class="toggle" @click="toggleSidebar" style="margin: 0 !important; padding: 0 6px">
           <img :src="menuSvg" alt="menu" />
         </div>
         <div class="NavigationTab_root__3914H">
           <div class="NavigationTab_container__1rlca">
-            <button
-              :class="
-                store.isCasino
-                  ? 'NavigationTab_active'
-                  : 'NavigationTab_disable'
-              "
-              @click="goToCasino"
-            >
+            <button class="NavigationTab_active" @click="goToCasino">
               <span>Casino</span>
-            </button>
-            <button
-              :class="
-                !store.isCasino && store.sportLink === 'sport'
-                  ? 'NavigationTab_active'
-                  : 'NavigationTab_disable'
-              "
-              disabled
-            >
-              <span>Sports</span>
             </button>
           </div>
         </div>
       </div>
 
-      <OverlayScrollbarsComponent
-        :options="{
-          scrollbars: { autoHide: 'leave' },
-        }"
-        class="games"
-      >
+      <OverlayScrollbarsComponent :options="{
+        scrollbars: { autoHide: 'leave' },
+      }" class="games">
         <div class="logo game" @click="openSearch">
           <WebIcon icon="fa fa-search" />
           <input :placeholder="$t('general.search')" />
         </div>
 
         <div class="divider"></div>
-        <a
-          class="NavigationToken_token__qSrff NavigationToken_active__aTNwj"
-          href="/token"
-        >
+        <a class="NavigationToken_token__qSrff NavigationToken_active__aTNwj" href="/token">
           <img :src="vtxSvg" alt="token" height="48px" width="48" />
           <div class="NavigationToken_textContainer__V5wi9">
             <p>Vortex <span class="NavigationToken_code__59rbj">(VTX)</span></p>
@@ -149,11 +114,7 @@ onMounted(() => {
           <div>Home</div>
         </NuxtLink>
 
-        <div
-          v-if="$checkPermission('dashboard')"
-          @click="goToAdmin"
-          class="game"
-        >
+        <div v-if="$checkPermission('dashboard')" @click="goToAdmin" class="game">
           <img :src="dashboardSvg" alt="Admin" class="icon" />
           <div>{{ $t("general.sidebar.admin") }}</div>
         </div>
@@ -211,18 +172,19 @@ onMounted(() => {
 }
 
 @media (min-width: 1700px) {
-  .sidebar.visible ~ .pageWrapper {
+  .sidebar.visible~.pageWrapper {
     padding-left: $sidebar-width-expand;
   }
 }
 
 @media (max-width: 991px) {
-  .sidebar.visible ~ .pageWrapper {
+  .sidebar.visible~.pageWrapper {
     padding-left: 0 !important;
   }
 }
 
-@media (min-width: 1700px), (max-width: 991px) {
+@media (min-width: 1700px),
+(max-width: 991px) {
   .sidebar .games {
     height: calc(100% - 95px) !important;
   }
@@ -441,11 +403,9 @@ onMounted(() => {
 
   .promotion {
     margin-top: 20px;
-    background: linear-gradient(
-        274.28deg,
+    background: linear-gradient(274.28deg,
         rgba(255, 195, 76, 0) 0%,
-        rgb(25 32 46) 100%
-      ),
+        rgb(25 32 46) 100%),
       #20293c;
     padding: 20px 40px;
     display: flex;
@@ -698,9 +658,11 @@ onMounted(() => {
         left: 17px !important;
         border-radius: 50%;
         width: 15px;
+
         @include themed() {
           background: t("secondary");
         }
+
         color: white;
         height: 15px;
         font-size: 0.5em;
@@ -716,10 +678,7 @@ onMounted(() => {
     }
   }
 
-  &.hidden
-    .fixed
-    .NavigationToken_token__qSrff
-    .NavigationToken_textContainer__V5wi9 {
+  &.hidden .fixed .NavigationToken_token__qSrff .NavigationToken_textContainer__V5wi9 {
     display: none;
   }
 
