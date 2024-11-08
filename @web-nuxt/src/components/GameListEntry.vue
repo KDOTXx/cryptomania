@@ -12,7 +12,7 @@ const openGame = (isDisabled, gameId) => {
         const game = store.games.filter((e) => e.id === gameId)[0];
         game.popularity = game.popularity + 1;
 
-        if ((gameId.startsWith('external') && !isGuest) || !gameId.startsWith('external')) {
+        if ((gameId.startsWith('external') && !store.isGuest) || !gameId.startsWith('external')) {
             router.push('/casino/game/' + gameId);
         }
         else {

@@ -163,17 +163,17 @@ onMounted(() => {
                 </div>
                 <div style="display: flex;">
                     <div class="name" style="flex-grow: 1;">
-                        <!-- <dropdown class="providerDropdown" :chevron="true" style="font-size: 14px"
+                        <Dropdown class="providerDropdown" :chevron="true" style="font-size: 14px"
                             :entries="findDropdownProviders().map(e => { return { id: e, name: e }; })"
                             :onSelect="(e) => { dropdownProvider = e.id; curIdx = 0; isLastPage = false; }"
-                            :select="dropdownProvider"></dropdown> -->
+                            :select="dropdownProvider" />
                     </div>
                     <div class="name">
                         <div style="font-size: 14px; margin-right: 5px;">Sort by:</div>
-                        <!-- <dropdown class="sortDropdown" :chevron="true" style="font-size: 14px"
+                        <Dropdown class="sortDropdown" :chevron="true" style="font-size: 14px"
                             :entries="findDropdownSorts().map(e => { return { id: e, name: e }; })"
                             :onSelect="(e) => { dropdownSort = e.id; curIdx = 0; isLastPage = false; }"
-                            :select="dropdownSort"></dropdown> -->
+                            :select="dropdownSort" />
                     </div>
                 </div>
 
@@ -199,7 +199,7 @@ onMounted(() => {
                     :key="game.id" :game="game" />
             </div>
             <div class="more-games-container">
-                <button @click="loadMoreGames" v-if="!isLastPage" class="more-games-button">more games</button>
+                <button @click="loadMoreGames" v-if="!isLastPage" class="more-games-button">More games</button>
             </div>
         </template>
     </div>

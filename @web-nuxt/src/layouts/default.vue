@@ -96,6 +96,7 @@ watch(route, () => {
 
     <!-- Modals -->
     <Modals.AuthModal />
+    <Modals.LeaderBoardModal />
   </div>
 </template>
 

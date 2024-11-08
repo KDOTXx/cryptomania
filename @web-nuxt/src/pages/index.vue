@@ -7,7 +7,7 @@ import casinoSvg from "@/assets/img/icons/casino.svg";
 const store = useMainStore();
 const router = useRouter();
 const route = useRoute();
-const { $toast } = useNuxtApp();
+const $toast = useToast();
 
 const { selectedTab: tab } = useGameCategory();
 
@@ -274,7 +274,7 @@ onBeforeUnmount(() => {
           <GameListEntry v-for="game in paginatedLiveGames" :key="game.id" :game="game" />
         </div>
       </div>
-      <!-- <provider-slider v-if="tab === 'lobby'" /> -->
+      <ProviderSlider v-if="tab === 'lobby'" />
     </template>
     <template v-else-if="tab === 'originals'">
       <div class="game-list">
@@ -284,7 +284,7 @@ onBeforeUnmount(() => {
           </div>
           <div class="name">Originals</div>
         </div>
-        <CategoryGameList :sort="{ type: 'category', by: 'originals' }" :isCategory="false" :isIndex="false" />
+        <CategoryGameList :sort="{ type: 'category', by: 'originals' }" :isCategory="true" :isIndex="false" />
       </div>
     </template>
     <template v-else-if="tab === 'slots'">

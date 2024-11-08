@@ -1,7 +1,7 @@
 <script setup>
 import { OverlayScrollbarsComponent } from "overlayscrollbars-vue";
 
-defineProps(["title"])
+defineProps(["title", "className"])
 
 const model = defineModel();
 </script>
@@ -9,7 +9,7 @@ const model = defineModel();
 <template>
   <transition tag="div" name="modal" v-if="model">
     <div class="modals" tabindex="0">
-      <div class="xmodal">
+      <div :class="`xmodal ${className}`">
         <i class="modal-close fa fa-times" @click="model = false"></i>
         <div v-if="title" class="heading">
           <span class="title">{{ $t(title) }}</span>

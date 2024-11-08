@@ -1,9 +1,7 @@
 <script setup>
 import { OverlayScrollbarsComponent } from "overlayscrollbars-vue";
-import LeaderboardModal from "@/components/Modals/LeaderboardModal.vue";
-import vClickOutside from "v-click-outside";
-import useStore from "@/stores/useMainStore";
 import { usePermissions } from "@/composables/usePermissions";
+import vClickOutside from "v-click-outside";
 import Bus from "@/composables/useBus";
 import menuSvg from "@/assets/img/menu.svg";
 import vtxSvg from "@/assets/img/vtx.svg";
@@ -19,7 +17,9 @@ import slotsSvg from "@/assets/img/icons/slots.svg";
 const { $checkPermission } = usePermissions();
 
 const router = useRouter();
-const store = useStore();
+const store = useMainStore();
+const { toggleModal } = useLeaderBoardModal();
+
 
 const mobileToggle = ref(false);
 const tempBlock = ref(false);
@@ -40,10 +40,6 @@ function goToCasino() {
 function goToAdmin() {
   window.location.href = "/admin";
 }
-
-const openLeaderboard = () => {
-  LeaderboardModal.methods.open();
-};
 
 function openSearch() {
   Bus.$emit("search:toggle");
@@ -125,7 +121,7 @@ onMounted(() => {
         </NuxtLink>
 
         <div class="divider"></div>
-        <div class="game" @click="openLeaderboard">
+        <div class="game" @click="toggleModal()">
           <img :src="competitionSvg" alt="competition" class="icon" />
           <div>Competition</div>
         </div>

@@ -8,7 +8,7 @@ import { useAxios } from "@/composables/useAxios";
 const { locale, setLocale } = useI18n()
 const { $checkPermission } = usePermissions();
 const { t } = useI18n()
-const { $toast } = useNuxtApp();
+const $toast = useToast();
 const apiClient = useAxios();
 
 const chatScrollbarRef = ref();

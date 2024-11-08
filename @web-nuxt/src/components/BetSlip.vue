@@ -6,7 +6,7 @@ const store = useMainStore();
 const apiClient = useAxios();
 
 const { t } = useI18n()
-const { $toast } = useNuxtApp();
+const toast = useToast();
 
 const { betSlip, isGuest, currencies, currency, user } = storeToRefs(store);
 
